@@ -11,11 +11,13 @@
 #include <stdlib.h>
 
 enum amp_devices_enum {
+    ELLIPTIC_US,
     TFA98XX,
     MAX_AMPLIFIER_DEVICES,
 };
 
 static const char *amp_devices_list[MAX_AMPLIFIER_DEVICES] = {
+    "elliptic_us",
     "tfa98xx",
 };
 
