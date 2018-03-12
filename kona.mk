@@ -307,6 +307,7 @@ PRODUCT_PACKAGES += \
 
 # LMKD
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.log_stats=true \
     ro.lmk.low=1001 \
     ro.lmk.medium=0 \
     ro.lmk.critical=0 \
