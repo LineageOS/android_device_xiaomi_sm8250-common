@@ -43,6 +43,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
     private long mClosedEvent;
     private long mOpenEvent;
 
+    private Handler mHandler = new Handler(this);
     private IMotor mMotor = null;
     private SensorManager mSensorManager;
     private Sensor mFreeFallSensor;
@@ -143,11 +144,13 @@ public class PopupCameraService extends Service implements Handler.Callback {
             try {
                 if (cameraState.equals(Constants.OPEN_CAMERA_STATE) &&
                         mMotor.getMotorStatus() == Constants.MOTOR_STATUS_TAKEBACK_OK) {
+                    lightUp();
                     mMotor.popupMotor(1);
                     mSensorManager.registerListener(mFreeFallListener, mFreeFallSensor,
                             SensorManager.SENSOR_DELAY_NORMAL);
                 } else if (cameraState.equals(Constants.CLOSE_CAMERA_STATE) &&
                         mMotor.getMotorStatus() == Constants.MOTOR_STATUS_POPUP_OK) {
+                    lightUp();
                     mMotor.takebackMotor(1);
                     mSensorManager.unregisterListener(mFreeFallListener, mFreeFallSensor);
                 } else {
@@ -176,6 +179,16 @@ public class PopupCameraService extends Service implements Handler.Callback {
     }
 
 }
+
+    private void lightUp() {
+        FileUtils.writeLine(Constants.GREEN_LED_PATH, "255");
+        FileUtils.writeLine(Constants.BLUE_LED_PATH, "255");
+
+        mHandler.postDelayed(() -> {
+            FileUtils.writeLine(Constants.GREEN_LED_PATH, "0");
+            FileUtils.writeLine(Constants.BLUE_LED_PATH, "0");
+        }, 1200);
+    }
 
     public void goBackHome() {
         Intent homeIntent = new Intent(Intent.ACTION_MAIN);
