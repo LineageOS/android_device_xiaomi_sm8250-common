@@ -11,6 +11,7 @@ allow devicesettings_app {
   mediaserver_service
 }:service_manager find;
 
+hal_client_domain(devicesettings_app, hal_displayfeature)
 hal_client_domain(devicesettings_app, hal_motor)
 hal_client_domain(devicesettings_app, hal_touchfeature)
 
@@ -20,6 +21,7 @@ allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perm
 
 # Allow binder communication with gpuservice
 binder_call(devicesettings_app, gpuservice)
+binder_call(devicesettings_app, hal_displayfeature)
 binder_call(devicesettings_app, hal_motor)
 binder_call(devicesettings_app, hal_touchfeature)
 
