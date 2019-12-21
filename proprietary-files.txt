@@ -794,31 +794,19 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/bin/fidoca
 vendor/bin/mlipayd@1.1
-vendor/bin/mtd@1.2
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/jcos_nq_client.so
-vendor/lib64/libmfido.so
 vendor/lib64/libmlipay@1.1.so
 vendor/lib64/libmlipay.so
-vendor/lib64/libmt@1.2.so
-vendor/lib64/libmt.so
 vendor/lib64/libwvkeybox.so
 vendor/lib64/ls_nq_client.so
-vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
