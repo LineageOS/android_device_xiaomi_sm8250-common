@@ -11,10 +11,12 @@
 #include <stdlib.h>
 
 enum amp_devices_enum {
+    TFA98XX,
     MAX_AMPLIFIER_DEVICES,
 };
 
 static const char *amp_devices_list[MAX_AMPLIFIER_DEVICES] = {
+    "tfa98xx",
 };
 
 static amplifier_device_t *amp_devices[MAX_AMPLIFIER_DEVICES];
