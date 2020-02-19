@@ -1,5 +1,6 @@
 type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_touchpanel, fs_type, sysfs_type;
 type sysfs_wireless_supply, sysfs_type, fs_type;
 type vendor_sysfs_smart_fps, fs_type, sysfs_type;
 type vendor_sysfs_dynamic_fps, fs_type, sysfs_type;

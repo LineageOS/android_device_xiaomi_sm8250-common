@@ -7,6 +7,7 @@ r_dir_file(hal_power_default, input_device)
 allow hal_power_default {
   sysfs_devfreq
   sysfs_msm_subsys
+  sysfs_touchpanel
 }:dir search;
 
 allow hal_power_default {
@@ -18,6 +19,7 @@ allow hal_power_default {
   sysfs_kgsl
   sysfs_msm_subsys
   sysfs_scsi_host 
+  sysfs_touchpanel
 }:{
   file
   lnk_file
