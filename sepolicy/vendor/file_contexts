@@ -37,6 +37,9 @@
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_data_file:s0
 
+# Fingerprint - FOD
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui                                           u:object_r:sysfs_fod:s0
+
 # Graphics nodes
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:sysfs_graphics:s0
