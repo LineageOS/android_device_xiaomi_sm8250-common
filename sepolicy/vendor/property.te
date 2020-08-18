@@ -1,11 +1,9 @@
-type power_prop, property_type;
+vendor_internal_prop(power_prop);
 
-type thermal_normal_prop, property_type;
+vendor_internal_prop(thermal_normal_prop);
 
-type vendor_device_prop, property_type;
+vendor_internal_prop(vendor_device_prop);
 
-type vendor_fod_prop, property_type;
+vendor_internal_prop(vendor_fod_prop);
 
-type vendor_fp_prop, property_type;
-
-type vendor_motor_prop, property_type;
+vendor_internal_prop(vendor_motor_prop);
