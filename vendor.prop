@@ -285,3 +285,6 @@ ro.config.vc_call_vol_steps=11
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Zygote
+zygote.critical_window.minute=10
