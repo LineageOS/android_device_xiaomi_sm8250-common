@@ -16,8 +16,10 @@
 
 package org.lineageos.settings.popupcamera;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.util.Log;
 
@@ -26,9 +28,20 @@ public class PopupCameraUtils {
     private static final String TAG = "PopupCameraUtils";
     private static final boolean DEBUG = false;
 
+    private static final boolean isPopUpMotorAvailable() {
+        return PopupCameraService.getMotorService() != null;
+    }
+
     public static void startService(Context context) {
+        final boolean enable = isPopUpMotorAvailable();
         if (DEBUG) Log.d(TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, PopupCameraService.class),
                 UserHandle.CURRENT);
+        PackageManager pm = context.getPackageManager();
+        pm.setComponentEnabledSetting(
+                new ComponentName(context, PopupCameraSettingsActivity.class),
+                enable ? pm.COMPONENT_ENABLED_STATE_ENABLED
+                       : pm.COMPONENT_ENABLED_STATE_DEFAULT,
+                pm.SYNCHRONOUS);
     }
 }
