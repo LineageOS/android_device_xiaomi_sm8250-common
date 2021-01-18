@@ -38,6 +38,8 @@ using ::android::hardware::Void;
 using ::vendor::lineage::fastcharge::V1_0::IFastCharge;
 
 struct FastCharge : public IFastCharge {
+  FastCharge();
+
   Return<bool> isEnabled() override;
   Return<bool> setEnabled(bool enable) override;
 };

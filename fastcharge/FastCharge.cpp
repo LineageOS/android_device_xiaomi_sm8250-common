@@ -16,10 +16,13 @@
 
 #define LOG_TAG "fastcharge@1.0-service.xiaomi_sm8250"
 
+#define FASTCHARGE_DEFAULT_SETTING true
 #define FASTCHARGE_PATH "/sys/class/qcom-battery/restrict_chg"
 
 #include "FastCharge.h"
 #include <android-base/logging.h>
+#include <cutils/properties.h>
+
 #include <fstream>
 #include <iostream>
 
@@ -28,6 +31,9 @@ namespace lineage {
 namespace fastcharge {
 namespace V1_0 {
 namespace implementation {
+
+static constexpr const char *kFastChargingProp =
+    "persist.vendor.sec.fastchg_enabled";
 
 /*
  * Write value to path and close file.
@@ -70,12 +76,19 @@ template <typename T> static T get(const std::string &path, const T &def) {
   }
 }
 
+FastCharge::FastCharge() {
+  setEnabled(property_get_bool(kFastChargingProp, FASTCHARGE_DEFAULT_SETTING));
+}
+
 Return<bool> FastCharge::isEnabled() { return get(FASTCHARGE_PATH, 0) < 1; }
 
 Return<bool> FastCharge::setEnabled(bool enable) {
   set(FASTCHARGE_PATH, enable ? 0 : 1);
 
-  return isEnabled();
+  bool enabled = isEnabled();
+  property_set(kFastChargingProp, enabled ? "true" : "false");
+
+  return enabled;
 }
 
 } // namespace implementation
