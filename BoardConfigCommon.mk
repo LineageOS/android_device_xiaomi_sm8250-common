@@ -76,6 +76,9 @@ TARGET_USES_MKE2FS := true
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Treble
+BOARD_VNDK_VERSION := current
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
