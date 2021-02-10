@@ -17,6 +17,43 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.primary.kona \
+    audio.r_submix.default \
+    audio.usb.default \
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libaudiopreprocessing \
+    libbatterylistener \
+    libbundlewrapper \
+    libcomprcapture \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libldnhncr \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
+    libsndmonitor \
+    libspkrprot \
+    libvisualizer \
+    libvolumelistener
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
