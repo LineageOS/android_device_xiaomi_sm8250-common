@@ -163,6 +163,19 @@ PRODUCT_PACKAGES += \
     vendor.nxp.hardware.nfc@1.1.vendor \
     vendor.nxp.hardware.nfc@2.0.vendor
 
+# OMX
+PRODUCT_PACKAGES += \
+    init.qti.media.sh \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
