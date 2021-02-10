@@ -140,6 +140,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.kona
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
