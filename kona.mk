@@ -158,6 +158,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+ifneq ($(TARGET_NO_FOD),true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    doze.enable_fod_service=true
+endif
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
