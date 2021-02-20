@@ -1,0 +1,9 @@
+type citsensorservice_hwservice, hwservice_manager_type;
+
+type hal_displayfeature_hwservice, hwservice_manager_type;
+
+type hal_mlipay_hwservice, hwservice_manager_type;
+
+type hal_motor_hwservice, hwservice_manager_type;
+
+type hal_touchfeature_hwservice, hwservice_manager_type;

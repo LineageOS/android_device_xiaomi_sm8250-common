@@ -1,0 +1,9 @@
+# For mount tracefs tracefs /sys/kernel/tracing
+allow init debugfs_tracing_debug:dir mounton;
+
+allow init same_process_hal_file:file execute;
+
+allow init proc_last_kmsg:file {
+  r_file_perms
+  setattr
+};

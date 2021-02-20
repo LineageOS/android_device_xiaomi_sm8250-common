@@ -1,0 +1,91 @@
+# Audio
+/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value u:object_r:vendor_sysfs_audio:s0
+
+# Camera
+/dev/akm09970                   u:object_r:hall_device:s0
+/dev/drv8846_dev                u:object_r:motor_device:s0
+/dev/ti-drv8846                 u:object_r:motor_device:s0
+/mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
+/vendor/bin/remosaic_daemon     u:object_r:remosaic_daemon_exec:s0
+
+# Charger
+/vendor/bin/batterysecret       u:object_r:batterysecret_exec:s0
+
+# Data files
+/data/vendor/goodix(/.*)?       u:object_r:fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?          u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?       u:object_r:fingerprint_data_file:s0
+/data/vendor/thermal(/.*)?      u:object_r:thermal_data_file:s0
+/data/vendor/mac_addr(/.*)?     u:object_r:wifi_vendor_data_file:s0
+
+# EFS Block devices
+/dev/block/sde[0-9]	u:object_r:efs_block_device:s0
+
+# Elliptic
+/dev/elliptic[0-9]              u:object_r:ultrasound_device:s0
+/dev/mius(.*)?                  u:object_r:ultrasound_device:s0
+
+# Fingerprint devices
+/dev/goodix_fp                  u:object_r:fingerprint_device:s0
+
+# Graphics nodes
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:sysfs_graphics:s0
+
+# HALs
+/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_kona              u:object_r:hal_lineage_fod_kona_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service                                    u:object_r:hal_displayfeature_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service                                              u:object_r:hal_motor_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                                      u:object_r:hal_touchfeature_default_exec:s0
+
+# Health
+/sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                                                                         u:object_r:sysfs_battery_supply:s0
+
+# IR
+/dev/lirc[0-9]             u:object_r:lirc_device:s0
+/dev/spidev[0-9]\.1        u:object_r:lirc_device:s0
+
+# LED
+/sys/class/leds/(blue|green|red)(-right)?(/.*)?                 u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?             u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?             u:object_r:sysfs_leds:s0
+
+# Mlipay
+/vendor/bin/mlipayd@1\.1 u:object_r:hal_mlipay_default_exec:s0
+
+# Mac
+/vendor/bin/nv_mac       u:object_r:wcnss_service_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
+
+# Sockets
+/dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
+
+# SSR
+/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:sysfs_ssr:s0
+
+# Sys
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/smart_fps_value u:object_r:vendor_sysfs_smart_fps:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dynamic_fps  u:object_r:vendor_sysfs_dynamic_fps:s0
+/sys/bus/iio/devices  u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/us_prox.0/iio:device3(/.*)? u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
+
+# Sysfs
+/sys/devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi(/.*)?         u:object_r:sysfs:s0
+/sys/devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup/wakeup48(/.*)?               u:object_r:sysfs:s0
+/sys/devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup/wakeup48/event_count         u:object_r:sysfs:s0
+/sys/devices/platform/soc/a600000.ssusb/wakeup/wakeup33(/.*)?                         u:object_r:sysfs:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?                                                        u:object_r:sysfs_wireless_supply:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc/rtc0/hctosys u:object_r:sysfs:s0
+
+# Thermal
+/vendor/bin/mi_thermald         u:object_r:mi_thermald_exec:s0
+
+# Touchfeature
+/dev/xiaomi-touch          u:object_r:touchfeature_device:s0
+
+# USB
+/vendor/bin/init\.mi\.usb\.sh    u:object_r:vendor_qti_init_shell_exec:s0

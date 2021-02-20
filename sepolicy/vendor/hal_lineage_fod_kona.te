@@ -1,0 +1,24 @@
+type hal_lineage_fod_kona, domain;
+hal_server_domain(hal_lineage_fod_kona, hal_lineage_fod)
+
+type hal_lineage_fod_kona_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_lineage_fod_kona)
+
+wakelock_use(hal_lineage_fod_kona)
+
+# Allow access to the HALs
+hal_client_domain(hal_lineage_fod_kona, hal_displayfeature)
+hal_client_domain(hal_lineage_fod_kona, hal_fingerprint)
+hal_client_domain(hal_lineage_fod_kona, hal_touchfeature)
+
+# Allow binder communication with hal_displayfeature_default
+binder_call(hal_lineage_fod_kona, hal_displayfeature_default)
+
+# Allow binder communication with hal_fingerprint_kona
+binder_call(hal_lineage_fod_kona, hal_fingerprint_default)
+
+# Allow binder communication with hal_touchfeature_default
+binder_call(hal_lineage_fod_kona, hal_touchfeature_default)
+
+allow hal_lineage_fod_kona sysfs_graphics:dir r_dir_perms;
+allow hal_lineage_fod_kona sysfs_graphics:file rw_file_perms;
