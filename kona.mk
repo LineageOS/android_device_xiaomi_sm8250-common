@@ -334,8 +334,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    capture.sh \
-    capture_headset.sh \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
@@ -355,15 +353,7 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.sh \
     install-recovery.sh \
     mishow.sh \
-    playback.sh \
-    playback_headset.sh \
     qca6234-service.sh \
-    setup_backmic2headphone.sh \
-    setup_headsetmic2headphone.sh \
-    setup_headsetmic2receiver.sh \
-    setup_mainmic2headphone.sh \
-    setup_topmic2headphone.sh \
-    teardown_loopback.sh \
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
