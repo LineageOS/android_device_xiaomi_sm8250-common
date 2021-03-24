@@ -199,9 +199,9 @@ fi
 # update product
 marketname=`getprop ro.product.marketname`
 if [ "$marketname" != "" ]; then
-    echo "$marketname" > /config/usb_gadget/g1/strings/0x409/product
+    setprop vendor.usb.product_string "$marketname"
 else
-    echo "$(getprop ro.product.model)" > /config/usb_gadget/g1/strings/0x409/product
+    setprop vendor.usb.product_string "$(getprop ro.product.model)"
 fi
 
 #

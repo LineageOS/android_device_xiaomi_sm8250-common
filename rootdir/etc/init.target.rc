@@ -65,6 +65,9 @@ on fs
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/haptics 0755 system system
+    chmod 0644 /mnt/vendor/persist/haptics/vov
+    chown system system /mnt/vendor/persist/haptics/vov
+    chown system system /sys/bus/i2c/drivers/aw8697_haptic/2-005a/vov
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
