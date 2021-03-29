@@ -359,6 +359,8 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.recovery.hardware.rc \
+    init.recovery.qcom.rc \
     init.target.rc \
     init.target.wigig.rc \
     fstab.qcom \

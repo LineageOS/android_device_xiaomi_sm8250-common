@@ -1,0 +1,5 @@
+on property:vendor.kpdpwr.reset.enabled=0
+    write /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/kpdpwr_reset 0
+
+on property:vendor.kpdpwr.reset.enabled=1
+    write /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/kpdpwr_reset 1
