@@ -43,6 +43,7 @@
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                                                                         u:object_r:sysfs_battery_supply:s0
 
 # IR
+/dev/ir_spi                u:object_r:lirc_device:s0
 /dev/lirc[0-9]             u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1        u:object_r:lirc_device:s0
 
