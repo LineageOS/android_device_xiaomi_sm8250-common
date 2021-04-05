@@ -61,7 +61,6 @@ static T get(const std::string& path, const T& def) {
 }
 
 FingerprintInscreen::FingerprintInscreen() {
-    xiaomiDisplayFeatureService = IDisplayFeature::getService();
     touchFeatureService = ITouchFeature::getService();
     xiaomiFingerprintService = IXiaomiFingerprint::getService();
 }
@@ -90,13 +89,11 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     touchFeatureService->setTouchMode(TOUCH_FOD_ENABLE, 1);
-    xiaomiDisplayFeatureService->setFeature(0, 17, 1, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
     touchFeatureService->resetTouchMode(TOUCH_FOD_ENABLE);
-    xiaomiDisplayFeatureService->setFeature(0, 17, 0, 1);
     return Void();
 }
 
