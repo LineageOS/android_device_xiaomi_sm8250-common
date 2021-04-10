@@ -186,6 +186,9 @@ BOARD_SEPOLICY_M4DEFS += \
 # Treble
 BOARD_VNDK_VERSION := current
 
+# USB
+TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
