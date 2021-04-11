@@ -1,7 +1,7 @@
 # Audio
-audio.offload.min.duration.secs=30
-persist.vendor.audio.hac.enable=false
-persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+tunnel.audio.encode=true
 
 # Camera
 camera.disable_zsl_mode=true
