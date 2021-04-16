@@ -265,6 +265,9 @@ persist.vendor.radio.uicc_se_enabled=true
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=false
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
