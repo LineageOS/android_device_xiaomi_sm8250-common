@@ -4,3 +4,6 @@ allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
