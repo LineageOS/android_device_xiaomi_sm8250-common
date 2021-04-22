@@ -1,4 +1,4 @@
-cc_binary {
+xiaomi_kona_biometrics_hal_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona",
     defaults: ["hidl_defaults"],
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona.rc"],

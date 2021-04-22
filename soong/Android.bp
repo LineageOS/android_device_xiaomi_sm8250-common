@@ -10,6 +10,7 @@ bootstrap_go_package {
         "soong-genrule",
     ],
     srcs: [
+        "biometrics.go",
         "fod.go",
         "main.go",
     ],
