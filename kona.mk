@@ -204,6 +204,9 @@ PRODUCT_COPY_FILES += \
 endif
 
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona
+
+PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
