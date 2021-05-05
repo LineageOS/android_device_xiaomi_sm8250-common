@@ -36,7 +36,11 @@ namespace implementation {
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
 
 // List of fingerprint HALs
-static const char *kHALClasses[] = {HAL_CLASSES};
+static const char *kHALClasses[] = {
+    "fpc",
+    "goodix_fod",
+    "goodix_fod6",
+};
 static const size_t kHALClassesSize = sizeof(kHALClasses) / sizeof(char *);
 
 // Boost duration
