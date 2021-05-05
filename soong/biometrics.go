@@ -14,7 +14,6 @@ func biometricsFlags(ctx android.BaseContext) []string {
     var halClasses = strings.Split(strings.TrimSpace(config.String("HAL_CLASSES")), ",")
 
     cflags = append(cflags, "-DHAL_CLASSES=\"" + strings.Join(halClasses, "\", \"") + "\"")
-    cflags = append(cflags, " -DHAL_CLASSES_SIZE=" + strconv.Itoa(len(halClasses)))
 
     return cflags
 }

@@ -36,7 +36,8 @@ namespace implementation {
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
 
 // List of fingerprint HALs
-static const char *kHALClasses[HAL_CLASSES_SIZE] = {HAL_CLASSES};
+static const char *kHALClasses[] = {HAL_CLASSES};
+static const size_t kHALClassesSize = sizeof(kHALClasses) / sizeof(char *);
 
 // Boost duration
 static constexpr int kDefaultBoostDurationMs = 2000;
@@ -56,7 +57,7 @@ BiometricsFingerprint::BiometricsFingerprint() :
     sInstance = this; // keep track of the most recent instance
     mPowerService = IPower::fromBinder(ndk::SpAIBinder(
         AServiceManager_getService(kPowerInstance.c_str())));
-    for (i=0; i<HAL_CLASSES_SIZE; i++) {
+    for (i=0; i<kHALClassesSize; i++) {
         class_name = kHALClasses[i];
         mDevice = openHal(class_name);
         if (!mDevice) {
