@@ -1,5 +1,0 @@
-service vendor.light-default /vendor/bin/hw/android.hardware.lights-service.example
-    class hal
-    user nobody
-    group nobody
-    shutdown critical
