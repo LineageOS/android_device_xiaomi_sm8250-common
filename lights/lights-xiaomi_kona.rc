@@ -1,0 +1,5 @@
+service vendor.light-xiaomi_kona /vendor/bin/hw/android.hardware.lights-service.xiaomi_kona
+    class hal
+    user nobody
+    group nobody
+    shutdown critical

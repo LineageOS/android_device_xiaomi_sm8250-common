@@ -1,8 +1,8 @@
 cc_binary {
-    name: "android.hardware.lights-service.example",
+    name: "android.hardware.lights-service.xiaomi_kona",
     relative_install_path: "hw",
-    init_rc: ["lights-default.rc"],
-    vintf_fragments: ["lights-default.xml"],
+    init_rc: ["lights-xiaomi_kona.rc"],
+    vintf_fragments: ["lights-xiaomi_kona.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
