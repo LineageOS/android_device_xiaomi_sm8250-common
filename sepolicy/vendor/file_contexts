@@ -40,6 +40,7 @@
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                                      u:object_r:hal_touchfeature_default_exec:s0
 
 # Health
+/sys/devices/platform/soc/884000.i2c/i2c-5/5-0066/power_supply/bq2597x-standalone(/.*)?                                                            u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                                                                         u:object_r:sysfs_battery_supply:s0
 
 # IR
