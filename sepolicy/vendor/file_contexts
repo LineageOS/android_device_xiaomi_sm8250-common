@@ -76,12 +76,7 @@
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
 
 # Sysfs
-/sys/devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi(/.*)?         u:object_r:sysfs:s0
-/sys/devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup/wakeup48(/.*)?               u:object_r:sysfs:s0
-/sys/devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup/wakeup48/event_count         u:object_r:sysfs:s0
-/sys/devices/platform/soc/a600000.ssusb/wakeup/wakeup33(/.*)?                         u:object_r:sysfs:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?                                                        u:object_r:sysfs_wireless_supply:s0
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc/rtc0/hctosys u:object_r:sysfs:s0
 
 # Thermal
 /vendor/bin/mi_thermald         u:object_r:mi_thermald_exec:s0
