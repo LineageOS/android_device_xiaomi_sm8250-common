@@ -453,11 +453,6 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Lights
-vendor/bin/hw/android.hardware.lights-service.qti
-vendor/etc/init/android.hardware.lights-qti.rc
--vendor/etc/vintf/manifest/android.hardware.lights-qti.xml
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libadpcmdec.so
