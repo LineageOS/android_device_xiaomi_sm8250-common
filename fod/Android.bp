@@ -49,5 +49,5 @@ cc_binary {
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature@1.0",
     ],
-    proprietary: true,
+    vendor: true,
 }
