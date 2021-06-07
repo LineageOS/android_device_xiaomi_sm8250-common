@@ -41,7 +41,6 @@ static const char *kHALClasses[] = {
     "goodix_fod",
     "goodix_fod6",
 };
-static const size_t kHALClassesSize = sizeof(kHALClasses) / sizeof(char *);
 
 // Boost duration
 static constexpr int kDefaultBoostDurationMs = 2000;
@@ -56,13 +55,10 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : 
         mClientCallback(nullptr), mPowerService(nullptr), mDevice(nullptr) {
-    int i;
-    const char *class_name;
     sInstance = this; // keep track of the most recent instance
     mPowerService = IPower::fromBinder(ndk::SpAIBinder(
         AServiceManager_getService(kPowerInstance.c_str())));
-    for (i=0; i<kHALClassesSize; i++) {
-        class_name = kHALClasses[i];
+    for (const auto& class_name : kHALClasses) {
         mDevice = openHal(class_name);
         if (!mDevice) {
             ALOGE("Can't open HAL module, class %s", class_name);
