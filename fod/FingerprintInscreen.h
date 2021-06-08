@@ -48,9 +48,9 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<int32_t> getSize() override;
 
   private:
-    sp<IDisplayFeature> xiaomiDisplayFeatureService;
-    sp<ITouchFeature> touchFeatureService;
-    sp<IXiaomiFingerprint> xiaomiFingerprintService;
+    sp<IDisplayFeature> mXiaomiDisplayFeatureService;
+    sp<ITouchFeature> mTouchFeatureService;
+    sp<IXiaomiFingerprint> mXiaomiFingerprintService;
 };
 
 }  // namespace implementation
