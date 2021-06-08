@@ -178,6 +178,7 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
+    write /sys/class/leds/white/max_brightness 2
 
 on property:vendor.audio.cit.spkcal.copy=true
     copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
@@ -245,6 +246,11 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     user root
     group root system
     disabled
+    oneshot
+
+service leds-sh /system/vendor/bin/sh /vendor/etc/init.leds.sh
+    class core
+    user root
     oneshot
 
 on property:vendor.dcvs.prop=1
