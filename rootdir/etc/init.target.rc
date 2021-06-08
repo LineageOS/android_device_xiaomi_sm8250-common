@@ -178,6 +178,7 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
+    write /sys/class/leds/white/max_brightness 2
 
 on property:vendor.audio.cit.spkcal.copy=true
     copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
