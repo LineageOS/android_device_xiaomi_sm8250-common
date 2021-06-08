@@ -22,6 +22,29 @@
       "revId": "b2c1eeddf53f1e7fbf3bff71cda8e9fc72f32d73",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16b06594_2f21cfd6",
+        "filename": "fod/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-06-08T10:34:24Z",
+      "side": 1,
+      "message": "Here cflags is used, maybe \"properties\" is not used at all? I don\u0027t know what\u0027s its purpose",
+      "range": {
+        "startLine": 28,
+        "startChar": 12,
+        "endLine": 28,
+        "endChar": 18
+      },
+      "revId": "b2c1eeddf53f1e7fbf3bff71cda8e9fc72f32d73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
