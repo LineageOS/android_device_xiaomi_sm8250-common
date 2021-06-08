@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0eb663c7_313f1bc4",
+        "filename": "fod/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-08T10:16:11Z",
+      "side": 1,
+      "message": "I changed it to cppflags, while picking to OnePlus sm8350 common tree.",
+      "range": {
+        "startLine": 21,
+        "startChar": 18,
+        "endLine": 21,
+        "endChar": 24
+      },
+      "revId": "b2c1eeddf53f1e7fbf3bff71cda8e9fc72f32d73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
