@@ -1,0 +1,28 @@
+type hal_displayfeature_default, domain;
+hal_server_domain(hal_displayfeature_default, hal_displayfeature)
+
+type hal_displayfeature_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_displayfeature_default)
+
+binder_call(hal_displayfeature_client, hal_displayfeature_server)
+
+hal_attribute_hwservice(hal_displayfeature, hal_displayfeature_hwservice)
+
+set_prop(hal_displayfeature_default, vendor_displayfeature_prop)
+set_prop(hal_displayfeature_default, hwservicemanager_prop)
+get_prop(hal_displayfeature_default, vendor_mpctl_prop)
+
+vndbinder_use(hal_displayfeature_default)
+
+allow hal_displayfeature_default vendor_hal_display_config_hwservice:hwservice_manager find;
+allow hal_displayfeature_default fwk_sensor_hwservice:hwservice_manager find;
+allow hal_displayfeature_default vendor_qdisplay_service:service_manager find;
+allow hal_displayfeature_default hwservicemanager:binder { call transfer };
+allow hal_displayfeature_default hal_displayfeature_hwservice:hwservice_manager { add find };
+allow hal_displayfeature_default hal_graphics_composer_default:binder { call transfer };
+allow hal_displayfeature_default hidl_base_hwservice:hwservice_manager add;
+allow hal_displayfeature_default vendor_display_vendor_data_file:dir search;
+allow hal_displayfeature_default vendor_hal_display_postproc_hwservice:hwservice_manager find;
+allow hal_displayfeature_default vendor_sysfs_graphics:file rw_file_perms;
+allow hal_displayfeature_default vendor_sysfs_graphics:dir r_dir_perms;
+allow hal_displayfeature_default vendor_sysfs_smart_fps:file rw_file_perms;
