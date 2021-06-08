@@ -72,8 +72,8 @@ SOONG_CONFIG_XIAOMI_KONA_FOD := POS_X POS_Y SIZE
 endif
 
 # HIDL
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
