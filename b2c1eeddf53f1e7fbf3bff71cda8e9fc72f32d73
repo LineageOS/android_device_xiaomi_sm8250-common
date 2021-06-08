@@ -69,6 +69,30 @@
       "revId": "b2c1eeddf53f1e7fbf3bff71cda8e9fc72f32d73",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2d339fb_1a90cf73",
+        "filename": "fod/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-06-08T11:18:46Z",
+      "side": 1,
+      "message": "Oh ok",
+      "parentUuid": "f6baa247_64267f13",
+      "range": {
+        "startLine": 28,
+        "startChar": 12,
+        "endLine": 28,
+        "endChar": 18
+      },
+      "revId": "b2c1eeddf53f1e7fbf3bff71cda8e9fc72f32d73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
