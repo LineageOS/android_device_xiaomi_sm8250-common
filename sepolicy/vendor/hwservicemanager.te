@@ -1,0 +1,1 @@
+allow hwservicemanager hal_displayfeature_default:binder { call transfer };

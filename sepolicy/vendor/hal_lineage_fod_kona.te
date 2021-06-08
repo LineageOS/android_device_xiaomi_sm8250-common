@@ -7,8 +7,12 @@ init_daemon_domain(hal_lineage_fod_kona)
 wakelock_use(hal_lineage_fod_kona)
 
 # Allow access to the HALs
+hal_client_domain(hal_lineage_fod_kona, hal_displayfeature)
 hal_client_domain(hal_lineage_fod_kona, hal_fingerprint)
 hal_client_domain(hal_lineage_fod_kona, hal_touchfeature)
+
+# Allow binder communication with hal_displayfeature_default
+binder_call(hal_lineage_fod_kona, hal_displayfeature_default)
 
 # Allow binder communication with hal_fingerprint_kona
 binder_call(hal_lineage_fod_kona, hal_fingerprint_default)
