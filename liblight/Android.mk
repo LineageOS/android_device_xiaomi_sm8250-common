@@ -14,7 +14,7 @@
 
 LOCAL_PATH:= $(call my-dir)
 # HAL module implemenation stored in
-# hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
+# hw/<COPYPIX_HARDWARE_MODULE_ID>.kona.so
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := lights.c
@@ -26,7 +26,7 @@ ifeq ($(LLVM_SA), true)
     LOCAL_CFLAGS += --compile-and-analyze --analyzer-perf --analyzer-Werror
 endif
 LOCAL_CLANG  := true
-LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE := lights.kona
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
 
