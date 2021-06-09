@@ -22,10 +22,6 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_CFLAGS := -DLOG_TAG=\"qdlights\"
-ifeq ($(LLVM_SA), true)
-    LOCAL_CFLAGS += --compile-and-analyze --analyzer-perf --analyzer-Werror
-endif
-LOCAL_CLANG  := true
 LOCAL_MODULE := lights.kona
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
