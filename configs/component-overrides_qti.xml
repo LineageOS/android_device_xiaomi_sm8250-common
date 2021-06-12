@@ -15,6 +15,7 @@
 -->
 <config>
     <component-override package="com.android.bluetooth" >
-        <component class=".sap.SapService" enabled="true" />
+        <component class=".avrcpcontroller.AvrcpControllerService" enabled="true" />
+        <component class=".hid.HidDeviceService" enabled="true" />
     </component-override>
 </config>
