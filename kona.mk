@@ -197,7 +197,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_kona \
     FODService
 
 PRODUCT_PACKAGES += \

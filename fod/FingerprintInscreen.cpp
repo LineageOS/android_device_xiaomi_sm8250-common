@@ -25,7 +25,7 @@ namespace lineage {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
-namespace V1_0 {
+namespace V1_1 {
 namespace implementation {
 
 template <typename T>
@@ -126,8 +126,12 @@ Return<int32_t> FingerprintInscreen::getSize() {
     return FOD_SIZE;
 }
 
+Return<bool> FingerprintInscreen::dimBehindPressedLayer() {
+    return false;
+}
+
 }  // namespace implementation
-}  // namespace V1_0
+}  // namespace V1_1
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
