@@ -127,7 +127,7 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }
 
 Return<bool> FingerprintInscreen::shouldEnableDimlayer() {
-    return true;
+    return false;
 }
 
 }  // namespace implementation
