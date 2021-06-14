@@ -208,9 +208,6 @@ BOARD_SEPOLICY_M4DEFS += \
     wcnss_service_exec=vendor_wcnss_service_exec \
     wifi_vendor_data_file=vendor_wifi_vendor_data_file
 
-# USB
-TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY := true
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
