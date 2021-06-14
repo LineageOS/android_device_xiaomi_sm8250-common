@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona"
+#define LOG_TAG "vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_kona"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -14,8 +14,8 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreen;
-using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::implementation::FingerprintInscreen;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_1::IFingerprintInscreen;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_1::implementation::FingerprintInscreen;
 
 using android::OK;
 using android::status_t;
