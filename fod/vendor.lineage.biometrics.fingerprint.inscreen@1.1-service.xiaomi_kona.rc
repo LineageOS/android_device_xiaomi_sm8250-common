@@ -1,0 +1,7 @@
+service vendor.fingerprint-inscreen-1-1 /vendor/bin/hw/vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_kona
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.1::IFingerprintInscreen default
+    class hal
+    user system
+    group system wakelock
+    shutdown critical
