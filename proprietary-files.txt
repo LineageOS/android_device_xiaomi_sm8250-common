@@ -497,6 +497,9 @@ vendor/lib64/ls_nq_client.so
 vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/se_nq_extn_client.so
 
+# NVRAM
+vendor/bin/nv_mac
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
