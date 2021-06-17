@@ -45,6 +45,29 @@
       "revId": "8b8074c1b6def1e6bac8348c43f2276259ec13c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c0861367_0115a163",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-17T08:39:00Z",
+      "side": 1,
+      "message": "write /sys/class/leds/white/max_brightness 2",
+      "range": {
+        "startLine": 181,
+        "startChar": 4,
+        "endLine": 181,
+        "endChar": 17
+      },
+      "revId": "8b8074c1b6def1e6bac8348c43f2276259ec13c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
