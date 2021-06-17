@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "98d940f3_fd762126",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-17T08:57:52Z",
+      "side": 1,
+      "message": "Remove.",
+      "range": {
+        "startLine": 251,
+        "startChar": 0,
+        "endLine": 254,
+        "endChar": 11
+      },
+      "revId": "af53ef8365ad95f2d6ee50cc3de5dd094d1661fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
