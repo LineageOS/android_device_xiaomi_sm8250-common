@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7d00c7e_c96311e6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-17T08:33:00Z",
+      "side": 1,
+      "message": "To be fair, the script doesn\u0027t exactly do that.",
+      "range": {
+        "startLine": 9,
+        "startChar": 29,
+        "endLine": 9,
+        "endChar": 44
+      },
+      "revId": "8b8074c1b6def1e6bac8348c43f2276259ec13c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "53a1e7fd_9edc9c97",
+        "filename": "rootdir/bin/init.leds.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-17T08:33:00Z",
+      "side": 1,
+      "message": "Lol?",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 11
+      },
+      "revId": "8b8074c1b6def1e6bac8348c43f2276259ec13c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
