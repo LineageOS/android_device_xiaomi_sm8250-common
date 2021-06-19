@@ -1,0 +1,4 @@
+service vendor.qti.vibrator.xiaomi_kona /vendor/bin/hw/vendor.qti.hardware.vibrator.service.xiaomi_kona
+    class hal
+    user system
+    group system input
