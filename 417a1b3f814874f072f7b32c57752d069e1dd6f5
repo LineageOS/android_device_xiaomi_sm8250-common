@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "432a774c_9d918e9b",
+        "filename": "kona.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 407,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-19T11:53:54Z",
+      "side": 1,
+      "message": "vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml",
+      "range": {
+        "startLine": 407,
+        "startChar": 4,
+        "endLine": 407,
+        "endChar": 110
+      },
+      "revId": "417a1b3f814874f072f7b32c57752d069e1dd6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
