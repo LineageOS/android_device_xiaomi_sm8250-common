@@ -16,6 +16,24 @@
       "revId": "7e2b99b7e06a1241d2642ac07475214c4ad00ecc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e29115ab_9ddf5a81",
+        "filename": "vibrator/effect/Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-06-20T11:55:42Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "985dfc1a_a3a9693c",
+      "revId": "7e2b99b7e06a1241d2642ac07475214c4ad00ecc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
