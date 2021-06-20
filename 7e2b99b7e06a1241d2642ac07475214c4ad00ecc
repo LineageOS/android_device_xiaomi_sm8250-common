@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "985dfc1a_a3a9693c",
+        "filename": "vibrator/effect/Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-20T09:01:55Z",
+      "side": 0,
+      "message": "You could skip importing vibrator/effect entirely.",
+      "revId": "7e2b99b7e06a1241d2642ac07475214c4ad00ecc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
