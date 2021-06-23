@@ -1,0 +1,22 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "libinit_kona_defaults",
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init"
+    ],
+    shared_libs: ["libbase"],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libinit_kona",
+    defaults: ["libinit_kona_defaults"],
+    srcs: ["libinit_kona.cpp"],
+    export_include_dirs: ["include"],
+}
