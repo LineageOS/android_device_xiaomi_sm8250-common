@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from lmi-user 11 RKQ1.200826.002 V12.2.6.0.RJKMIXM release-keys
+# All unpinned blobs below are extracted from alioth-user 11 RKQ1.200826.002 V12.5.1.0.RKHMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
