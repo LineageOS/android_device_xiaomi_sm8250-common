@@ -290,6 +290,9 @@ PRODUCT_PACKAGES += \
     vendor.nxp.hardware.nfc@1.1.vendor \
     vendor.nxp.hardware.nfc@2.0.vendor
 
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+
 # OMX
 PRODUCT_PACKAGES += \
     init.qti.media.sh \
