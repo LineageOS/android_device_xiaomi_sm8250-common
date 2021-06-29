@@ -65,11 +65,15 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Charger
+# Charger (HVDCP)
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+
+# Charger (Mi Turbo Charge)
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
