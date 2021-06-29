@@ -22,7 +22,8 @@
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dynamic_fps               u:object_r:vendor_sysfs_dynamic_fps:s0
 
 # EFS Block devices
-/dev/block/sde[0-9]+                                                        u:object_r:efs_block_device:s0
+/dev/block/sde[0-9]+                                                    u:object_r:efs_block_device:s0
+/dev/block/sdf[0-9]+                                                    u:object_r:efs_block_device:s0
 
 # Elliptic
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
