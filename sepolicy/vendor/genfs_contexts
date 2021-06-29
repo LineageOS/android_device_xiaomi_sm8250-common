@@ -17,6 +17,7 @@ genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                     
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare         u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait        u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                    u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/power_cfg              u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg           u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable          u:object_r:vendor_sysfs_fingerprint:s0
 
