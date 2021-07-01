@@ -464,7 +464,6 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC
 vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
-vendor/etc/permissions/com.nxp.mifare.xml
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
