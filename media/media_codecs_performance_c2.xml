@@ -53,12 +53,6 @@
         </MediaCodec>
 
         <!-- C2 HW decoders with OMX aliases -->
-        <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="101-221" />
-            <Limit name="measured-frame-rate-720x480" range="720-740" />
-            <Limit name="measured-frame-rate-1280x720" range="200-420" />
-            <Limit name="measured-frame-rate-1920x1088" range="76-167" />
-        </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="800-850" />
             <Limit name="measured-frame-rate-720x480" range="440-600" />
