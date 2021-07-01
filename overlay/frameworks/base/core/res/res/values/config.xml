@@ -347,4 +347,8 @@
 
     <!-- The max vibration strength allowed in audio haptic channels. -->
     <item name="config_hapticChannelMaxVibrationAmplitude" format="float" type="dimen">0.3</item>
+
+    <!-- The duration (in milliseconds) that should be applied to waveform vibrations that ends in
+         non-zero amplitudes, to bring the vibrator amplitude down to zero using this timing. -->
+    <integer name="config_vibrationWaveformRampDownDuration">50</integer>
 </resources>
