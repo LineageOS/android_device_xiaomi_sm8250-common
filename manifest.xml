@@ -63,11 +63,6 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
@@ -116,11 +111,6 @@
         <transport>hwbinder</transport>
         <fqname>@2.0::IDisplayModes/default</fqname>
         <fqname>@2.0::IPictureAdjustment/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::INqNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
