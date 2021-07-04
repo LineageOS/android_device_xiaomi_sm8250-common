@@ -163,6 +163,10 @@ on boot
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
 
+    # Touch Sampling Rate
+    chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    chmod 0664 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
 
