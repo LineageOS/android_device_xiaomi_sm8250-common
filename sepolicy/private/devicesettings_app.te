@@ -28,4 +28,5 @@ allow devicesettings_app {
   cgroup
   sysfs_leds
   sysfs_thermal
+  sysfs_htsr
 }:{ file lnk_file } rw_file_perms;
