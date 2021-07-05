@@ -290,17 +290,23 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     libchrome.vendor \
-    NfcNci \
+    com.nxp.nfc.nq \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default.hw \
+    NQNfcNci \
     SecureElement \
     Tag \
-    vendor.nxp.hardware.nfc@1.1 \
-    vendor.nxp.hardware.nfc@2.0 \
-    vendor.nxp.hardware.nfc@1.1.vendor \
-    vendor.nxp.hardware.nfc@2.0.vendor
+    android.hardware.secure_element@1.2 \
+    se_nq_extn_client \
+    ls_nq_client \
+    jcos_nq_client \
+    vendor.nxp.hardware.nfc@2.0-service
 
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
