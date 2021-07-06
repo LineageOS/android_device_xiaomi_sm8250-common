@@ -130,7 +130,7 @@ ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=hastings
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.cameratest,com.xiaomi.factory.mmi,com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
