@@ -1,20 +1,12 @@
 on early-boot
     chown system system /sys/class/leds/red/breath
-    chown system system /sys/class/leds/red/delay_off
-    chown system system /sys/class/leds/red/delay_on
 
     chown system system /sys/class/leds/green/breath
-    chown system system /sys/class/leds/green/delay_off
-    chown system system /sys/class/leds/green/delay_on
 
     chown system system /sys/class/leds/blue/breath
-    chown system system /sys/class/leds/blue/delay_off
-    chown system system /sys/class/leds/blue/delay_on
 
     chown system system /sys/class/leds/white/breath
     chown system system /sys/class/leds/white/brightness
-    chown system system /sys/class/leds/white/delay_off
-    chown system system /sys/class/leds/white/delay_on
 
     chown system system /sys/class/backlight/panel0-backlight/brightness
 

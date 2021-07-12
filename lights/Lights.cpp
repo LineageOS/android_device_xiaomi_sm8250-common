@@ -20,10 +20,6 @@
 #include <android-base/logging.h>
 #include <fcntl.h>
 
-#ifndef DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS
-#define DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS 0x80
-#endif
-
 using ::android::base::WriteStringToFile;
 
 namespace aidl {
@@ -31,34 +27,14 @@ namespace android {
 namespace hardware {
 namespace light {
 
-#define JOIN_PATH(a, b)                     a "/" b
+#define LED_PATH(led)                       "/sys/class/leds/" led "/"
 
-#define LED_FILE_BASE                       "/sys/class/leds"
-
-#define RED_LED_FILE_BASE                   JOIN_PATH(LED_FILE_BASE, "red")
-#define GREEN_LED_FILE_BASE                 JOIN_PATH(LED_FILE_BASE, "green")
-#define BLUE_LED_FILE_BASE                  JOIN_PATH(LED_FILE_BASE, "blue")
-#define WHITE_LED_FILE_BASE                 JOIN_PATH(LED_FILE_BASE, "white")
-
-static const std::string kRedBreathFile = JOIN_PATH(RED_LED_FILE_BASE, "breath");
-static const std::string kGreenBreathFile = JOIN_PATH(GREEN_LED_FILE_BASE, "breath");
-static const std::string kBlueBreathFile = JOIN_PATH(BLUE_LED_FILE_BASE, "breath");
-static const std::string kWhiteBreathFile = JOIN_PATH(WHITE_LED_FILE_BASE, "breath");
-
-static const std::string kRedLEDFile = JOIN_PATH(RED_LED_FILE_BASE, "brightness");
-static const std::string kGreenLEDFile = JOIN_PATH(GREEN_LED_FILE_BASE, "brightness");
-static const std::string kBlueLEDFile = JOIN_PATH(BLUE_LED_FILE_BASE, "brightness");
-static const std::string kWhiteLEDFile = JOIN_PATH(WHITE_LED_FILE_BASE, "brightness");
-
-static const std::string kRedDelayOffFile = JOIN_PATH(RED_LED_FILE_BASE, "delay_off");
-static const std::string kGreenDelayOffFile = JOIN_PATH(GREEN_LED_FILE_BASE, "delay_off");
-static const std::string kBlueDelayOffFile = JOIN_PATH(BLUE_LED_FILE_BASE, "delay_off");
-static const std::string kWhiteDelayOffFile = JOIN_PATH(WHITE_LED_FILE_BASE, "delay_off");
-
-static const std::string kRedDelayOnFile = JOIN_PATH(RED_LED_FILE_BASE, "delay_on");
-static const std::string kGreenDelayOnFile = JOIN_PATH(GREEN_LED_FILE_BASE, "delay_on");
-static const std::string kBlueDelayOnFile = JOIN_PATH(BLUE_LED_FILE_BASE, "delay_on");
-static const std::string kWhiteDelayOnFile = JOIN_PATH(WHITE_LED_FILE_BASE, "delay_on");
+static const std::string led_paths[] {
+    [RED] = LED_PATH("red"),
+    [GREEN] = LED_PATH("green"),
+    [BLUE] = LED_PATH("blue"),
+    [WHITE] = LED_PATH("white"),
+};
 
 static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brightness";
 
@@ -72,20 +48,22 @@ const static std::vector<HwLight> kAvailableLights = {
 };
 
 Lights::Lights() {
-    mWhiteLed = !access(kWhiteLEDFile.c_str(), W_OK);
+    mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
 }
 
 // AIDL methods
 ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
     switch (id) {
         case (int)LightType::BACKLIGHT:
-            setLightBacklight(state);
+            WriteToFile(kLCDFile, RgbaToBrightness(state.color));
             break;
         case (int)LightType::BATTERY:
-            setLightBattery(state);
+            mBattery = state;
+            handleSpeakerBatteryLocked();
             break;
         case (int)LightType::NOTIFICATIONS:
-            setLightNotification(state);
+            mNotification = state;
+            handleSpeakerBatteryLocked();
             break;
         default:
             return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
@@ -103,37 +81,16 @@ ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
 }
 
 // device methods
-ndk::ScopedAStatus Lights::setLightBacklight(const HwLightState& state) {
-    WriteToFile(kLCDFile, RgbaToBrightness(state.color));
-    return ndk::ScopedAStatus::ok();
-}
-
-ndk::ScopedAStatus Lights::setLightBattery(const HwLightState& state) {
-    mBattery = state;
-    handleSpeakerBatteryLocked();
-    return ndk::ScopedAStatus::ok();
-}
-
-ndk::ScopedAStatus Lights::setLightNotification(const HwLightState& state) {
-    mNotification = state;
-    handleSpeakerBatteryLocked();
-    return ndk::ScopedAStatus::ok();
-}
-
-ndk::ScopedAStatus Lights::setSpeakerLightLocked(const HwLightState& state) {
-    uint32_t red, green, blue;
+void Lights::setSpeakerLightLocked(const HwLightState& state) {
+    uint32_t alpha, red, green, blue;
     uint32_t blink;
-    unsigned int colorRGB;
-    uint32_t alpha;
     bool rc = true;
 
-    colorRGB = state.color;
-
     // Extract brightness from AARRGGBB
-    alpha = (colorRGB >> 24) & 0xFF;
-    red = (colorRGB >> 16) & 0xFF;
-    green = (colorRGB >> 8) & 0xFF;
-    blue = colorRGB & 0xFF;
+    alpha = (state.color >> 24) & 0xFF;
+    red = (state.color >> 16) & 0xFF;
+    green = (state.color >> 8) & 0xFF;
+    blue = state.color & 0xFF;
 
     // Scale RGB brightness if Alpha brightness is not 0xFF
     if (alpha != 0xFF) {
@@ -146,58 +103,48 @@ ndk::ScopedAStatus Lights::setSpeakerLightLocked(const HwLightState& state) {
 
     switch (state.flashMode) {
         case FlashMode::HARDWARE:
-            if (mWhiteLed) {
-                rc = WriteToFile(kWhiteBreathFile, blink);
-            } else {
-                if (!!red)
-                    rc = WriteToFile(kRedBreathFile, blink);
-                if (!!green)
-                    rc &= WriteToFile(kGreenBreathFile, blink);
-                if (!!blue)
-                    rc &= WriteToFile(kBlueBreathFile, blink);
-            }
-            if (rc)
-                break;
         case FlashMode::TIMED:
             if (mWhiteLed) {
-                rc = WriteToFile(kWhiteDelayOffFile, state.flashOffMs);
-                rc &= WriteToFile(kWhiteDelayOnFile, state.flashOnMs);
+                rc = setLedBreath(WHITE, blink);
             } else {
-                if (!!red) {
-                    rc = WriteToFile(kRedDelayOffFile, state.flashOffMs);
-                    rc &= WriteToFile(kRedDelayOnFile, state.flashOnMs);
-                }
-                if (!!green) {
-                    rc &= WriteToFile(kGreenDelayOffFile, state.flashOffMs);
-                    rc &= WriteToFile(kGreenDelayOnFile, state.flashOnMs);
-                }
-                if (!!blue) {
-                    rc &= WriteToFile(kBlueDelayOffFile, state.flashOffMs);
-                    rc &= WriteToFile(kBlueDelayOnFile, state.flashOnMs);
-                }
+                if (!!red)
+                    rc = setLedBreath(RED, blink);
+                if (!!green)
+                    rc &= setLedBreath(GREEN, blink);
+                if (!!blue)
+                    rc &= setLedBreath(BLUE, blink);
             }
             if (rc)
                 break;
+            FALLTHROUGH_INTENDED;
         case FlashMode::NONE:
         default:
             if (mWhiteLed) {
-                rc = WriteToFile(kWhiteLEDFile, RgbaToBrightness(state.color));
+                rc = setLedBrightness(WHITE, RgbaToBrightness(state.color));
             } else {
-                rc = WriteToFile(kRedLEDFile, red);
-                rc &= WriteToFile(kGreenLEDFile, green);
-                rc &= WriteToFile(kBlueLEDFile, blue);
+                rc = setLedBrightness(RED, red);
+                rc &= setLedBrightness(GREEN, green);
+                rc &= setLedBrightness(BLUE, blue);
             }
             break;
     }
 
-    return ndk::ScopedAStatus::ok();
+    return;
 }
 
-ndk::ScopedAStatus Lights::handleSpeakerBatteryLocked() {
+void Lights::handleSpeakerBatteryLocked() {
     if (IsLit(mBattery.color))
         return setSpeakerLightLocked(mBattery);
     else
         return setSpeakerLightLocked(mNotification);
+}
+
+bool Lights::setLedBreath(led_type led, uint32_t value) {
+    return WriteToFile(led_paths[led] + "breath", value);
+}
+
+bool Lights::setLedBrightness(led_type led, uint32_t value) {
+    return WriteToFile(led_paths[led] + "brightness", value);
 }
 
 // Utils
