@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "audio_amplifier.kona",
+    relative_install_path: "hw",
+    srcs: ["audio_amplifier.c"],
+	shared_libs: [
+        "libhardware",
+        "liblog",
+    ],
+    vendor: true,
+}
