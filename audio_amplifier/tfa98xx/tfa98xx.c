@@ -79,7 +79,7 @@ int tfa98xx_start_feedback(void* adev, uint32_t snd_device) {
     }
     tfa_dev->usecase_tx->id = USECASE_AUDIO_SPKR_CALIB_TX;
     tfa_dev->usecase_tx->type = PCM_CAPTURE;
-    tfa_dev->usecase_tx->in_snd_device = SND_DEVICE_IN_CAPTURE_VI_FEEDBACK;
+    tfa_dev->usecase_tx->in_snd_device = 232;
     list_init(&tfa_dev->usecase_tx->device_list);
 
     list_add_tail(&tfa_dev->adev->usecase_list, &tfa_dev->usecase_tx->list);
