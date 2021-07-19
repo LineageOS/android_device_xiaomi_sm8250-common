@@ -73,23 +73,27 @@ volume index from 0 to 100.
                                        ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                        ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
-    <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET"
-                                        ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+    <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET">
+        <point>1,-6500</point>
+        <point>33,-4500</point>
+        <point>73,-1400</point>
+        <point>100,-50</point>
+    </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_SPEAKER">
-        <point>1,-6200</point>
-        <point>13,-5300</point>
-        <point>20,-4700</point>
-        <point>27,-4100</point>
-        <point>33,-3500</point>
-        <point>40,-2950</point>
-        <point>47,-2600</point>
-        <point>53,-2250</point>
-        <point>60,-1900</point>
-        <point>66,-1600</point>
-        <point>73,-1250</point>
-        <point>80,-900</point>
-        <point>87,-550</point>
-        <point>93,-300</point>
+        <point>1,-7100</point>
+        <point>13,-5700</point>
+        <point>20,-5000</point>
+        <point>27,-4400</point>
+        <point>33,-3800</point>
+        <point>40,-3200</point>
+        <point>47,-2700</point>
+        <point>53,-2300</point>
+        <point>60,-2000</point>
+        <point>66,-1700</point>
+        <point>73,-1400</point>
+        <point>80,-1000</point>
+        <point>87,-700</point>
+        <point>93,-400</point>
         <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -127,9 +131,9 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                                ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_HEADSET">
-        <point>0,-4200</point>
-        <point>33,-2800</point>
-        <point>66,-1400</point>
+        <point>0,-420</point>
+        <point>33,-280</point>
+        <point>66,-140</point>
         <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_SPEAKER">
@@ -227,4 +231,3 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                         ref="FULL_SCALE_VOLUME_CURVE"/>
 </volumes>
-
