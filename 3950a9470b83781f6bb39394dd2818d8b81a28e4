@@ -34,6 +34,24 @@
       "revId": "3950a9470b83781f6bb39394dd2818d8b81a28e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "db70715c_710fed8f",
+        "filename": "audio_amplifier/Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-07-19T12:56:46Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "e37cc853_5162d182",
+      "revId": "3950a9470b83781f6bb39394dd2818d8b81a28e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
