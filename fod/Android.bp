@@ -46,7 +46,6 @@ cc_binary {
         "libutils",
         "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
         "//hardware/xiaomi:vendor.goodix.hardware.biometrics.fingerprint@2.1",
-        "//hardware/xiaomi:vendor.xiaomi.hardware.displayfeature@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature@1.0",
     ],
