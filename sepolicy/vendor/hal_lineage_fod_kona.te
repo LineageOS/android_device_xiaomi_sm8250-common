@@ -4,8 +4,6 @@ hal_server_domain(hal_lineage_fod_kona, hal_lineage_fod)
 type hal_lineage_fod_kona_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_lineage_fod_kona)
 
-wakelock_use(hal_lineage_fod_kona)
-
 # Allow access to the HALs
 hal_client_domain(hal_lineage_fod_kona, hal_fingerprint)
 
