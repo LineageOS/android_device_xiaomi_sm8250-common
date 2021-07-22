@@ -307,9 +307,4 @@
         <transport>hwbinder</transport>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.touchfeature</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ITouchFeature/default</fqname>
-    </hal>
 </manifest>

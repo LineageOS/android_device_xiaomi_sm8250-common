@@ -8,13 +8,9 @@ wakelock_use(hal_lineage_fod_kona)
 
 # Allow access to the HALs
 hal_client_domain(hal_lineage_fod_kona, hal_fingerprint)
-hal_client_domain(hal_lineage_fod_kona, hal_touchfeature)
 
 # Allow binder communication with hal_fingerprint_kona
 binder_call(hal_lineage_fod_kona, hal_fingerprint_default)
-
-# Allow binder communication with hal_touchfeature_default
-binder_call(hal_lineage_fod_kona, hal_touchfeature_default)
 
 allow hal_lineage_fod_kona sysfs_graphics:dir r_dir_perms;
 allow hal_lineage_fod_kona sysfs_graphics:file rw_file_perms;

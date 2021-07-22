@@ -66,8 +66,5 @@ sys.thermal.        u:object_r:thermal_normal_prop:s0
 vendor.sys.thermal.        u:object_r:thermal_normal_prop:s0
 persist.sys.thermal.config u:object_r:thermal_normal_prop:s0
 
-# Touchfeature
-ro.vendor.touchfeature.type              u:object_r:vendor_touchfeature_prop:s0
-
 # USB
 sys.usb.configfs	u:object_r:system_prop:s0
