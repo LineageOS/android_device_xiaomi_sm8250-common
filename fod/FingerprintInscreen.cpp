@@ -7,7 +7,6 @@
 #define LOG_TAG "FingerprintInscreenService"
 
 #include "FingerprintInscreen.h"
-#include <android-base/file.h>
 #include <android-base/logging.h>
 #include <hardware_legacy/power.h>
 #include <cmath>
@@ -24,11 +23,6 @@
 #define PARAM_NIT_NONE 0
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
-
-#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
-
-using ::android::base::ReadFileToString;
-using ::android::base::WriteStringToFile;
 
 namespace vendor {
 namespace lineage {
@@ -55,18 +49,6 @@ static bool readBool(int fd) {
     }
 
     return c != '0';
-}
-
-// Read value from path and close file.
-static uint32_t ReadFromFile(const std::string& path) {
-    std::string content;
-    ReadFileToString(path, &content, true);
-    return std::stoi(content);
-}
-
-// Write value to path and close file.
-static bool WriteToFile(const std::string& path, uint32_t content) {
-    return WriteStringToFile(std::to_string(content), path);
 }
 
 FingerprintInscreen::FingerprintInscreen() {
@@ -111,7 +93,6 @@ Return<void> FingerprintInscreen::onPress() {
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    WriteToFile(BRIGHTNESS_PATH, ReadFromFile(BRIGHTNESS_PATH));
     return Void();
 }
 
