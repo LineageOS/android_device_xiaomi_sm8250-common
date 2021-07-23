@@ -45,6 +45,30 @@
       "revId": "8cf8303fee51cacc2b08c06ef8076dc236a1b371",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55a616b1_ba880249",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 25640
+      },
+      "writtenOn": "2021-07-23T07:44:52Z",
+      "side": 1,
+      "message": "You mean 0-57?",
+      "parentUuid": "b480b9ae_d01e3ac0",
+      "range": {
+        "startLine": 22,
+        "startChar": 14,
+        "endLine": 22,
+        "endChar": 19
+      },
+      "revId": "8cf8303fee51cacc2b08c06ef8076dc236a1b371",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
