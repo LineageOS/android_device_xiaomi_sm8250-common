@@ -20,8 +20,8 @@ void search_variant(const std::vector<variant_info_t> variants) {
     std::string sku_value = GetProperty(SKU_PROP, "");
 
     for (const auto& variant : variants) {
-        if (variant.hwc_value == hwc_value &&
-            variant.sku_value == sku_value) {
+        if ((variant.hwc_value == "" || variant.hwc_value == hwc_value) &&
+            (variant.sku_value == "" || variant.sku_value == sku_value)) {
             set_variant_props(variant);
             break;
         }
