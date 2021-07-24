@@ -12,6 +12,8 @@
 
 using android::base::GetProperty;
 
+#define SKU_PROP "ro.boot.product.hardware.sku"
+
 void search_variant(const std::vector<variant_info_t> variants) {
     std::string prop;
 
@@ -33,6 +35,9 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("fingerprint", variant.build_fingerprint);
     property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint.c_str());
     property_override("ro.build.description", variant.build_description.c_str());
+
+    if (variant.nfc)
+        property_override(SKU_PROP, "nfc");
 }
 
 void property_override(char const prop[], char const value[], bool add) {
