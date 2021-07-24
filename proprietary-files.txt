@@ -7,6 +7,10 @@ vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
+# ADSP modules (aptX)
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
+
 # Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
