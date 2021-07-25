@@ -5,8 +5,8 @@
         <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
+        <name>vendor.nxp.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <fqname>@2.0::INxpNfc/default</fqname>
+        <fqname>@2.0::INqNfc/default</fqname>
     </hal>
 </manifest>
