@@ -3,7 +3,7 @@ set_prop(vendor_init, vendor_alarm_boot_prop)
 set_prop(vendor_init, vendor_video_prop)
 
 allow vendor_init {
-  debugfs_clk
+  vendor_debugfs_clk
   proc_dirty
   proc
 }:file w_file_perms;

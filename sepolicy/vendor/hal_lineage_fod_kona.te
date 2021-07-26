@@ -10,7 +10,7 @@ hal_client_domain(hal_lineage_fod_kona, hal_fingerprint)
 # Allow binder communication with hal_fingerprint_kona
 binder_call(hal_lineage_fod_kona, hal_fingerprint_default)
 
-allow hal_lineage_fod_kona sysfs_graphics:dir r_dir_perms;
-allow hal_lineage_fod_kona sysfs_graphics:file rw_file_perms;
+allow hal_lineage_fod_kona vendor_sysfs_graphics:dir r_dir_perms;
+allow hal_lineage_fod_kona vendor_sysfs_graphics:file rw_file_perms;
 
 allow hal_lineage_fod_kona sysfs_fod:file rw_file_perms;

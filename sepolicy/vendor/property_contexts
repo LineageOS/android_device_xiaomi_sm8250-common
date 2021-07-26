@@ -29,11 +29,11 @@ vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor	   u:object_r:vendor_fp_prop:s0
 
 # Global
-ro.boot.factorybuild                u:object_r:public_vendor_default_prop:s0
-ro.boot.hwversion                   u:object_r:public_vendor_default_prop:s0
-ro.carrier.name                     u:object_r:public_vendor_default_prop:s0
-ro.miui.cust_variant                u:object_r:public_vendor_default_prop:s0
-ro.product.marketname		    u:object_r:public_vendor_default_prop:s0
+ro.boot.factorybuild                u:object_r:vendor_public_vendor_default_prop:s0
+ro.boot.hwversion                   u:object_r:vendor_public_vendor_default_prop:s0
+ro.carrier.name                     u:object_r:vendor_public_vendor_default_prop:s0
+ro.miui.cust_variant                u:object_r:vendor_public_vendor_default_prop:s0
+ro.product.marketname		    u:object_r:vendor_public_vendor_default_prop:s0
 
 # Graphics
 ro.gfx.driver.1            u:object_r:exported3_default_prop:s0
@@ -55,10 +55,10 @@ persist.vendor.motor.      u:object_r:vendor_motor_prop:s0
 ro.build.expect.           u:object_r:exported_default_prop:s0
 
 # RIL
-ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
+ro.vendor.ril              u:object_r:vendor_public_vendor_default_prop:s0
 
 # Sensor
-persist.sensor.                u:object_r:sensors_prop:s0
+persist.sensor.                u:object_r:vendor_sensors_prop:s0
 invn.hal.data.      u:object_r:vendor_sensors_prop:s0
 invn.hal.entry.     u:object_r:vendor_sensors_prop:s0
 invn.hal.debug.     u:object_r:vendor_sensors_prop:s0
