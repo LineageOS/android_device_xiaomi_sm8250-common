@@ -4,6 +4,9 @@ type vendor_fp_prop, property_type;
 # Init
 type vendor_device_prop, property_type;
 
+# Motor
+type vendor_motor_prop, property_type;
+
 # Power
 type power_prop, property_type;
 
