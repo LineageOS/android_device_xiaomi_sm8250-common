@@ -324,11 +324,11 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtwifi.conf
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# HotwordEnrollment - from lmi-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|91c49e2f1f95fe76952eb55d7a936a997685b964
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|89b2c917c0c35489f10306f1627b2cf7cf6b59cf
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
 
 # IMS
 -system_ext/priv-app/ims/ims.apk
@@ -414,19 +414,19 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.kona.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2svarnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
-vendor/lib/libsmwrapper.so
+# Listen - from lmi-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys
+vendor/lib/hw/sound_trigger.primary.kona.so|4887062ec4fc4508dfd7e5050ccc6214f10c7476
+vendor/lib/libadpcmdec.so|5232c32b93a8653612cd8fcdde161a9d7fe39c7f
+vendor/lib/libcapiv2svacnn.so|10271e9d5a32377740292bcf27f35098ee65fb5b
+vendor/lib/libcapiv2svarnn.so|1ce885774b9bfbcd59e1a7e0664c9ea9eb61efe7
+vendor/lib/libcapiv2vop.so|ffde544a5b8b4db988e92308568a84caad80518e
+vendor/lib/libgcs-calwrapper.so|8cf1158b9e2b687f41ccba805b08f3a7a798836e
+vendor/lib/libgcs-ipc.so|968eebf25011b654065d5c49a578fbc5d7bfe47a
+vendor/lib/libgcs-osal.so|7f592b86760afcf1c9f255cd8c645602ee1be56f
+vendor/lib/libgcs.so|0b1059e541905f713cac0d9cbeb1c2b5d6bc79b9
+vendor/lib/liblistensoundmodel2.so|8614fdd54b08a3a1c63f645dc219a959b1b49673
+vendor/lib/libmulawdec.so|4ad85b4982bf0cfed77c9bede75aac09a51ab062
+vendor/lib/libsmwrapper.so|636665d88d3f9c00be276cf3011e1165061bc69e
 
 # Media
 system_ext/lib/libmmosal.so
