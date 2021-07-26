@@ -117,11 +117,17 @@ else
 AUDIO_POLICY_CONFIGURATION_FILE := audio_policy_configuration.xml
 endif
 
+ifeq ($(TARGET_USE_AOSP_AUDIO_POLICY_VOLUMES),true)
+AUDIO_POLICY_VOLUMES_FILE := frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml
+else
+AUDIO_POLICY_VOLUMES_FILE := $(LOCAL_PATH)/audio/audio_policy_volumes.xml
+endif
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/audio/$(AUDIO_POLICY_CONFIGURATION_FILE):$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(AUDIO_POLICY_VOLUMES_FILE):$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt
 
 PRODUCT_COPY_FILES += \
