@@ -9,9 +9,6 @@ allow mi_thermald self:capability { chown fowner fsetid };
 allow mi_thermald thermal_data_file:dir rw_dir_perms;
 allow mi_thermald thermal_data_file:file create_file_perms;
 
-allow mi_thermald sysfs:file write;
-
-r_dir_file(mi_thermald, sysfs)
 r_dir_file(mi_thermald, sysfs_battery_supply)
 r_dir_file(mi_thermald, sysfs_devices_system_cpu)
 r_dir_file(mi_thermald, sysfs_graphics)
