@@ -37,7 +37,7 @@ vendor.iop.enable_uxe=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
-ro.netflix.bsp_rev=Q8250-19134-1
+ro.netflix.bsp_rev=Q845-05000-1
 
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
