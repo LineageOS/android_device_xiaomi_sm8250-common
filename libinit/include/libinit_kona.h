@@ -27,7 +27,7 @@ typedef struct variant_info {
 void search_variant(const std::vector<variant_info_t> variants);
 void set_variant_props(const variant_info_t variant);
 
-void property_override(char const prop[], char const value[], bool add = true);
+void property_override(std::string prop, std::string value, bool add = true);
 void set_ro_build_prop(const std::string &prop, const std::string &value, bool product = false);
 
 #endif // LIBINIT_KONA_H
