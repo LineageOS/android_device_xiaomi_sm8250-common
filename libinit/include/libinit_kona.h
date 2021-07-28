@@ -27,6 +27,17 @@ typedef struct variant_info {
 void search_variant(const std::vector<variant_info_t> variants);
 void set_variant_props(const variant_info_t variant);
 
+typedef struct dalvik_heap_info {
+    std::string heapstartsize;
+    std::string heapgrowthlimit;
+    std::string heapsize;
+    std::string heapminfree;
+    std::string heapmaxfree;
+    std::string heaptargetutilization;
+} dalvik_heap_info_t;
+
+void set_dalvik_heap(void);
+
 void property_override(std::string prop, std::string value, bool add = true);
 void set_ro_build_prop(const std::string &prop, const std::string &value, bool product = false);
 
