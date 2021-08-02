@@ -16,6 +16,24 @@
       "revId": "c72f51910e59688e3606c9ca73e3801a812911ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "32a4e3ca_05c8ea7e",
+        "filename": "kona.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 15050
+      },
+      "writtenOn": "2021-08-02T14:44:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa6c8a30_6d8cc602",
+      "revId": "c72f51910e59688e3606c9ca73e3801a812911ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
