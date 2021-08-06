@@ -66,6 +66,9 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
 
+# Mi Thermal
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/thermal_hbm_disabled      u:object_r:sysfs_thermal:s0
+
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
 
