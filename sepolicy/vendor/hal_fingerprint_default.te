@@ -1,9 +1,5 @@
 # Allow access to the HALs
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
-hal_client_domain(hal_fingerprint_default, hal_power)
-
-# Allow binder communication with hal_power_default
-binder_call(hal_fingerprint_default, hal_power_default)
 
 # Allow binder communication with vendor_hal_perf_default
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
