@@ -368,6 +368,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.nfc.rc \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
