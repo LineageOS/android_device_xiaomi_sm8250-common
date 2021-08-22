@@ -1,14 +1,9 @@
-# Fingerprint
-type vendor_fp_prop, property_type;
-
-# Init
-type vendor_device_prop, property_type;
-
-# Motor
-type vendor_motor_prop, property_type;
-
-# Power
 type power_prop, property_type;
 
-# Thermal
 type thermal_normal_prop, property_type;
+
+type vendor_device_prop, property_type;
+
+type vendor_fp_prop, property_type;
+
+type vendor_motor_prop, property_type;
