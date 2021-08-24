@@ -4,19 +4,22 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-cc_defaults {
-    name: "libinit_kona_defaults",
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init"
+cc_library_static {
+    name: "libinit_xiaomi_kona",
+    srcs: [
+        "libinit_dalvik_heap.cpp",
+        "libinit_variant.cpp",
+        "libinit_utils.cpp",
     ],
-    shared_libs: ["libbase"],
+    whole_static_libs: ["libbase"],
+    export_include_dirs: ["include"],
     recovery_available: true,
 }
 
 cc_library_static {
-    name: "libinit_kona",
-    defaults: ["libinit_kona_defaults"],
-    srcs: ["libinit_kona.cpp"],
-    export_include_dirs: ["include"],
+    name: "init_xiaomi_kona",
+    srcs: ["init_xiaomi_kona.cpp"],
+    whole_static_libs: ["libinit_xiaomi_kona"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
 }
