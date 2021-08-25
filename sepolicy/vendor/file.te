@@ -22,8 +22,4 @@ type thermal_data_file, file_type, data_file_type;
 
 type ultrasound_device, dev_type;
 
-type vendor_sysfs_dynamic_fps, fs_type, sysfs_type;
-
 type vendor_sysfs_iio, fs_type, sysfs_type;
-
-type vendor_sysfs_smart_fps, fs_type, sysfs_type;
