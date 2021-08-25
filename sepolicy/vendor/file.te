@@ -10,8 +10,6 @@ type proc_last_kmsg, fs_type, proc_type;
 
 type public_adsprpcd_file, file_type;
 
-type sysfs_fod, fs_type, sysfs_type;
-
 type sysfs_msm_boot, fs_type, sysfs_type;
 
 type sysfs_msm_subsys, fs_type, sysfs_type;
