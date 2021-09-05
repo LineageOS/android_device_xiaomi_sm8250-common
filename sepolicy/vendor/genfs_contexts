@@ -47,6 +47,9 @@ genfscon sysfs /touchpanel                                                      
 # UFS
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:vendor_sysfs_scsi_host:s0
 
+# USB
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/typec   u:object_r:sysfs_usb:s0
+
 # Wakeup source stats
 genfscon sysfs /devices/0306_02.01.00/wakeup                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup                                                                                                u:object_r:sysfs_wakeup:s0
