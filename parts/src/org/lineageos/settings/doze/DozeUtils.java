@@ -72,6 +72,9 @@ public final class DozeUtils {
             Context con = context.createPackageContext("com.android.systemui", 0);
             int id = con.getResources().getIdentifier("doze_proximity_check_before_pulse",
                     "bool", "com.android.systemui");
+            if (Device.isAlioth() || Device.isApollo()){
+                return false;
+            }
             return con.getResources().getBoolean(id);
         } catch (PackageManager.NameNotFoundException e) {
             return false;
