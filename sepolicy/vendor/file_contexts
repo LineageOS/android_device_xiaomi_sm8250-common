@@ -65,7 +65,7 @@
 /sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
 
 # Lights
-/vendor/bin/hw/android\.hardware\.lights-service\.xiaomi_kona           u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
 
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
