@@ -75,6 +75,7 @@
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.xiaomi_sm8250      u:object_r:hal_power_stats_default_exec:s0
 
 # Sensors
 /dev/akm09970                                                                                                                   u:object_r:hall_device:s0

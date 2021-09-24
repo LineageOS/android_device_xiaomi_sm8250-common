@@ -14,6 +14,10 @@ type sysfs_msm_boot, fs_type, sysfs_type;
 
 type sysfs_msm_subsys, fs_type, sysfs_type;
 
+type sysfs_msm_wlan, sysfs_type, fs_type;
+
+type sysfs_power_stats, sysfs_type, fs_type;
+
 type sysfs_touchpanel, fs_type, sysfs_type;
 
 type sysfs_wireless_supply, fs_type, sysfs_type;

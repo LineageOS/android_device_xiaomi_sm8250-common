@@ -1,0 +1,5 @@
+service vendor.power.stats-hal-1-0 /vendor/bin/hw/android.hardware.power.stats@1.0-service.xiaomi_sm8250
+    interface android.hardware.power.stats@1.0::IPowerStats default
+    class hal
+    user system
+    group system

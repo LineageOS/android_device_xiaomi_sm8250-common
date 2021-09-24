@@ -1,1 +1,2 @@
 type remosaic_daemon_service, vndservice_manager_type;
+type power_stats_service, vndservice_manager_type;

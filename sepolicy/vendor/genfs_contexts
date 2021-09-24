@@ -38,6 +38,12 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:switch_0/brightness             u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:switch_1/brightness             u:object_r:sysfs_leds:s0
 
+# PowerStats HAL
+genfscon sysfs /kernel/wifi                                                                                                                        u:object_r:sysfs_msm_wlan:s0
+genfscon sysfs /power/system_sleep/stats                                                                                                           u:object_r:sysfs_power_stats:s0
+genfscon sysfs /power/rpmh_stats/master_stats                                                                                                      u:object_r:sysfs_power_stats:s0
+genfscon sysfs /kernel/w/power_stats                                                                                                               u:object_r:sysfs_power_stats:s0
+
 # RTC
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc        u:object_r:sysfs_rtc:s0
 

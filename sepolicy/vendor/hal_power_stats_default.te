@@ -1,2 +1,11 @@
+vndbinder_use(hal_power_stats)
+add_service(hal_power_stats_server, power_stats_service)
+
+get_prop(hal_power_stats_default, exported_wifi_prop);
+#allow hal_power_stats_default exported_wifi_prop:file open;
+
+allow hal_power_stats_default sysfs_msm_wlan:file r_file_perms;
+allow hal_power_stats_default sysfs_power_stats:file r_file_perms;
+
 allow hal_power_stats_default vendor_sysfs_iio:dir r_dir_perms;
 allow hal_power_stats_default vendor_sysfs_iio:file r_file_perms;
