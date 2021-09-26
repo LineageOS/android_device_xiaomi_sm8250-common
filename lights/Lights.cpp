@@ -20,6 +20,7 @@
 #include <android-base/logging.h>
 #include <fcntl.h>
 
+using ::android::base::ReadFileToString;
 using ::android::base::WriteStringToFile;
 
 namespace aidl {
@@ -38,6 +39,9 @@ static const std::string led_paths[] {
 
 static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brightness";
 
+// Default max brightness
+constexpr auto kDefaultMaxLedBrightness = 255;
+
 #define AutoHwLight(light) {.id = (int)light, .type = light, .ordinal = 0}
 
 // List of supported lights
@@ -48,7 +52,18 @@ const static std::vector<HwLight> kAvailableLights = {
 };
 
 Lights::Lights() {
+    std::string buf;
+
     mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
+
+    if (ReadFileToString(led_paths[BLUE] + "max_brightness", &buf) ||
+        ReadFileToString(led_paths[RED] + "max_brightness", &buf) ||
+        ReadFileToString(led_paths[WHITE] + "max_brightness", &buf)) {
+        max_led_brightness_ = std::stoi(buf);
+    } else {
+        max_led_brightness_ = kDefaultMaxLedBrightness;
+        LOG(ERROR) << "Failed to read max LED brightness, fallback to " << kDefaultMaxLedBrightness;
+    }
 }
 
 // AIDL methods
@@ -120,11 +135,11 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
         case FlashMode::NONE:
         default:
             if (mWhiteLed) {
-                rc = setLedBrightness(WHITE, RgbaToBrightness(state.color));
+                rc = setLedBrightness(WHITE, RgbaToBrightness(state.color, max_led_brightness_));
             } else {
-                rc = setLedBrightness(RED, red);
-                rc &= setLedBrightness(GREEN, green);
-                rc &= setLedBrightness(BLUE, blue);
+                rc = setLedBrightness(RED, scaleBrightness(red, max_led_brightness_));
+                rc &= setLedBrightness(GREEN, scaleBrightness(green, max_led_brightness_));
+                rc &= setLedBrightness(BLUE, scaleBrightness(blue, max_led_brightness_));
             }
             break;
     }
@@ -152,6 +167,10 @@ bool Lights::IsLit(uint32_t color) {
     return color & 0x00ffffff;
 }
 
+uint32_t Lights::scaleBrightness(uint32_t brightness, uint32_t max_brightness) {
+    return brightness * max_brightness / 0xFF;
+}
+
 uint32_t Lights::RgbaToBrightness(uint32_t color) {
     // Extract brightness from AARRGGBB.
     uint32_t alpha = (color >> 24) & 0xFF;
@@ -169,6 +188,10 @@ uint32_t Lights::RgbaToBrightness(uint32_t color) {
     }
 
     return (77 * red + 150 * green + 29 * blue) >> 8;
+}
+
+uint32_t Lights::RgbaToBrightness(uint32_t color, uint32_t max_brightness) {
+    return scaleBrightness(RgbaToBrightness(color), max_brightness);
 }
 
 // Write value to path and close file.
