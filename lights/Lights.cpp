@@ -107,8 +107,8 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
     green = (state.color >> 8) & 0xFF;
     blue = state.color & 0xFF;
 
-    // Scale RGB brightness if Alpha brightness is not 0xFF
-    if (alpha != 0xFF) {
+    // Scale RGB brightness if Alpha brightness is not 0
+    if (alpha > 0 && alpha < 255) {
         red = (red * alpha) / 0xFF;
         green = (green * alpha) / 0xFF;
         blue = (blue * alpha) / 0xFF;
