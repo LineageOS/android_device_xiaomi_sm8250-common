@@ -188,6 +188,9 @@
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
+    <!-- Default refresh rate while the device has high brightness mode enabled for HDR. -->
+    <integer name="config_defaultRefreshRateInHbmHdr">60</integer>
+
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">680</integer>
 
