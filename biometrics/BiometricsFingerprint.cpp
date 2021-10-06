@@ -14,9 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_kona"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_kona"
 
+#include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <hardware/hw_auth_token.h>
 
 #include "xiaomi_fingerprint.h"
@@ -24,13 +26,15 @@
 
 #include <cutils/properties.h>
 #include <inttypes.h>
+#include <poll.h>
+#include <thread>
 #include <unistd.h>
 
 namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -47,8 +51,34 @@ static const char *kHALClasses[] = {
 
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
+using ::android::base::GetBoolProperty;
 
 BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
+
+#define COMMAND_NIT 10
+#define PARAM_NIT_FOD 1
+#define PARAM_NIT_NONE 0
+
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+
+static bool readBool(int fd) {
+    char c;
+    int rc;
+
+    rc = lseek(fd, 0, SEEK_SET);
+    if (rc) {
+        LOG(ERROR) << "failed to seek fd, err: " << rc;
+        return false;
+    }
+
+    rc = read(fd, &c, sizeof(char));
+    if (rc != 1) {
+        LOG(ERROR) << "failed to read bool from fd, err: " << rc;
+        return false;
+    }
+
+    return c != '0';
+}
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
@@ -61,6 +91,33 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             property_set("persist.vendor.sys.fp.vendor", class_name); // fix AliPay TouchID
             break;
         }
+    }
+    mFod = GetBoolProperty("vendor.lineage.fod.enable", false);
+
+    if (mFod) {
+        std::thread([this]() {
+            int fd = open(FOD_UI_PATH, O_RDONLY);
+            if (fd < 0) {
+                LOG(ERROR) << "failed to open fd, err: " << fd;
+                return;
+            }
+
+            struct pollfd fodUiPoll = {
+                .fd = fd,
+                .events = POLLERR | POLLPRI,
+                .revents = 0,
+            };
+
+            while (true) {
+                int rc = poll(&fodUiPoll, 1, -1);
+                if (rc < 0) {
+                    LOG(ERROR) << "failed to poll fd, err: " << rc;
+                    continue;
+                }
+
+                extCmd(COMMAND_NIT, readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+            }
+        }).detach();
     }
 }
 
@@ -373,12 +430,25 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     }
 }
 
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t /*sensorId*/) {
+    return mFod;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t /*x*/, uint32_t /*y*/,
+        float /*minor*/, float /*major*/) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
 Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
     return mDevice->extCmd(mDevice, cmd, param);
 }
 
 } // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware

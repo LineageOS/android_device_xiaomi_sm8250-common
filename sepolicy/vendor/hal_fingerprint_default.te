@@ -30,3 +30,5 @@ set_prop(hal_fingerprint_default, vendor_fp_prop)
 
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
+
+get_prop(hal_fingerprint_default, vendor_fod_prop);
