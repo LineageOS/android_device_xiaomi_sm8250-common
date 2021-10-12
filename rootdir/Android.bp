@@ -48,8 +48,6 @@ sh_binary {
 }
 
 // fstab
-// TODO on S:
-// https://android-review.googlesource.com/c/platform/build/soong/+/1532503
 soong_config_module_type {
     name: "xiaomi_kona_rootdir_prebuilt_etc",
     module_type: "prebuilt_etc",
@@ -65,7 +63,6 @@ soong_config_string_variable {
 
 xiaomi_kona_rootdir_prebuilt_etc {
     name: "fstab.qcom",
-    src: "etc/fstab.qcom",
     soong_config_variables: {
         PARTITION_SCHEME: {
             a: {
@@ -73,6 +70,9 @@ xiaomi_kona_rootdir_prebuilt_etc {
             },
             vab: {
                 src: "etc/fstab_AB.qcom",
+            },
+            conditions_default: {
+                src: "etc/fstab.qcom",
             },
         },
     },
@@ -112,5 +112,12 @@ prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
     sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.qcom.rc",
     vendor: true,
 }
