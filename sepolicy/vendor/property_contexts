@@ -38,9 +38,6 @@ ro.carrier.name                                 u:object_r:vendor_public_vendor_
 ro.miui.cust_variant                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.product.marketname                           u:object_r:vendor_public_vendor_default_prop:s0
 
-# Graphics
-ro.gfx.driver.1                                 u:object_r:exported3_default_prop:s0
-
 # Power
 vendor.powerhal.state                           u:object_r:power_prop:s0
 vendor.powerhal.audio                           u:object_r:power_prop:s0
@@ -53,9 +50,6 @@ persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_p
 
 # Motor
 persist.vendor.motor.                           u:object_r:vendor_motor_prop:s0
-
-# Recovery
-ro.build.expect.                                u:object_r:exported_default_prop:s0
 
 # RIL
 ro.vendor.ril                                   u:object_r:vendor_public_vendor_default_prop:s0
@@ -71,6 +65,3 @@ invn.hal.verbose.                               u:object_r:vendor_sensors_prop:s
 sys.thermal.                                    u:object_r:thermal_normal_prop:s0
 vendor.sys.thermal.                             u:object_r:thermal_normal_prop:s0
 persist.sys.thermal.config                      u:object_r:thermal_normal_prop:s0
-
-# USB
-sys.usb.configfs                                u:object_r:system_prop:s0
