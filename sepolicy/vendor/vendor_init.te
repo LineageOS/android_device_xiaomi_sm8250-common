@@ -1,7 +1,7 @@
-set_prop(vendor_init, power_prop)
 set_prop(vendor_init, vendor_alarm_boot_prop)
 set_prop(vendor_init, vendor_fod_prop)
 set_prop(vendor_init, vendor_motor_prop)
+set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_video_prop)
 
 allow vendor_init {
