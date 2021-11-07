@@ -33,6 +33,24 @@
       "message": "I\u0027m sure it won\u0027t play nice with libperf, also I don\u0027t really like users controlling thermals",
       "revId": "dfa43ff3dc590c291c040399fc366f0133e346b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36b924da_f6d3f35d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-11-07T07:14:10Z",
+      "side": 1,
+      "message": "it works fine here, same option is used in other Xiaomi devices like beryllium, I don\u0027t see a problem here 🤔",
+      "parentUuid": "63e83426_2fccf3d9",
+      "revId": "dfa43ff3dc590c291c040399fc366f0133e346b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
