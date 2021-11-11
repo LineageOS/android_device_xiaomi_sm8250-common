@@ -162,6 +162,7 @@ drm.service.enabled=true
 
 # Fingerprint
 persist.vendor.qfp=false
+ro.hardware.fp.vendor=fpc
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
