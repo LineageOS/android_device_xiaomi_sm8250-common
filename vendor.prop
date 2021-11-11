@@ -162,6 +162,9 @@ drm.service.enabled=true
 
 # Fingerprint
 persist.vendor.qfp=false
+# Fix Alipay TouchID
+persist.vendor.sys.fp.vendor=fpc
+ro.hardware.fp.vendor=fpc
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
