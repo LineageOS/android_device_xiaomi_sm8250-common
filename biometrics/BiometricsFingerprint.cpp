@@ -22,6 +22,7 @@
 #include "xiaomi_fingerprint.h"
 #include "BiometricsFingerprint.h"
 
+#include <cutils/properties.h>
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -55,6 +56,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             ALOGE("Can't open HAL module, class %s", class_name);
         } else {
             ALOGI("Opened fingerprint HAL, class %s", class_name);
+            property_set("persist.vendor.sys.fp.vendor", class_name); // fix AliPay TouchID
             break;
         }
     }
