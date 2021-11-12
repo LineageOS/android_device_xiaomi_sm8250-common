@@ -34,6 +34,24 @@
       "parentUuid": "6d86ae61_657f6cf3",
       "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed06bfdb_d31fe64a",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-12T14:33:13Z",
+      "side": 1,
+      "message": "* Correction:\nStock MIUI /vendor/build.prop only has ro.hardware.fp.vendor\u003dfpc, while \"getprop | grep fpc\" shows both ro.hardware.fp.vendor\u003dfpc and persist.vendor.sys.fp.vendor\u003dfpc",
+      "parentUuid": "d53b2325_8bfb3a6d",
+      "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
