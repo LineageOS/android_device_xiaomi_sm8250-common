@@ -52,6 +52,24 @@
       "parentUuid": "d53b2325_8bfb3a6d",
       "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05b3f88e_774585ea",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-11-12T16:10:14Z",
+      "side": 1,
+      "message": "then i would suggest this to device specific tree. since we have fod device in sm8250. they might even have different vendor goodix or name. someone else should confirm it.",
+      "parentUuid": "ed06bfdb_d31fe64a",
+      "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
