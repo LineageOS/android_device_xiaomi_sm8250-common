@@ -16,6 +16,29 @@
       "message": "The best I can do is still setprop persist.vendor.sys.fp.vendor according to ro.hardware.fp.vendor. Besides, stock MIUI has that \"ro.hardware.fp.vendor\u003dfpc\" line in /vendor/build.prop as well.",
       "revId": "0bb6ef42fe499c246a6c81b4899e689852d3858d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e816077_df765141",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-11-12T13:22:35Z",
+      "side": 1,
+      "message": "not required since it will always return a value smaller than that:\nhttps://android.googlesource.com/platform/system/core/+/master/libcutils/include/cutils/properties.h#42",
+      "range": {
+        "startLine": 242,
+        "startChar": 24,
+        "endLine": 242,
+        "endChar": 59
+      },
+      "revId": "0bb6ef42fe499c246a6c81b4899e689852d3858d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
