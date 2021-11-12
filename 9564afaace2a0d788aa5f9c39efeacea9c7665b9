@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2bc2fad_1f97ad5a",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-12T20:05:09Z",
+      "side": 1,
+      "message": "Set props after this line, using class_name as prop value",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ea58481_2ce90ef8",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-12T20:05:09Z",
+      "side": 1,
+      "message": "Set it regardless if it\u0027s set or not",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0e8845e_9ec65f5e",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-12T20:05:09Z",
+      "side": 1,
+      "message": "You can remove logging",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
