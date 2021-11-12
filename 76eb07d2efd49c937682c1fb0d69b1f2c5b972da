@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d86ae61_657f6cf3",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-11-12T13:59:45Z",
+      "side": 1,
+      "message": "is this tested?. previous change was persist.vendor.sys.fp.vendor\u003dfpc",
+      "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
