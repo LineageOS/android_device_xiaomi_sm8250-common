@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4846a647_c73ce344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-12T12:51:23Z",
+      "side": 1,
+      "message": "The best I can do is still setprop persist.vendor.sys.fp.vendor according to ro.hardware.fp.vendor. Besides, stock MIUI has that \"ro.hardware.fp.vendor\u003dfpc\" line in /vendor/build.prop as well.",
+      "revId": "0bb6ef42fe499c246a6c81b4899e689852d3858d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
