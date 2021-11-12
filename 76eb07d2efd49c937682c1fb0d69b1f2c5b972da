@@ -16,6 +16,24 @@
       "message": "is this tested?. previous change was persist.vendor.sys.fp.vendor\u003dfpc",
       "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d53b2325_8bfb3a6d",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-12T14:31:52Z",
+      "side": 1,
+      "message": "Stock MIUI only has ro.hardware.fp.vendor\u003dfpc. I\u0027ve confirmed that \"setprop persist.vendor.sys.fp.vendor fpc\" works. Actually that\u0027s all I know.\n\nSebaUbuntu asked me to \"do this from fingerprint HIDL\" - I was not sure whether I\u0027ve got what he meant actually, however I still tried to do as what he suggested...",
+      "parentUuid": "6d86ae61_657f6cf3",
+      "revId": "76eb07d2efd49c937682c1fb0d69b1f2c5b972da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
