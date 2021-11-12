@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9dee5871_c6e7731d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-12T10:35:49Z",
+      "side": 1,
+      "message": "I can confirm that `setprop persist.vendor.sys.fp.vendor fpc` has successfully fixed AliPay TouchID on my device. However editing /vendor/build.prop didn\u0027t seem to be reflected on getprop result after reboot, so that I\u0027m still not sure whether this patch can fix AliPay TouchID for existing users after an OTA.",
+      "revId": "3a65e39a18a3ffa19a246486eda680bdc15fdd51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
