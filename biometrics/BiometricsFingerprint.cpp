@@ -22,6 +22,7 @@
 #include "xiaomi_fingerprint.h"
 #include "BiometricsFingerprint.h"
 
+#include <cutils/properties.h>
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -233,6 +234,19 @@ IXiaomiFingerprint* BiometricsFingerprint::getXiaomiInstance() {
 xiaomi_fingerprint_device_t* BiometricsFingerprint::openHal(const char *class_name) {
     int err;
     const hw_module_t *hw_mdl = nullptr;
+    int getprop_ret;
+    char *propstr;
+
+    // Fix AliPay TouchID
+    getprop_ret = property_get("ro.hardware.fp.vendor", propstr, "");
+    if (getprop_ret > 0) {
+        if (property_set("persist.vendor.sys.fp.vendor", propstr) != 0) {
+            ALOGE("Cannot set property persist.vendor.sys.fp.vendor to %s", propstr);
+        }
+    } else {
+        ALOGE("Cannot read property ro.hardware.fp.vendor");
+    }
+
     ALOGD("Opening fingerprint hal library...");
     if (0 != (err = hw_get_module_by_class(FINGERPRINT_HARDWARE_MODULE_ID, class_name, &hw_mdl))) {
         ALOGE("Can't open fingerprint HW Module, class %s, error: %d", class_name, err);
