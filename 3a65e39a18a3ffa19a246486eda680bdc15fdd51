@@ -16,6 +16,23 @@
       "message": "I can confirm that `setprop persist.vendor.sys.fp.vendor fpc` has successfully fixed AliPay TouchID on my device. However editing /vendor/build.prop didn\u0027t seem to be reflected on getprop result after reboot, so that I\u0027m still not sure whether this patch can fix AliPay TouchID for existing users after an OTA.",
       "revId": "3a65e39a18a3ffa19a246486eda680bdc15fdd51",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edbc677c_808c35ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-12T10:37:36Z",
+      "side": 1,
+      "message": "Must be done from fingerprint HIDL",
+      "revId": "3a65e39a18a3ffa19a246486eda680bdc15fdd51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
