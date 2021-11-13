@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dfd7c5b_4324cf98",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-13T00:54:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b2bc2fad_1f97ad5a",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7ea58481_2ce90ef8",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "07925d66_b128ac07",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-13T00:54:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ea58481_2ce90ef8",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d0e8845e_9ec65f5e",
@@ -48,6 +84,24 @@
       "writtenOn": "2021-11-12T20:05:09Z",
       "side": 1,
       "message": "You can remove logging",
+      "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89226238_a41bf3e6",
+        "filename": "biometrics/BiometricsFingerprint.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-13T00:54:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0e8845e_9ec65f5e",
       "revId": "9564afaace2a0d788aa5f9c39efeacea9c7665b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
