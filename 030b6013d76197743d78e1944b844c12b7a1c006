@@ -16,6 +16,24 @@
       "message": "Do we really want to check ultrasound proximity sensors before wakeup?",
       "revId": "030b6013d76197743d78e1944b844c12b7a1c006",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3331e941_f76f0eae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-11-15T18:32:27Z",
+      "side": 1,
+      "message": "for some reason phone turns on and keeps pressing buttons in pocket (emergency call, etc..), i could only find this fix.",
+      "parentUuid": "ddfee14b_7baa7a58",
+      "revId": "030b6013d76197743d78e1944b844c12b7a1c006",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
