@@ -34,6 +34,24 @@
       "parentUuid": "ddfee14b_7baa7a58",
       "revId": "030b6013d76197743d78e1944b844c12b7a1c006",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c365f5e5_92bdcb40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29876
+      },
+      "writtenOn": "2021-11-16T15:05:02Z",
+      "side": 1,
+      "message": "I\u0027ve been waiting for this “pocket mode\" feature for quite some time, so it\u0027s exciting for me to see this! Actually, it\u0027s not only myself, but countless users have been wishing for this missing feature (which had actually been widely avaible years before!). It\u0027s really awful and anxious that the phone in the pocket may silently do every kind of unexpected weird things due to mistouch.\n\nStock MIUI on alioth doesn\u0027t have this feature. It\u0027s rumored that ultrasound proximity sensors have hardware-level issues preventing this feature to be implemented - however I don\u0027t understand why.\n\n1. Maybe it could cause battery drain? However this really seems to be the easiest to fix - just activate the sensor in case it\u0027s needed?\n\n2. Maybe it\u0027s not very reliable? I don\u0027t know. Nevertheless I think there should always be a way (like pressing volume keys etc) to temporarily override it (in case there\u0027s a false positive preventing unlocking the phone), no?\nI once had a try of Proximity Service, an app which automatically turns off screen just like making phone calls (which is generally considered protective to OLED, preventing it from burn-in ghost image issues), however I didn\u0027t feel great about it because:\n(1) (seemed to? I\u0027m not very sure) unnecessarily checking g-sensor, so that the phone must not be laid level if you want to trigger screen-off;\n(2) not very reliable/responsive: it\u0027s not rare that after you flip the screen down, expecting the screen to be turned off, but then you find the screen wasn\u0027t turned off as expected (or vice versa);\n\n3. Maybe it requires quite some time before being ready for detecting proximity, so (combined with the reliability issue above) the usefulness could be (significantly) reduced?",
+      "parentUuid": "3331e941_f76f0eae",
+      "revId": "030b6013d76197743d78e1944b844c12b7a1c006",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
