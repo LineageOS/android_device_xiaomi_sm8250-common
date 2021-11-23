@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    libhidltransport.vendor \
     libhwbinder.vendor
 
 # HotwordEnrollement app permissions
