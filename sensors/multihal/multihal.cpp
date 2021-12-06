@@ -57,8 +57,6 @@ static std::vector<void *> *so_handles = nullptr;
 
 // Config file paths
 static const char* MULTI_HAL_CONFIG_FILE_PATH = "/vendor/etc/sensors/hals.conf";
-// Depracated because system partition HAL config file does not satisfy treble requirements.
-static const char* DEPRECATED_MULTI_HAL_CONFIG_FILE_PATH = "/system/etc/sensors/hals.conf";
 
 /*
  * Comparable class that globally identifies a sensor, by module index and local handle.
@@ -597,7 +595,7 @@ static std::vector<std::string> get_so_paths() {
     std::vector<std::string> so_paths;
 
     const std::vector<const char *> config_path_list(
-            { MULTI_HAL_CONFIG_FILE_PATH, DEPRECATED_MULTI_HAL_CONFIG_FILE_PATH });
+            { MULTI_HAL_CONFIG_FILE_PATH });
 
     std::ifstream stream;
     const char *path = nullptr;
@@ -613,11 +611,6 @@ static std::vector<std::string> get_so_paths() {
         ALOGW("No multihal config file found");
         return so_paths;
     }
-
-    ALOGE_IF(strcmp(path, DEPRECATED_MULTI_HAL_CONFIG_FILE_PATH) == 0,
-            "Multihal configuration file path %s is not compatible with Treble "
-            "requirements. Please move it to %s.",
-            path, MULTI_HAL_CONFIG_FILE_PATH);
 
     ALOGV("Multihal config file found at %s", path);
     std::string line;
