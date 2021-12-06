@@ -11,6 +11,7 @@ cc_library_shared {
         "-DLOG_TAG=\"MultiHal\"",
     ],
     shared_libs: [
+        "libbase",
         "libcutils",
         "libdl",
         "libhardware",
