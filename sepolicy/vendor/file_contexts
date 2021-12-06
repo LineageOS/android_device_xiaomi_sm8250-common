@@ -40,6 +40,7 @@
 
 # Fingerprint - devices
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
+/dev/gx_fod_fp                                                          u:object_r:fingerprint_device:s0
 
 # Fingerprint - data
 /data/gf_data(/.*)?                                                     u:object_r:fingerprint_data_file:s0
