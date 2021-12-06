@@ -1,0 +1,21 @@
+cc_library_shared {
+    name: "sensors.kona",
+    relative_install_path: "hw",
+    srcs: [
+        "multihal.cpp",
+        "SensorEventQueue.cpp",
+    ],
+    cppflags: [
+        "-Wall",
+        "-Werror",
+        "-DLOG_TAG=\"MultiHal\"",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libdl",
+        "libhardware",
+        "liblog",
+        "libutils",
+    ],
+    vendor: true,
+}
