@@ -9,3 +9,5 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
+
+allow init sysfs_xiaomi:file r_file_perms;
