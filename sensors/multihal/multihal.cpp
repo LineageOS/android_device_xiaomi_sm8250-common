@@ -15,11 +15,11 @@
  */
 
 #include "SensorEventQueue.h"
-#include "multihal.h"
 
 #define LOG_NDEBUG 1
 #include <log/log.h>
 #include <cutils/atomic.h>
+#include <hardware/hardware.h>
 #include <hardware/sensors.h>
 
 #include <vector>
@@ -54,6 +54,11 @@ static std::vector<hw_module_t *> *sub_hw_modules = nullptr;
 
 // Vector of sub modules shared object handles
 static std::vector<void *> *so_handles = nullptr;
+
+// Config file paths
+static const char* MULTI_HAL_CONFIG_FILE_PATH = "/vendor/etc/sensors/hals.conf";
+// Depracated because system partition HAL config file does not satisfy treble requirements.
+static const char* DEPRECATED_MULTI_HAL_CONFIG_FILE_PATH = "/system/etc/sensors/hals.conf";
 
 /*
  * Comparable class that globally identifies a sensor, by module index and local handle.
@@ -584,9 +589,6 @@ static int device__config_direct_report(struct sensors_poll_device_1 *dev,
     return ctx->config_direct_report(sensor_handle, channel_handle, config);
 }
 
-static int open_sensors(const struct hw_module_t* module, const char* name,
-        struct hw_device_t** device);
-
 /*
  * Adds valid paths from the config file to the vector passed in.
  * The vector must not be null.
@@ -761,29 +763,6 @@ static int module__get_sensors_list(__unused struct sensors_module_t* module,
     return global_sensors_count;
 }
 
-static struct hw_module_methods_t sensors_module_methods = {
-    .open = open_sensors
-};
-
-struct sensors_module_t HAL_MODULE_INFO_SYM = {
-    .common = {
-        .tag = HARDWARE_MODULE_TAG,
-        .version_major = 1,
-        .version_minor = 1,
-        .id = SENSORS_HARDWARE_MODULE_ID,
-        .name = "MultiHal Sensor Module",
-        .author = "Google, Inc",
-        .methods = &sensors_module_methods,
-        .dso = NULL,
-        .reserved = {0},
-    },
-    .get_sensors_list = module__get_sensors_list
-};
-
-struct sensors_module_t *get_multi_hal_module_info() {
-    return (&HAL_MODULE_INFO_SYM);
-}
-
 static int open_sensors(const struct hw_module_t* hw_module, const char* name,
         struct hw_device_t** hw_device_out) {
     ALOGV("open_sensors begin...");
@@ -830,3 +809,22 @@ static int open_sensors(const struct hw_module_t* hw_module, const char* name,
     ALOGV("...open_sensors end");
     return 0;
 }
+
+static struct hw_module_methods_t sensors_module_methods = {
+    .open = open_sensors
+};
+
+struct sensors_module_t HAL_MODULE_INFO_SYM = {
+    .common = {
+        .tag = HARDWARE_MODULE_TAG,
+        .version_major = 1,
+        .version_minor = 1,
+        .id = SENSORS_HARDWARE_MODULE_ID,
+        .name = "MultiHal Sensor Module",
+        .author = "Google, Inc",
+        .methods = &sensors_module_methods,
+        .dso = NULL,
+        .reserved = {0},
+    },
+    .get_sensors_list = module__get_sensors_list
+};
