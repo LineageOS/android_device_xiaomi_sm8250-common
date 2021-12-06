@@ -56,7 +56,7 @@ static std::vector<hw_module_t *> *sub_hw_modules = nullptr;
 static std::vector<void *> *so_handles = nullptr;
 
 // Config file paths
-static const char* MULTI_HAL_CONFIG_FILE_PATH = "/vendor/etc/sensors/hals.conf";
+static const std::string MULTI_HAL_CONFIG_FILE_PATH = "/vendor/etc/sensors/hals.conf";
 
 /*
  * Comparable class that globally identifies a sensor, by module index and local handle.
@@ -594,11 +594,11 @@ static int device__config_direct_report(struct sensors_poll_device_1 *dev,
 static std::vector<std::string> get_so_paths() {
     std::vector<std::string> so_paths;
 
-    const std::vector<const char *> config_path_list(
+    const std::vector<std::string> config_path_list(
             { MULTI_HAL_CONFIG_FILE_PATH });
 
     std::ifstream stream;
-    const char *path = nullptr;
+    std::string path;
     for (auto i : config_path_list) {
         std::ifstream f(i);
         if (f) {
@@ -612,7 +612,7 @@ static std::vector<std::string> get_so_paths() {
         return so_paths;
     }
 
-    ALOGV("Multihal config file found at %s", path);
+    ALOGV("Multihal config file found at %s", path.c_str());
     std::string line;
     while (std::getline(stream, line)) {
         ALOGV("config file line: '%s'", line.c_str());
