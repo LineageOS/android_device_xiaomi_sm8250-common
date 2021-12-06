@@ -19,6 +19,7 @@
 #define LOG_NDEBUG 1
 #include <log/log.h>
 #include <cutils/atomic.h>
+#include <android-base/properties.h>
 #include <hardware/hardware.h>
 #include <hardware/sensors.h>
 
@@ -38,6 +39,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+using android::base::GetProperty;
 
 static pthread_mutex_t init_modules_mutex = PTHREAD_MUTEX_INITIALIZER;
 static pthread_mutex_t init_sensors_mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -54,9 +56,6 @@ static std::vector<hw_module_t *> *sub_hw_modules = nullptr;
 
 // Vector of sub modules shared object handles
 static std::vector<void *> *so_handles = nullptr;
-
-// Config file paths
-static const std::string MULTI_HAL_CONFIG_FILE_PATH = "/vendor/etc/sensors/hals.conf";
 
 /*
  * Comparable class that globally identifies a sensor, by module index and local handle.
@@ -592,10 +591,11 @@ static int device__config_direct_report(struct sensors_poll_device_1 *dev,
  * The vector must not be null.
  */
 static std::vector<std::string> get_so_paths() {
+    std::string codename = GetProperty("ro.product.device", "default");
     std::vector<std::string> so_paths;
 
     const std::vector<std::string> config_path_list(
-            { MULTI_HAL_CONFIG_FILE_PATH });
+            { "/vendor/etc/sensors/hals." + codename + ".conf" });
 
     std::ifstream stream;
     std::string path;
