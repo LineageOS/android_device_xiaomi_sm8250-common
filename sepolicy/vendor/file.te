@@ -18,6 +18,8 @@ type sysfs_touchpanel, fs_type, sysfs_type;
 
 type sysfs_wireless_supply, fs_type, sysfs_type;
 
+type sysfs_xiaomi, fs_type, sysfs_type;
+
 type thermal_data_file, file_type, data_file_type;
 
 type ultrasound_device, dev_type;
