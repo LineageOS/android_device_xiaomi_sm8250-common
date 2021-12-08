@@ -8,6 +8,7 @@
 
 #include "FingerprintInscreen.h"
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <hardware_legacy/power.h>
 #include <cmath>
 #include <fcntl.h>
@@ -23,6 +24,8 @@
 #define PARAM_NIT_NONE 0
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+
+using android::base::GetIntProperty;
 
 namespace vendor {
 namespace lineage {
@@ -53,6 +56,9 @@ static bool readBool(int fd) {
 
 FingerprintInscreen::FingerprintInscreen() {
     mXiaomiFingerprintService = IXiaomiFingerprint::getService();
+    mPositionX = GetIntProperty<int32_t>("vendor.lineage.fod.position_x", 0);
+    mPositionY = GetIntProperty<int32_t>("vendor.lineage.fod.position_y", 0);
+    mSize = GetIntProperty<int32_t>("vendor.lineage.fod.size", 0);
 
     std::thread([this]() {
         int fd = open(FOD_UI_PATH, O_RDONLY);
@@ -165,15 +171,15 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    return FOD_POS_X;
+    return mPositionX;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    return FOD_POS_Y;
+    return mPositionY;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    return FOD_SIZE;
+    return mSize;
 }
 
 }  // namespace implementation

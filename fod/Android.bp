@@ -4,35 +4,9 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_config_module_type {
-    name: "xiaomi_kona_fod_hal_cc_defaults",
-    module_type: "cc_defaults",
-    config_namespace: "XIAOMI_KONA_FOD",
-    value_variables: ["POS_X", "POS_Y", "SIZE"],
-    properties: ["cppflags"],
-}
-
-xiaomi_kona_fod_hal_cc_defaults {
-    name: "xiaomi_kona_fod_hal_defaults",
-    soong_config_variables: {
-        POS_X: {
-            cppflags: ["-DFOD_POS_X=%s"],
-        },
-        POS_Y: {
-            cppflags: ["-DFOD_POS_Y=%s"],
-        },
-        SIZE: {
-            cppflags: ["-DFOD_SIZE=%s"],
-        },
-    },
-}
-
 cc_binary {
     name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona",
-    defaults: [
-        "hidl_defaults",
-        "xiaomi_kona_fod_hal_defaults",
-    ],
+    defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona.rc"],
     vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona.xml"],

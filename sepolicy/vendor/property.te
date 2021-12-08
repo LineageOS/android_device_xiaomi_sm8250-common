@@ -4,6 +4,8 @@ type thermal_normal_prop, property_type;
 
 type vendor_device_prop, property_type;
 
+type vendor_fod_prop, property_type;
+
 type vendor_fp_prop, property_type;
 
 type vendor_motor_prop, property_type;

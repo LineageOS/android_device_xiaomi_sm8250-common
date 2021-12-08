@@ -45,6 +45,9 @@ class FingerprintInscreen : public IFingerprintInscreen {
 
   private:
     sp<IXiaomiFingerprint> mXiaomiFingerprintService;
+    int32_t mPositionX;
+    int32_t mPositionY;
+    int32_t mSize;
 
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
