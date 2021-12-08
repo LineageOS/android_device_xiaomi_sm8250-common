@@ -5,11 +5,14 @@
  */
 
 #include <android-base/properties.h>
+#include <filesystem>
 #include <libinit_utils.h>
 
 #include <libinit_variant.h>
 
 using android::base::GetProperty;
+using std::filesystem::directory_iterator;
+using std::filesystem::filesystem_error;
 
 #define HWC_PROP "ro.boot.hwc"
 #define SKU_PROP "ro.boot.product.hardware.sku"
@@ -42,4 +45,12 @@ void set_variant_props(const variant_info_t variant) {
         property_override(SKU_PROP, "nfc");
 
     property_override("ro.arch", variant.device);
+
+    int i = 0;
+    try {
+        for (const auto& acdb : directory_iterator("/vendor/etc/acdbdata/" + variant.device))
+            property_override("persist.vendor.audio.calfile" + std::to_string(i++), acdb.path());
+    } catch (const filesystem_error&) {
+        // Ignore
+    }
 }

@@ -11,6 +11,7 @@ cc_library_static {
         "libinit_variant.cpp",
         "libinit_utils.cpp",
     ],
+    cppflags: ["-fexceptions"],
     whole_static_libs: ["libbase"],
     export_include_dirs: ["include"],
     recovery_available: true,
