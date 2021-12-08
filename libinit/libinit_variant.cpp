@@ -27,6 +27,16 @@ void search_variant(const std::vector<variant_info_t> variants) {
     }
 }
 
+static const std::string[] kACDBFiles = {
+    "Forte_Bluetooth_cal.acdb",
+    "Forte_General_cal.acdb",
+    "Forte_Global_cal.acdb",
+    "Forte_Handset_cal.acdb",
+    "Forte_Hdmi_cal.acdb",
+    "Forte_Headset_cal.acdb",
+    "Forte_Speaker_cal.acdb",
+};
+
 void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("brand", variant.brand, true);
     set_ro_build_prop("device", variant.device, true);
@@ -42,4 +52,9 @@ void set_variant_props(const variant_info_t variant) {
         property_override(SKU_PROP, "nfc");
 
     property_override("ro.arch", variant.device);
+
+    for (int i = 0; i < kACDBFiles.size(); i++) {
+        std::string acdb_path = "/vendor/etc/acdbdata/" + variant.device + "/" + kACDBFiles[i];
+        property_override("persist.vendor.audio.calfile" + i, acdb_path);
+    }
 }
