@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
+    init.motor.rc \
     init.nfc.rc \
     init.qcom.power.rc \
     init.qcom.rc \

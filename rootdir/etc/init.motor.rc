@@ -1,0 +1,15 @@
+#
+# Copyright (C) 2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
+    override
+    class hal
+    user system
+    group system
+    disabled
+
+on property:vendor.lineage.motor.enable=true
+    enable vendor.motor
