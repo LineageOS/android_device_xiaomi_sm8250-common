@@ -8,3 +8,7 @@ service vendor.fingerprint-inscreen-1-0 /vendor/bin/hw/vendor.lineage.biometrics
     user system
     group system
     shutdown critical
+    disabled
+
+on property:vendor.lineage.fod.enable=true
+    enable vendor.fingerprint-inscreen-1-0
