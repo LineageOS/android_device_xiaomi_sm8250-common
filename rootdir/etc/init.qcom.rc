@@ -25,6 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /vendor/etc/init/hw/init.device.rc
 import /vendor/etc/init/hw/init.motor.rc
 import /vendor/etc/init/hw/init.nfc.rc
 import /vendor/etc/init/hw/init.qti.ufs.rc
