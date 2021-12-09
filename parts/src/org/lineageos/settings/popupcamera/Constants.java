@@ -50,5 +50,5 @@ public class Constants {
             "/sys/class/leds/green-right/breath";
     public static final String RED_RIGHT_LED_PATH =
             "/sys/class/leds/red-right/breath";
-    public static final String POPUP_SOUND_PATH = "/system/media/audio/ui/";
+    public static final String POPUP_SOUND_PATH = "/system_ext/media/audio/ui/";
 }
