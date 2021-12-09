@@ -309,12 +309,12 @@ public class PopupCameraService extends Service implements Handler.Callback {
 
     private void lightUp() {
         if (mPopupCameraPreferences.isLedAllowed()) {
-            FileUtils.writeLine(Constants.RED_LED_PATH, "255");
-            FileUtils.writeLine(Constants.GREEN_LED_PATH, "255");
-            FileUtils.writeLine(Constants.BLUE_LED_PATH, "255");
-            FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "255");
-            FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "255");
-            FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "255");
+            FileUtils.writeLine(Constants.RED_LED_PATH, "1");
+            FileUtils.writeLine(Constants.GREEN_LED_PATH, "1");
+            FileUtils.writeLine(Constants.BLUE_LED_PATH, "1");
+            FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "1");
+            FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "1");
+            FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "1");
 
             mHandler.postDelayed(() -> {
                 FileUtils.writeLine(Constants.RED_LED_PATH, "0");
@@ -323,7 +323,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
                 FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "0");
                 FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "0");
                 FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "0");
-            }, 1200);
+            }, 2300);
         }
     }
 
