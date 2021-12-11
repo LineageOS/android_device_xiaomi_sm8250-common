@@ -147,22 +147,6 @@ public class PopupCameraService extends Service implements Handler.Callback {
     // Service
     @Override
     public void onCreate() {
-        IMotor motor = getMotor();
-        if (motor == null) {
-            return;
-        }
-
-        try {
-            int status = motor.getMotorStatus();
-            if (status == Constants.MOTOR_STATUS_POPUP_OK ||
-                    status == Constants.MOTOR_STATUS_POPUP_JAMMED ||
-                    status == Constants.MOTOR_STATUS_TAKEBACK_JAMMED) {
-                mHandler.sendEmptyMessage(Constants.MSG_CAMERA_CLOSED);
-            }
-        } catch (RemoteException e) {
-            // Do nothing
-        }
-
         CameraManager cameraManager = getSystemService(CameraManager.class);
         cameraManager.registerAvailabilityCallback(mAvailabilityCallback, null);
 
@@ -184,6 +168,22 @@ public class PopupCameraService extends Service implements Handler.Callback {
         mSounds = new int[soundNames.length];
         for (int i = 0; i < soundNames.length; i++) {
             mSounds[i] = mSoundPool.load(Constants.POPUP_SOUND_PATH + soundNames[i], 1);
+        }
+
+        IMotor motor = getMotor();
+        if (motor == null) {
+            return;
+        }
+
+        try {
+            int status = motor.getMotorStatus();
+            if (status == Constants.MOTOR_STATUS_POPUP_OK ||
+                    status == Constants.MOTOR_STATUS_POPUP_JAMMED ||
+                    status == Constants.MOTOR_STATUS_TAKEBACK_JAMMED) {
+                mHandler.sendEmptyMessage(Constants.MSG_CAMERA_CLOSED);
+            }
+        } catch (RemoteException e) {
+            // Do nothing
         }
     }
 
