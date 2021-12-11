@@ -191,6 +191,10 @@ public class PopupCameraService extends Service implements Handler.Callback {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (DEBUG)
             Log.d(TAG, "Starting service");
+        IMotor motor = getMotor();
+        if (motor == null) {
+            return START_STICKY;
+        }
         mProximitySensor.enable();
         return START_STICKY;
     }
@@ -199,6 +203,10 @@ public class PopupCameraService extends Service implements Handler.Callback {
     public void onDestroy() {
         if (DEBUG)
             Log.d(TAG, "Destroying service");
+        IMotor motor = getMotor();
+        if (motor == null) {
+            return;
+        }
         mProximitySensor.disable();
         super.onDestroy();
     }
