@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2463d182_417a2766",
+        "filename": "kona.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 24834
+      },
+      "writtenOn": "2021-12-18T15:38:38Z",
+      "side": 1,
+      "message": "I think this lib is not needed, not present in miui image.",
+      "revId": "ca58919755bb8efc993718fdc3eac64bbc0d6ff3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
