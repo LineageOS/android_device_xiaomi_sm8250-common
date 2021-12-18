@@ -16,6 +16,23 @@
       "message": "only tested in alioth, used for a month",
       "revId": "546be432613f6e3571338b92ceb5846108d77a4a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a0ad359_f15babb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-12-18T14:52:28Z",
+      "side": 1,
+      "message": "Move ULL drop and speaker safe dropping to 2 different commits",
+      "revId": "546be432613f6e3571338b92ceb5846108d77a4a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
