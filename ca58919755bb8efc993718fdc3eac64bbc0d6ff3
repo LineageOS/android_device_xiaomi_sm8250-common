@@ -16,6 +16,24 @@
       "message": "I think this lib is not needed, not present in miui image.",
       "revId": "ca58919755bb8efc993718fdc3eac64bbc0d6ff3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3cb85c7_c11e361e",
+        "filename": "kona.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-12-19T07:11:16Z",
+      "side": 1,
+      "message": "its needed for aptx afaik",
+      "parentUuid": "2463d182_417a2766",
+      "revId": "ca58919755bb8efc993718fdc3eac64bbc0d6ff3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
