@@ -15,6 +15,7 @@ r_dir_file(mi_thermald, vendor_sysfs_graphics)
 r_dir_file(mi_thermald, vendor_sysfs_kgsl)
 r_dir_file(mi_thermald, sysfs_leds)
 r_dir_file(mi_thermald, sysfs_thermal)
+r_dir_file(mi_thermald, sysfs)
 
 # Allow mi_thermald to read and write to sysfs_*
 allow mi_thermald {
@@ -22,6 +23,7 @@ allow mi_thermald {
   sysfs_devices_system_cpu
   vendor_sysfs_kgsl
   sysfs_thermal
+  sysfs
 }:{
   file
   lnk_file
