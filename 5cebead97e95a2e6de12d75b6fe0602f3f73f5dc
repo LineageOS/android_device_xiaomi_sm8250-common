@@ -16,6 +16,24 @@
       "message": "no. It will be a mess switching from current codename.",
       "revId": "5cebead97e95a2e6de12d75b6fe0602f3f73f5dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6dfbcdb1_e96aa534",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-12-29T17:59:14Z",
+      "side": 1,
+      "message": "Will be done in 19.0 to not break anything (fyi it\u0027s even dirty flashable)",
+      "parentUuid": "bf33fc26_8dd7cead",
+      "revId": "5cebead97e95a2e6de12d75b6fe0602f3f73f5dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
