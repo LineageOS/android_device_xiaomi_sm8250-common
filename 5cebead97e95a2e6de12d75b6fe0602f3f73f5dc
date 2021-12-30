@@ -34,6 +34,24 @@
       "parentUuid": "bf33fc26_8dd7cead",
       "revId": "5cebead97e95a2e6de12d75b6fe0602f3f73f5dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bce09f3a_fd9f0fa7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-12-30T12:15:43Z",
+      "side": 1,
+      "message": "is this even discussed with lineage directors and any other sm8250 devs?",
+      "parentUuid": "6dfbcdb1_e96aa534",
+      "revId": "5cebead97e95a2e6de12d75b6fe0602f3f73f5dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
