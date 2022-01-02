@@ -51,7 +51,7 @@ void set_ro_build_prop(const std::string &prop, const std::string &value, bool p
 
 std::string fingerprint_to_description(std::string fingerprint) {
     std::string delimiter = "/";
-    std::string delimiter2 = "/";
+    std::string delimiter2 = ":";
     std::string build_fingerprint_copy = fingerprint;
 
     FIND_AND_REMOVE(build_fingerprint_copy, delimiter, brand)
