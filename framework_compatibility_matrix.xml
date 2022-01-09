@@ -41,7 +41,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.display.color</name>
-        <version>1.0-5</version>
+        <version>1.0-6</version>
         <interface>
             <name>IDisplayColor</name>
             <instance>default</instance>
@@ -191,6 +191,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.display.composer</name>
+        <version>2.0-1</version>
         <version>3.0</version>
         <interface>
             <name>IQtiComposer</name>
