@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_FASTCHARGE_V1_0_FASTCHARGE_H
-#define VENDOR_LINEAGE_FASTCHARGE_V1_0_FASTCHARGE_H
+#pragma once
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
@@ -49,5 +48,3 @@ struct FastCharge : public IFastCharge {
 } // namespace fastcharge
 } // namespace lineage
 } // namespace vendor
-
-#endif // VENDOR_LINEAGE_FASTCHARGE_V1_0_FASTCHARGE_H
