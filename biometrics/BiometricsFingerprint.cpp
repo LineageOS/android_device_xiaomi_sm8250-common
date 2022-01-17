@@ -82,7 +82,8 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
+BiometricsFingerprint::BiometricsFingerprint() :
+        mClientCallback(nullptr), mUdfpsSensorCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
     for (const auto& class_name : kHALClasses) {
         mDevice = openHal(class_name);
@@ -294,6 +295,13 @@ IXiaomiFingerprint* BiometricsFingerprint::getXiaomiInstance() {
     return sInstance;
 }
 
+IUdfpsSensor* BiometricsFingerprint::getUdfpsSensorInstance() {
+    if (!sInstance) {
+      sInstance = new BiometricsFingerprint();
+    }
+    return sInstance;
+}
+
 xiaomi_fingerprint_device_t* BiometricsFingerprint::openHal(const char *class_name) {
     int err;
     const hw_module_t *hw_mdl = nullptr;
@@ -366,6 +374,10 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
                 ALOGD("onAcquired(%d)", result);
                 if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
                     ALOGE("failed to invoke fingerprint onAcquired callback");
+                }
+                if (thisPtr->mFod && result == FingerprintAcquiredInfo::ACQUIRED_VENDOR
+                        && vendorCode == 22 && thisPtr->mUdfpsSensorCallback) {
+                    thisPtr->mUdfpsSensorCallback->onPressed();
                 }
             }
             break;
@@ -450,6 +462,15 @@ Return<void> BiometricsFingerprint::onFingerUp() {
 
 Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
     return mDevice->extCmd(mDevice, cmd, param);
+}
+
+Return<void> BiometricsFingerprint::setCallback(const sp<IUdfpsSensorCallback>& callback) {
+    std::lock_guard<std::mutex> lock(mUdfpsSensorCallbackMutex);
+    mUdfpsSensorCallback = callback;
+
+    LOG(INFO) << "Registered callback";
+
+    return Void();
 }
 
 } // namespace implementation

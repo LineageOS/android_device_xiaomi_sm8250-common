@@ -253,6 +253,9 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
+    sensors.udfps
+
+PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 endif
 
