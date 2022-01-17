@@ -72,6 +72,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.lineage.biometrics.fingerprint.udfpssensor</name>
+        <version>1.0</version>
+        <interface>
+            <name>IUdfpsSensor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.nxp.nxpnfc</name>
         <version>2.0</version>
         <interface>

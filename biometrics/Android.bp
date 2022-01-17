@@ -20,6 +20,7 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.3",
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature@1.0",
+        "vendor.lineage.biometrics.fingerprint.udfpssensor@1.0",
     ],
     vendor: true,
 }
