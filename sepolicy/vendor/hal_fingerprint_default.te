@@ -32,3 +32,8 @@ allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
 
 get_prop(hal_fingerprint_default, vendor_fod_prop);
+
+hal_client_domain(hal_fingerprint_default, hal_touchfeature)
+
+# Allow binder communication with hal_touchfeature_default
+binder_call(hal_fingerprint_default, hal_touchfeature_default)
