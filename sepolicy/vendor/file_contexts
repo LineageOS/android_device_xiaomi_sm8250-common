@@ -91,6 +91,10 @@
 /vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
 
+# Touchfeature
+/dev/xiaomi-touch                                                       u:object_r:touchfeature_device:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service      u:object_r:hal_touchfeature_default_exec:s0
+
 # USB
 /vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
 
