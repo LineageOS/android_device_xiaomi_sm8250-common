@@ -44,3 +44,6 @@ ro.vendor.ril                                   u:object_r:vendor_public_vendor_
 
 # Thermal
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
+
+# Touchfeature
+ro.vendor.touchfeature.type                     u:object_r:vendor_touchfeature_prop:s0
