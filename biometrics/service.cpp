@@ -21,6 +21,7 @@
 #include <hidl/HidlTransportSupport.h>
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <android/hardware/biometrics/fingerprint/2.2/types.h>
+#include <vendor/lineage/biometrics/fingerprint/udfpssensor/1.0/IUdfpsSensor.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
 #include "BiometricsFingerprint.h"
 
@@ -29,11 +30,13 @@ using android::hardware::biometrics::fingerprint::V2_3::implementation::Biometri
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;
+using vendor::lineage::biometrics::fingerprint::udfpssensor::V1_0::IUdfpsSensor;
 using vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
 
 int main() {
     android::sp<IBiometricsFingerprint> bio = BiometricsFingerprint::getInstance();
     android::sp<IXiaomiFingerprint> xfe = BiometricsFingerprint::getXiaomiInstance();
+    android::sp<IUdfpsSensor> lus = BiometricsFingerprint::getUdfpsSensorInstance();
 
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
@@ -51,6 +54,14 @@ int main() {
         }
     } else {
         ALOGE("Can't create instance of XiaomiFingerprint, nullptr");
+    }
+
+    if (lus != nullptr) {
+        if (::android::OK != lus->registerAsService()) {
+            return 1;
+        }
+    } else {
+        ALOGE("Can't create instance of UdfpsSensor, nullptr");
     }
 
     joinRpcThreadpool();
