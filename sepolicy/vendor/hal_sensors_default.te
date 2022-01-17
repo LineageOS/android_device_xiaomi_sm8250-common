@@ -8,3 +8,6 @@ allow hal_sensors_default vendor_sysfs_iio:dir r_dir_perms;
 allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
 
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
+
+hal_client_domain(hal_sensors_default, hal_fingerprint)
+binder_call(hal_sensors_default, hal_fingerprint_default)
