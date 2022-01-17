@@ -20,5 +20,8 @@ vendor.xiaomi.hardware.motor::IMotor                                u:object_r:h
 # NFC
 vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:hal_nfc_hwservice:s0
 
+# Touchfeature
+vendor.xiaomi.hardware.touchfeature::ITouchFeature                  u:object_r:hal_touchfeature_hwservice:s0
+
 # VPP
 ::vppService                                                        u:object_r:hal_vpp_hwservice:s0
