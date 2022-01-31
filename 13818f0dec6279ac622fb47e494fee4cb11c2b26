@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d20830a0_05e040de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-01-31T07:03:16Z",
+      "side": 1,
+      "message": "vAB devices are unable to flash anything above opengapps pico",
+      "revId": "13818f0dec6279ac622fb47e494fee4cb11c2b26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
