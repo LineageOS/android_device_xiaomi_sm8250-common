@@ -16,6 +16,23 @@
       "message": "vAB devices are unable to flash anything above opengapps pico",
       "revId": "13818f0dec6279ac622fb47e494fee4cb11c2b26",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c355ec5_a149de41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-01-31T08:01:52Z",
+      "side": 1,
+      "message": "Drop FRAMEWORK_PARTITIONS_RESERVED_SIZE flag for VAB devices instead, just set the values in BOARD_*IMAGE_PARTITION_RESERVED_SIZE",
+      "revId": "13818f0dec6279ac622fb47e494fee4cb11c2b26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
