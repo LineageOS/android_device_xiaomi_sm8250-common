@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a25d879_dfdffa45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-01-31T15:30:15Z",
+      "side": 1,
+      "message": "open_gapps doesn\u0027t support installing in product or system_ext. Only nikgapps and mindthegapps support  found so far. so increasing system reserve to support all",
+      "revId": "d39022cea274686db16692c497ba7186133adedb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
