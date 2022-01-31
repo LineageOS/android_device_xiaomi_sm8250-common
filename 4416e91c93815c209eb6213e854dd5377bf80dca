@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2a38ee6_0b8a9f6b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-01-31T08:51:37Z",
+      "side": 1,
+      "message": "Do this\n ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)\n BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE :\u003d 1073741824\n BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE :\u003d 268435456\n BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE :\u003d 268435456\n else\n FRAMEWORK_PARTITIONS_RESERVED_SIZE :\u003d 1258291200\n BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE :\u003d $(FRAMEWORK_PARTITIONS_RESERVED_SIZE)\n BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE :\u003d $(FRAMEWORK_PARTITIONS_RESERVED_SIZE)\n BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE :\u003d $(FRAMEWORK_PARTITIONS_RESERVED_SIZE)\n endif",
+      "range": {
+        "startLine": 148,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 58
+      },
+      "revId": "4416e91c93815c209eb6213e854dd5377bf80dca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
