@@ -16,6 +16,24 @@
       "message": "TMP chain will be dropped after 12 merge",
       "revId": "3116ad9390572a4c16e20eab9d2c88d54b57cc07",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1b555a2_28881885",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-03-13T14:22:31Z",
+      "side": 1,
+      "message": "Nah I mean, this commit isn\u0027t needed anymore, the needed Soong fix has been merged in Lineage",
+      "parentUuid": "9bda9cf3_3b0500ab",
+      "revId": "3116ad9390572a4c16e20eab9d2c88d54b57cc07",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
