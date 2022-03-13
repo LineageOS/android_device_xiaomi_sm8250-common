@@ -16,6 +16,41 @@
       "message": "I think this breaks COW for OTAs\nIf that\u0027s the case it\u0027s probably better to disable VAB altogether and stick to standard A/B",
       "revId": "ff7e6ef6fd955709a7401fba9af310135f7747e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50eea486_833db98a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-03-13T13:06:17Z",
+      "side": 1,
+      "message": "this change was picked from pixel coz i wasn\u0027t able build non-gapps build with current allocated size in a12.\n\nhttps://github.com/LineageOS/android_device_google_redbull/commit/d92fd2e09c47e16b8b8a6b71d157d20beecd5802",
+      "parentUuid": "dc0464f3_170944ba",
+      "revId": "ff7e6ef6fd955709a7401fba9af310135f7747e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41351e01_98d76b9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-03-13T13:06:17Z",
+      "side": 1,
+      "message": "this",
+      "revId": "ff7e6ef6fd955709a7401fba9af310135f7747e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
