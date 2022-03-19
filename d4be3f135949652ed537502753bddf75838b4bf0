@@ -16,6 +16,24 @@
       "message": "Why you merged it? I wanted to fast forward 19.1 branch to 18.1 while 18.1 is still being maintained, now we\u0027re gonna have diverging history",
       "revId": "d4be3f135949652ed537502753bddf75838b4bf0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e7d5832_119f8363",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-03-19T09:08:10Z",
+      "side": 1,
+      "message": "does that really matter?, there will be changes even after we move to 19.1",
+      "parentUuid": "326ac4b3_08d81288",
+      "revId": "d4be3f135949652ed537502753bddf75838b4bf0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
