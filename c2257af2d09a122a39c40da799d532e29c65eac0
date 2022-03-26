@@ -16,6 +16,24 @@
       "message": "was this needed?",
       "revId": "c2257af2d09a122a39c40da799d532e29c65eac0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e6223c4_9f2de571",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-03-26T14:40:01Z",
+      "side": 1,
+      "message": "Yes, I had to keep all of the property labels in vendor because our blobs need it (especially camera props since it killed slowmo videos)",
+      "parentUuid": "1202990a_84e08ddb",
+      "revId": "c2257af2d09a122a39c40da799d532e29c65eac0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
