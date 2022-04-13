@@ -485,6 +485,19 @@ vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
 # Media configs
+odm/etc/media_profiles_V1_0.xml
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_kona.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_codecs_performance_c2.xml
+vendor/etc/media_codecs_performance_kona.xml
+vendor/etc/media_codecs_system_default.xml
+vendor/etc/media_codecs_vendor.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_kona.xml
+vendor/etc/media_profiles_vendor.xml
 vendor/etc/system_properties.xml
 
 # Mink-Lowi Interface daemon
