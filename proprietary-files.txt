@@ -514,8 +514,9 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
-vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 vendor/lib64/jcos_nq_client.so
 vendor/lib64/ls_nq_client.so
