@@ -87,6 +87,24 @@
       "parentUuid": "9750ff7d_fd29b6fe",
       "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b14e29e2_e2b160df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T11:09:08Z",
+      "side": 1,
+      "message": "we have an unused vendor_boot partition. why keeping it blank if we can use it?. Even asus (sake) uses it.",
+      "parentUuid": "9750ff7d_fd29b6fe",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
