@@ -159,6 +159,24 @@
       "parentUuid": "30c120fa_d1aa2715",
       "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f01560b_9fbd7e3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-16T11:19:44Z",
+      "side": 1,
+      "message": "Understood, but AOSP docs assumes you can rebuild the bootloader, so SoC vendors are able to add support for newer boot headers in their bootloader\n\nWe can\u0027t, and alioth/thyme/* bootloaders don\u0027t support v4 boot header and bootconfig (https://source.android.com/devices/bootloader/implementing-bootconfig?hl\u003den)",
+      "parentUuid": "30c120fa_d1aa2715",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
