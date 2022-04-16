@@ -141,6 +141,24 @@
       "parentUuid": "85febb0c_548c7c2f",
       "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f9b794b_8a62ec2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T11:17:46Z",
+      "side": 1,
+      "message": "Moving recovery to vendor_boot, doesn\u0027t break anything, I\u0027m using it on a build right now. GKI isn\u0027t needed this to work.",
+      "parentUuid": "30c120fa_d1aa2715",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
