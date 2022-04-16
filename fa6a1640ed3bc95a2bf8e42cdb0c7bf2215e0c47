@@ -33,6 +33,24 @@
       "message": "v4 is needed for vendor_boot. and it won\u0027t compile with 3, i checked. see here https://source.android.com/devices/bootloader/partitions/vendor-boot-partitions",
       "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38073e6c_dbdde3ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T11:05:20Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_build/blob/8f41972a5f48b8f49133045c5c339d22cb01054f/core/board_config.mk#L913",
+      "parentUuid": "f6617f08_569f66ac",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
