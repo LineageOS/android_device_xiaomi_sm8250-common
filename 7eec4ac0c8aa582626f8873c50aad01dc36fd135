@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71f13534_e9392f6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T12:10:10Z",
+      "side": 1,
+      "message": "This doesn\u0027t move recovery completely to vendor_boot. only some resources",
+      "revId": "7eec4ac0c8aa582626f8873c50aad01dc36fd135",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
