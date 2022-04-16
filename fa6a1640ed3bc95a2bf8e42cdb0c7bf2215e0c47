@@ -16,6 +16,23 @@
       "message": "Our bootloader doesn\u0027t support V4 header, it will treat it as a V3 one",
       "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e42ba2d_6e1294c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T11:03:35Z",
+      "side": 1,
+      "message": "v4 is needed for vendor_boot. and it won\u0027t compile with 3, i checked. see here https://source.android.com/devices/bootloader/partitions/vendor-boot-partitions",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
