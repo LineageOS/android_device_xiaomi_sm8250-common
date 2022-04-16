@@ -16,6 +16,23 @@
       "message": "Need to host vendor_boot.img like sake \nhttps://wiki.lineageos.org/devices/sake/install#flashing-the-vendor-boot-partition",
       "revId": "d51d3653d469f70c78dce6c6e8f681626c82410e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3914f100_1bc8a53e",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 25640
+      },
+      "writtenOn": "2022-04-16T13:49:45Z",
+      "side": 1,
+      "message": "Actually dont set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT",
+      "revId": "d51d3653d469f70c78dce6c6e8f681626c82410e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
