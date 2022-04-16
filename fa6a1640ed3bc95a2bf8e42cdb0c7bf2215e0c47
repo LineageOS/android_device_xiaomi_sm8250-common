@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6617f08_569f66ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-16T10:58:39Z",
+      "side": 1,
+      "message": "Our bootloader doesn\u0027t support V4 header, it will treat it as a V3 one",
+      "revId": "fa6a1640ed3bc95a2bf8e42cdb0c7bf2215e0c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
