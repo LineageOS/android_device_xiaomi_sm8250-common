@@ -16,6 +16,23 @@
       "message": "Tested with new two builds",
       "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccd9b855_4ba6d46a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-18T10:10:05Z",
+      "side": 1,
+      "message": "I prefer checking cmdline",
+      "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
