@@ -50,6 +50,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_sony_nile-common/+/323509",
       "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60eb60f8_a635ce08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-18T10:16:56Z",
+      "side": 1,
+      "message": "We still want to override codename and model on recovery",
+      "parentUuid": "3a780f0e_2f9307a2",
+      "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
