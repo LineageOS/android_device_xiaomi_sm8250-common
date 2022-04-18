@@ -68,6 +68,24 @@
       "parentUuid": "3a780f0e_2f9307a2",
       "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37865205_a2505e2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-18T10:21:19Z",
+      "side": 1,
+      "message": "Then checking if recovery binary exists is somewhat aight, that\u0027s what google does in their init: https://github.com/LineageOS/android_system_core/blob/lineage-19.1/init/util.cpp#L745-L747",
+      "parentUuid": "60eb60f8_a635ce08",
+      "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
