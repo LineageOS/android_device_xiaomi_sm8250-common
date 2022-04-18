@@ -86,6 +86,47 @@
       "parentUuid": "60eb60f8_a635ce08",
       "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ff85987_f5f7f829",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-18T10:52:33Z",
+      "side": 1,
+      "message": "I still think it\u0027s ugly, but alright",
+      "parentUuid": "37865205_a2505e2f",
+      "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "751de980_44d7ca6c",
+        "filename": "libinit/libinit_variant.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-18T10:52:33Z",
+      "side": 1,
+      "message": "Newline here",
+      "range": {
+        "startLine": 39,
+        "startChar": 8,
+        "endLine": 40,
+        "endChar": 105
+      },
+      "revId": "3f6987a6d9015736184c03c71c76a233cb2431da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
