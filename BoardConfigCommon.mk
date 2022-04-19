@@ -6,6 +6,25 @@
 
 COMMON_PATH := device/xiaomi/sm8250-common
 
+# A/B
+ifeq ($(TARGET_IS_VAB),true)
+BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
+endif
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
