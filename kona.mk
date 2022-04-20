@@ -74,10 +74,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
 
-ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
+ifeq ($(TARGET_IS_VAB),true)
+VULKAN_DEQP_LEVEL := 2020-03-01
+else
+VULKAN_DEQP_LEVEL ?= 2019-03-01
 endif
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-$(VULKAN_DEQP_LEVEL).xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
