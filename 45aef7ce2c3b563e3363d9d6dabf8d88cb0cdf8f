@@ -33,6 +33,24 @@
       "message": "that is a mess. why this much effort for fstab. soong and stuff",
       "revId": "45aef7ce2c3b563e3363d9d6dabf8d88cb0cdf8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3567d754_21157137",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-20T09:18:30Z",
+      "side": 1,
+      "message": "It works and it\u0027s the proper way",
+      "parentUuid": "054f51e2_74db2db7",
+      "revId": "45aef7ce2c3b563e3363d9d6dabf8d88cb0cdf8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
