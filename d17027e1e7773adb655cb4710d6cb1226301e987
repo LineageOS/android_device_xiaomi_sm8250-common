@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66476a71_553fd88c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-20T09:51:40Z",
+      "side": 1,
+      "message": "- To 19.1\n- Might want to do /a/board.mk and /vab/board.mk (so we\u0027ll create product.mk later which will include A-only and VAB specific build targets)",
+      "revId": "d17027e1e7773adb655cb4710d6cb1226301e987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
