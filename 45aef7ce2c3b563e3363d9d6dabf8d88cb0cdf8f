@@ -69,6 +69,24 @@
       "parentUuid": "3567d754_21157137",
       "revId": "45aef7ce2c3b563e3363d9d6dabf8d88cb0cdf8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c235d10_d440c3c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-20T09:25:19Z",
+      "side": 1,
+      "message": "There are only 2 fstab for 9+ devices, this is common enough",
+      "parentUuid": "f81b7bb9_c1b81256",
+      "revId": "45aef7ce2c3b563e3363d9d6dabf8d88cb0cdf8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
