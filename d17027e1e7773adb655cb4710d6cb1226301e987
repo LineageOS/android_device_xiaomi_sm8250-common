@@ -16,6 +16,24 @@
       "message": "- To 19.1\n- Might want to do /a/board.mk and /vab/board.mk (so we\u0027ll create product.mk later which will include A-only and VAB specific build targets)",
       "revId": "d17027e1e7773adb655cb4710d6cb1226301e987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2ef0f4e_55d28aa6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-20T10:02:26Z",
+      "side": 1,
+      "message": "thats not neccessary. just move future changes to device specific trees",
+      "parentUuid": "66476a71_553fd88c",
+      "revId": "d17027e1e7773adb655cb4710d6cb1226301e987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
