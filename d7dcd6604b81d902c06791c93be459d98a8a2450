@@ -16,6 +16,24 @@
       "message": "squash these audio changes. we already have these twice in tree ",
       "revId": "d7dcd6604b81d902c06791c93be459d98a8a2450",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec9d6f67_9de75d75",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-26T15:20:15Z",
+      "side": 1,
+      "message": "I honestly lost track from where they come from, first version comes from lmi\u0027s /vendor/etc/audio_policy_configuration.xml (which isn\u0027t even used, dunno why I used that at the time), then we used CAF ones and then idk what happened to ULL one\nAny suggestion? I could probably only nuke audio_policy_configuration and io policy",
+      "parentUuid": "f5621683_37268ddf",
+      "revId": "d7dcd6604b81d902c06791c93be459d98a8a2450",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
