@@ -33,6 +33,24 @@
       "message": "its init.recovery.qcom.rc",
       "revId": "047be69abb844327e22322b9656da886cfcadb35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cdbd695_5b9e99e1",
+        "filename": "rootdir/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 25640
+      },
+      "writtenOn": "2022-04-26T17:33:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc4b3ff7_7cbeb055",
+      "revId": "047be69abb844327e22322b9656da886cfcadb35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
