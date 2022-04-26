@@ -16,6 +16,23 @@
       "message": "Sahil you tested it on alioth?",
       "revId": "047be69abb844327e22322b9656da886cfcadb35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc4b3ff7_7cbeb055",
+        "filename": "rootdir/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-26T16:50:35Z",
+      "side": 1,
+      "message": "its init.recovery.qcom.rc",
+      "revId": "047be69abb844327e22322b9656da886cfcadb35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
