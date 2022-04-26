@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4ed4793_b04ff819",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-26T19:20:17Z",
+      "side": 1,
+      "message": "Main init.rc only imports /init.recovery.${ro.hardware}.rc, we need to use prebuilt_root",
+      "revId": "05e99deeb6c52f3a5a4a9fbcfb5935b34ea2a3de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
