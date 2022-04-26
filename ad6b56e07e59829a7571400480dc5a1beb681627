@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71059757_7724d281",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-26T15:15:27Z",
+      "side": 1,
+      "message": "https://gitlab.com/SebaUbuntu/android_vendor_xiaomi/-/tree/lineage-19.1\nEverything works fine on lmi",
+      "revId": "ad6b56e07e59829a7571400480dc5a1beb681627",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
