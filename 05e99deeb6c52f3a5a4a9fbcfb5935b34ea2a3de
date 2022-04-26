@@ -16,6 +16,24 @@
       "message": "Main init.rc only imports /init.recovery.${ro.hardware}.rc, we need to use prebuilt_root",
       "revId": "05e99deeb6c52f3a5a4a9fbcfb5935b34ea2a3de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22655af2_d65d6f67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-26T19:54:56Z",
+      "side": 1,
+      "message": "Ugh prebuilt_root and recovery: true copies it to recovery/root/system/init.recovery.qcom.rc",
+      "parentUuid": "f4ed4793_b04ff819",
+      "revId": "05e99deeb6c52f3a5a4a9fbcfb5935b34ea2a3de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
