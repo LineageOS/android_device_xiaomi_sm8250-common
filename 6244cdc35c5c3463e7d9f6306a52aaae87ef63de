@@ -33,6 +33,24 @@
       "message": "I would like to not edit rootdir too much, we\u0027re gonna update it from Android 12 soon",
       "revId": "6244cdc35c5c3463e7d9f6306a52aaae87ef63de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1830242e_f52efec2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-27T13:38:05Z",
+      "side": 1,
+      "message": "We can do this after that",
+      "parentUuid": "7631f159_e32d36b6",
+      "revId": "6244cdc35c5c3463e7d9f6306a52aaae87ef63de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
