@@ -1,4 +1,4 @@
-# Unpinned blobs from alioth_global-user 11 RKQ1.200826.002 V12.5.6.0.RKHMIXM release-keys
+# Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.2.0.SKHMIXM release-keys
 # lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
 
 # ADSP
@@ -651,7 +651,6 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
@@ -770,8 +769,8 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Soter service (Tencent) - from lmi
--vendor/app/SoterService/SoterService.apk|939423f0016034cf8676f64d384aafde308f779b
+# Soter service (Tencent)
+-vendor/app/SoterService/SoterService.apk
 
 # Thermal
 vendor/bin/mi_thermald
@@ -830,9 +829,11 @@ vendor/etc/wifi/aoa_cldb_swl14.bin
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
+system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
 system_ext/etc/seccomp_policy/wfdservice.policy
+system_ext/etc/seccomp_policy/wfdservice64.policy
 system_ext/etc/wfdconfigsink.xml
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib/libmmrtpdecoder.so
@@ -871,14 +872,8 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 -system_ext/priv-app/WfdService/WfdService.apk
-vendor/bin/wfdhdcphalservice
-vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/wfdvndservice.rc
-vendor/etc/seccomp_policy/wfdhdcphalservice.policy
-vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so

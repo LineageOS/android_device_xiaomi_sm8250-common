@@ -11,10 +11,8 @@ libHalSuperSensorServer.so 64
 libSuperSensor.so 64
 libSuperSensorCPU.so 64
 libarcsoft_beautyshot.so 64
-libarcsoft_dualcam_refocus.so 64
-libarcsoft_dualcam_refocus_rear_t.so 64
-libarcsoft_dualcam_refocus_rear_w.so 64
-libarcsoft_dualcam_refocus_front.so 64
+libarcsoft_dualcam_refocus_image.so 64
+libarcsoft_dualcam_refocus_video.so 64
 libarcsoft_portrait_lighting.so 64
 libarcsoft_portrait_lighting_c.so 64
 libarcsoft_high_dynamic_range.so 64
@@ -32,13 +30,14 @@ libarcsoft_superportrait.so 64
 libmialgo_ie_capture.so 64
 libmialgo_utils.so 64
 libxmi_high_dynamic_range.so 64
+libxmi_hdr_checker.so 64
 libMIAIHDRhvx_interface.so 64
 libcvp2.so
 libcvp2_hfi.so
 libSNPE.so 64
 libsymphony-cpu.so 64
-libc++_shared.so 64
 libcamera_scene.so 64
 libsnpe_dsp_domains_v2.so 64
-libGLESv3.so
+libbeauty_face_interface.so 64
+libmiai_portraitsupernight.so 64
 libEGL.so
