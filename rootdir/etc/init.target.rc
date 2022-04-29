@@ -28,17 +28,10 @@
 #
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_q6_pdr audio_q6_notifier audio_snd_event audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_wcd audio_pinctrl_lpi audio_swr audio_platform audio_hdmi audio_stub audio_wcd_core audio_wsa881x audio_bolero_cdc audio_wsa_macro audio_va_macro audio_rx_macro audio_tx_macro audio_wcd938x audio_wcd938x_slave audio_machine_kona
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_q6_pdr audio_q6_notifier audio_snd_event audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_wcd audio_pinctrl_lpi audio_swr audio_platform audio_hdmi audio_stub audio_wcd_core audio_wsa881x audio_bolero_cdc audio_wsa_macro audio_va_macro audio_rx_macro audio_tx_macro audio_wcd938x audio_wcd938x_slave audio_cs35l41 audio_tfa98xx audio_machine_kona
     write /proc/sys/kernel/sched_boost 1
 
 on init
-    # Setup permission for Power HAL
-    chown system system /dev/stune/top-app/schedtune.boost
-    chown system system /dev/cpu_dma_latency
-
-    chmod 0664 /dev/stune/top-app/schedtune.boost
-    chmod 0664 /dev/cpu_dma_latency
-
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/schedtune.colocate 0
@@ -52,19 +45,22 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
     chown system system /proc/last_kmsg
+    #change owner of white led
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/breath
 
 on early-fs
     start vold
 
 on fs
     start hwservicemanager
-    mkdir /mnt/vendor/persist/audio 0755 system system
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     mkdir /mnt/vendor/spunvm 0660 system system
     mount_all /vendor/etc/fstab.qcom --early
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/haptics 0755 system system
+    mkdir /mnt/vendor/persist/audio 0755 system system
     chmod 0644 /mnt/vendor/persist/haptics/vov
     chown system system /mnt/vendor/persist/haptics/vov
     chown system system /sys/bus/i2c/drivers/aw8697_haptic/2-005a/vov
@@ -88,6 +84,10 @@ on fs
     chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
     chmod 0666  /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
 
+on fs && property:ro.build.ab_update=true
+    mount ext4 /dev/block/bootdevice/by-name/rescue /mnt/rescue noatime
+    restorecon_recursive /mnt/rescue
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -105,6 +105,10 @@ on post-fs-data
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6390/fs_ready 1
     chmod 0660 /dev/ir_spi
+    #sensors diag2bugreport log dir
+    mkdir /data/vendor/sensor_log
+    chown system system /data/vendor/sensor_log
+    chown system system /vendor/etc/sensors/sensor_diag.cfg
     chown system system /dev/ir_spi
     mkdir /data/vendor/wlan_logs 0777 root shell
     mkdir /data/vendor/nfc 0770 nfc nfc
@@ -114,6 +118,7 @@ on post-fs-data
     mkdir /data/vendor/mqsas_common 0771 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
+    chown gps system /dev/ttyHS1
 
 on boot
     start vendor.sensors
@@ -122,11 +127,12 @@ on property:ro.boot.dp=0x0
 
 on boot
     chown system system /sys/class/touch/touch_dev/palm_sensor
+    chown system system /sys/class/touch/touch_dev/partial_diff_data
     write /dev/cpuset/audio-app/cpus 1-2
     # Add a cpuset for the camera daemon
     # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
-    write /dev/cpuset/camera-daemon/cpus 0-3
+    write /dev/cpuset/camera-daemon/cpus 0-7
     write /dev/cpuset/camera-daemon/mems 0
     chown cameraserver cameraserver /dev/cpuset/camera-daemon
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
@@ -138,8 +144,11 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
+    #Load WLAN driver
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan
     chown system system /sys/class/drm/card0-DSI-1/disp_param
     chown system system /proc/tp_selftest
+    chmod 0664 /proc/tp_selftest
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_param
     chown system system /sys/class/drm/card0-DSI-1/mipi_reg
     chmod 0664 /sys/class/drm/card0-DSI-1/mipi_reg
@@ -155,6 +164,8 @@ on boot
     chmod 0664 /sys/class/drm/card0-DSI-1/doze_brightness
     chown system system /sys/class/drm/card0-DSI-1/disp_count
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_count
+    chown system system /sys/class/drm/card0-DSI-1/disp_pcc
+    chmod 0664 /sys/class/drm/card0-DSI-1/disp_pcc
     #camera motor
     chmod 0777 /sys/class/drv8846/ti-drv8846/debug
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
@@ -162,6 +173,8 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
+
+    write /sys/block/sda/queue/wbt_lat_usec 75000
 
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
@@ -177,10 +190,7 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/white/brightness
-    write /sys/class/leds/red/brightness 255
-    write /sys/class/leds/white/brightness 255
+    start leds-sh
 
 on property:vendor.audio.cit.spkcal.copy=true
     copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
@@ -193,6 +203,61 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.txt
     copy /data/vendor/cit/tfa9874_chk.txt /mnt/vendor/persist/audio/tfa9874_chk.txt
     chmod 666 /mnt/vendor/persist/audio/tfa9874_chk.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk1.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk1.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk2.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk2.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk3.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk3.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk4.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk4.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk5.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk5.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk6.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk6.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk7.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk7.txt
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk8.bin
+    chmod 444 /data/vendor/cit/cs35l41_cal_spk8.txt
+    copy /data/vendor/cit/cs35l41_cal_spk1.bin /mnt/vendor/persist/audio/cs35l41_cal_spk1.bin
+    copy /data/vendor/cit/cs35l41_cal_spk1.txt /mnt/vendor/persist/audio/cs35l41_cal_spk1.txt
+    copy /data/vendor/cit/cs35l41_cal_spk2.bin /mnt/vendor/persist/audio/cs35l41_cal_spk2.bin
+    copy /data/vendor/cit/cs35l41_cal_spk2.txt /mnt/vendor/persist/audio/cs35l41_cal_spk2.txt
+    copy /data/vendor/cit/cs35l41_cal_spk3.bin /mnt/vendor/persist/audio/cs35l41_cal_spk3.bin
+    copy /data/vendor/cit/cs35l41_cal_spk3.txt /mnt/vendor/persist/audio/cs35l41_cal_spk3.txt
+    copy /data/vendor/cit/cs35l41_cal_spk4.bin /mnt/vendor/persist/audio/cs35l41_cal_spk4.bin
+    copy /data/vendor/cit/cs35l41_cal_spk4.txt /mnt/vendor/persist/audio/cs35l41_cal_spk4.txt
+    copy /data/vendor/cit/cs35l41_cal_spk5.bin /mnt/vendor/persist/audio/cs35l41_cal_spk5.bin
+    copy /data/vendor/cit/cs35l41_cal_spk5.txt /mnt/vendor/persist/audio/cs35l41_cal_spk5.txt
+    copy /data/vendor/cit/cs35l41_cal_spk6.bin /mnt/vendor/persist/audio/cs35l41_cal_spk6.bin
+    copy /data/vendor/cit/cs35l41_cal_spk6.txt /mnt/vendor/persist/audio/cs35l41_cal_spk6.txt
+    copy /data/vendor/cit/cs35l41_cal_spk7.bin /mnt/vendor/persist/audio/cs35l41_cal_spk7.bin
+    copy /data/vendor/cit/cs35l41_cal_spk7.txt /mnt/vendor/persist/audio/cs35l41_cal_spk7.txt
+    copy /data/vendor/cit/cs35l41_cal_spk8.bin /mnt/vendor/persist/audio/cs35l41_cal_spk8.bin
+    copy /data/vendor/cit/cs35l41_cal_spk8.txt /mnt/vendor/persist/audio/cs35l41_cal_spk8.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk1.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk1.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk2.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk2.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk3.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk3.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk4.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk4.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk5.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk5.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk6.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk6.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk7.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk7.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk8.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk8.txt
+
+service audioshell_service /vendor/bin/audioshell_service
+    oneshot
+    disabled
+
+on property:ro.vendor.miui.region=*
+    start audioshell_service
 
 service vendor.lowi /vendor/bin/sscrpcd
    class core
@@ -259,3 +324,27 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+
+#####copy megvii files#####
+on property:sys.boot_completed=1
+    mkdir /data/vendor/camera/model 0777 cameraserver audio
+    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/rt_model/preview_model /data/vendor/camera/model/rt_model/preview_model
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_model
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_model
+    copy /vendor/etc/camera/model/rt_model/preview_cache /data/vendor/camera/model/rt_model/preview_cache
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_cache
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_cache
+    copy /vendor/etc/camera/model/rt_model/preview_policy /data/vendor/camera/model/rt_model/preview_policy
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_policy
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_policy
+    mkdir /data/vendor/camera/model/dof_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/dof_model/capture_cache /data/vendor/camera/model/dof_model/capture_cache
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_cache
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_cache
+    copy /vendor/etc/camera/model/dof_model/capture_model /data/vendor/camera/model/dof_model/capture_model
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_model
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_model
+    copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_policy
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_policy
