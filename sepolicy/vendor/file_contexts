@@ -93,7 +93,7 @@
 /data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
 
 # Touch
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_kona         u:object_r:hal_lineage_touch_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi              u:object_r:hal_lineage_touch_default_exec:s0
 
 # USB
 /vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
