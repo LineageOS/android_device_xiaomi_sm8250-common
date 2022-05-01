@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f3ebbd9_dede8673",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-05-01T07:58:54Z",
+      "side": 1,
+      "message": "Most of these aren\u0027t correct for sm8250, except maybe TASchedtuneHighCap and UfsClkGateEnable hints",
+      "revId": "ffbe7f9f34a32adbaab401ce905643228c80efb9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
