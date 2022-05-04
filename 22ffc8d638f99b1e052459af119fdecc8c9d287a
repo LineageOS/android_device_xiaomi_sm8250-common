@@ -16,6 +16,23 @@
       "message": "Fine on lmi",
       "revId": "22ffc8d638f99b1e052459af119fdecc8c9d287a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70c0f587_dc62efd1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29074
+      },
+      "writtenOn": "2022-05-04T08:50:15Z",
+      "side": 1,
+      "message": "Appears to work fine for Apollo",
+      "revId": "22ffc8d638f99b1e052459af119fdecc8c9d287a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
