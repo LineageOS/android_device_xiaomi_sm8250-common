@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99e17e3a_22fcce98",
+        "filename": "kona.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-05-04T23:46:10Z",
+      "side": 1,
+      "message": ":64",
+      "revId": "275c306bdf17bbfd2406dfa5ba50a99610704fa3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
