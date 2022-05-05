@@ -16,6 +16,24 @@
       "message": ":64",
       "revId": "275c306bdf17bbfd2406dfa5ba50a99610704fa3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "faae97f0_157c862c",
+        "filename": "kona.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-05T06:52:37Z",
+      "side": 1,
+      "message": "Ack\nThis is intentional, we build libs for both architectures everywhere",
+      "parentUuid": "99e17e3a_22fcce98",
+      "revId": "275c306bdf17bbfd2406dfa5ba50a99610704fa3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
