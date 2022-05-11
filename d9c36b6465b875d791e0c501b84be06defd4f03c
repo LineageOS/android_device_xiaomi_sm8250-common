@@ -16,6 +16,24 @@
       "message": "keep flipendo pls. it\u0027s useful when using Google flipendo apk",
       "revId": "d9c36b6465b875d791e0c501b84be06defd4f03c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d85e114d_9405775a",
+        "filename": "configs/powerhint.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 823,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-11T05:37:19Z",
+      "side": 0,
+      "message": "done",
+      "parentUuid": "818bbba1_93901c96",
+      "revId": "d9c36b6465b875d791e0c501b84be06defd4f03c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
