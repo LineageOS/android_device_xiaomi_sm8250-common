@@ -16,6 +16,24 @@
       "message": "Reverted to old patchset due to bootloop. this boots fine",
       "revId": "f11dda2815c0aedf098787fb64bbcafcffcfdff4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dc2c1c6_b064ae2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-05-12T13:25:27Z",
+      "side": 1,
+      "message": "Still, most of these cpu/gpu freqs are incorrect for sm8250, and the thermal and display hints are pixel specific.\n\nYou probably should just add TASchedtuneHighCap,UfsClkGateEnable and maybe F2fsRecessModeEnable. Everything else is pretty pointless.",
+      "parentUuid": "b03d5743_49320530",
+      "revId": "f11dda2815c0aedf098787fb64bbcafcffcfdff4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
