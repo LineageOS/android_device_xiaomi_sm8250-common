@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b03d5743_49320530",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-12T12:06:28Z",
+      "side": 1,
+      "message": "Reverted to old patchset due to bootloop. this boots fine",
+      "revId": "f11dda2815c0aedf098787fb64bbcafcffcfdff4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
