@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65776d94_d80a8d10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-13T11:20:07Z",
+      "side": 1,
+      "message": "Label as vendor_sysfs_graphics and allow mi_thermald to access it",
+      "revId": "a9dcefa5fa80457692f232c50a47e6565f0c8235",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
