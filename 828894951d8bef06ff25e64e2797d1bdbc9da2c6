@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d31927b_11f55e7a",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-13T09:33:55Z",
+      "side": 1,
+      "message": "Put it here",
+      "range": {
+        "startLine": 93,
+        "startChar": 0,
+        "endLine": 93,
+        "endChar": 9
+      },
+      "revId": "828894951d8bef06ff25e64e2797d1bdbc9da2c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
