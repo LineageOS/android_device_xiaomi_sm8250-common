@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b73505b8_4cb5533a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-16T09:57:45Z",
+      "side": 1,
+      "message": "Uhm I always keep \"LTE\" on SIM options and it works, not sure what needs fixing",
+      "revId": "d0d9d6443436829b03661191fca180af5d789dbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
