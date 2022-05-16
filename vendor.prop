@@ -255,6 +255,11 @@ persist.vendor.sensors.sync_request=true
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# ULMK properties
+ro.lmk.use_minfree_levels=true
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
