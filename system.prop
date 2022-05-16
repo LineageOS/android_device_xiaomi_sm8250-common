@@ -1,8 +1,3 @@
-# Audio
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
-tunnel.audio.encode=true
-
 # Camera
 camera.disable_zsl_mode=true
 
@@ -12,7 +7,6 @@ ro.charger.disable_init_blank=true
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
 persist.vendor.color.matrix=2
 
 # CNE
@@ -52,7 +46,6 @@ ro.vendor.qti.core_ctl_min_cpu=2
 ro.telephony.default_network=33,22
 
 # Netmgr
-persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 
 # SSR
