@@ -16,6 +16,24 @@
       "message": "Uhm I always keep \"LTE\" on SIM options and it works, not sure what needs fixing",
       "revId": "d0d9d6443436829b03661191fca180af5d789dbc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2645bd61_06d1ae2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-16T10:19:28Z",
+      "side": 1,
+      "message": "For 5g users it keeps using 5g when available. Setting lte actually isn\u0027t doing anything.",
+      "parentUuid": "b73505b8_4cb5533a",
+      "revId": "d0d9d6443436829b03661191fca180af5d789dbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
