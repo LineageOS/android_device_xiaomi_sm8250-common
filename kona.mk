@@ -460,6 +460,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
+# ULMK properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=15
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
