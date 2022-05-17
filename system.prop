@@ -44,8 +44,5 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Netmgr
 persist.vendor.data.mode=concurrent
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
