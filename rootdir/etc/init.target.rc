@@ -43,7 +43,6 @@ on init
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
-    start logd
     chown system system /proc/last_kmsg
     #change owner of white led
     chown system system /sys/class/leds/white/brightness
