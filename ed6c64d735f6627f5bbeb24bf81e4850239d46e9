@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "070bac24_f34684db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-19T06:21:27Z",
+      "side": 1,
+      "message": "Removed some of the previous hints, that weren\u0027t doing anything",
+      "revId": "ed6c64d735f6627f5bbeb24bf81e4850239d46e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
