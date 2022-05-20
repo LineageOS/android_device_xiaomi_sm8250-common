@@ -16,6 +16,24 @@
       "message": "It comes from qcom and it\u0027s already properly disabled, do we really want to nuke it?",
       "revId": "0fbc7346f72a3af1d50bcad8003ea7d93c2f25e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c658c6d0_32ff7510",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-20T08:17:34Z",
+      "side": 1,
+      "message": "we already did restart level fix in kernel. also this isnt doing anything. lets just nike this",
+      "parentUuid": "17431ff3_1a983898",
+      "revId": "0fbc7346f72a3af1d50bcad8003ea7d93c2f25e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
