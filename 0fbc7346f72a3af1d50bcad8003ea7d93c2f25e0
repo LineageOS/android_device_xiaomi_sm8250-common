@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17431ff3_1a983898",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-20T07:10:41Z",
+      "side": 1,
+      "message": "It comes from qcom and it\u0027s already properly disabled, do we really want to nuke it?",
+      "revId": "0fbc7346f72a3af1d50bcad8003ea7d93c2f25e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
