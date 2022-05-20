@@ -23,6 +23,9 @@ static const char* kFodUiPaths[] = {
         "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
 };
 
+static const char* kFodStatusPaths[] = {
+};
+
 static bool readBool(int fd) {
     char c;
     int rc;
@@ -61,6 +64,14 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
                 return;
             }
 
+            int fodStatusFd;
+            for (auto& path : kFodStatusPaths) {
+                fodStatusFd = open(path, O_RDWR);
+                if (fodStatusFd >= 0) {
+                    break;
+                }
+            }
+
             struct pollfd fodUiPoll = {
                     .fd = fd,
                     .events = POLLERR | POLLPRI,
@@ -76,6 +87,9 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
 
                 mDevice->extCmd(mDevice, COMMAND_NIT,
                                 readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+                if (fodStatusFd >= 0) {
+                    write(fodStatusFd, readBool(fd) ? "1" : "0", 1);
+                }
             }
         }).detach();
     }
