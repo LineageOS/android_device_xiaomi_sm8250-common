@@ -70,6 +70,24 @@
       "parentUuid": "8c85b1dd_d003ac26",
       "revId": "c3b97aef9d2e5aa6b8c03d77800971d091c4a9e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3336e2d_3c16901d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-20T19:30:27Z",
+      "side": 1,
+      "message": "theres no build.prop inside odm_dlkm",
+      "parentUuid": "f28373f2_16ae3319",
+      "revId": "c3b97aef9d2e5aa6b8c03d77800971d091c4a9e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
