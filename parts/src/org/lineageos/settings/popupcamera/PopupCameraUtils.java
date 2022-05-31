@@ -32,16 +32,31 @@ public class PopupCameraUtils {
         return PopupCameraService.getMotorService() != null;
     }
 
-    public static void startService(Context context) {
-        final boolean enable = isPopUpMotorAvailable();
+    protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, PopupCameraService.class),
                 UserHandle.CURRENT);
         PackageManager pm = context.getPackageManager();
         pm.setComponentEnabledSetting(
                 new ComponentName(context, PopupCameraSettingsActivity.class),
-                enable ? pm.COMPONENT_ENABLED_STATE_ENABLED
-                       : pm.COMPONENT_ENABLED_STATE_DEFAULT,
-                pm.SYNCHRONOUS);
+                pm.COMPONENT_ENABLED_STATE_ENABLED, pm.SYNCHRONOUS);
+    }
+
+    protected static void stopService(Context context) {
+        if (DEBUG) Log.d(TAG, "Stopping service");
+        context.stopServiceAsUser(new Intent(context, PopupCameraService.class),
+                UserHandle.CURRENT);
+        PackageManager pm = context.getPackageManager();
+        pm.setComponentEnabledSetting(
+                new ComponentName(context, PopupCameraSettingsActivity.class),
+                pm.COMPONENT_ENABLED_STATE_DEFAULT, pm.SYNCHRONOUS);
+    }
+
+    public static void checkPopupCameraService(Context context) {
+        if (isPopUpMotorAvailable()) {
+            startService(context);
+        } else {
+            stopService(context);
+        }
     }
 }
