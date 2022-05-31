@@ -45,17 +45,6 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
-# Motor
-service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
-    override
-    class hal
-    user system
-    group system
-    disabled
-
-on property:vendor.lineage.motor.enable=true
-    enable vendor.motor
-
 # NFC
 service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
     override
