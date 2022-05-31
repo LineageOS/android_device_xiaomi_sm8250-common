@@ -81,20 +81,6 @@ xiaomi_kona_rootdir_prebuilt_etc {
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.motor.rc",
-    src: "etc/init.motor.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.nfc.rc",
-    src: "etc/init.nfc.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.qcom.power.rc",
     src: "etc/init.qcom.power.rc",
     sub_dir: "init/hw",
@@ -118,6 +104,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "etc/init.xiaomi.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
