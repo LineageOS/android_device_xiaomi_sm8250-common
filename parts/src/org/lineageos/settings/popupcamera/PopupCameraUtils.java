@@ -25,7 +25,7 @@ import android.util.Log;
 
 public class PopupCameraUtils {
 
-    private static final String TAG = "PopupCameraUtils";
+    private static final String LOG_TAG = "PopupCameraUtils";
     private static final boolean DEBUG = false;
 
     private static final boolean isPopUpMotorAvailable() {
@@ -33,15 +33,30 @@ public class PopupCameraUtils {
     }
 
     public static void startService(Context context) {
-        final boolean enable = isPopUpMotorAvailable();
-        if (DEBUG) Log.d(TAG, "Starting service");
+        if (DEBUG) Log.d(LOG_TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, PopupCameraService.class),
                 UserHandle.CURRENT);
         PackageManager pm = context.getPackageManager();
         pm.setComponentEnabledSetting(
                 new ComponentName(context, PopupCameraSettingsActivity.class),
-                enable ? pm.COMPONENT_ENABLED_STATE_ENABLED
-                       : pm.COMPONENT_ENABLED_STATE_DEFAULT,
-                pm.SYNCHRONOUS);
+                pm.COMPONENT_ENABLED_STATE_ENABLED, pm.SYNCHRONOUS);
+    }
+
+    protected static void stopService(Context context) {
+        if (DEBUG) Log.d(LOG_TAG, "Stopping service");
+        context.stopServiceAsUser(new Intent(context, PopupCameraService.class),
+                UserHandle.CURRENT);
+        PackageManager pm = context.getPackageManager();
+        pm.setComponentEnabledSetting(
+                new ComponentName(context, PopupCameraSettingsActivity.class),
+                pm.COMPONENT_ENABLED_STATE_DEFAULT, pm.SYNCHRONOUS);
+    }
+
+    public static void checkPopupCameraService(Context context) {
+        if (isPopUpMotorAvailable()) {
+            startService(context);
+        } else {
+            stopService(context);
+        }
     }
 }
