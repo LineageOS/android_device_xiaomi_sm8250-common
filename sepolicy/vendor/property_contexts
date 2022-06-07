@@ -62,6 +62,3 @@ invn.hal.verbose.                               u:object_r:vendor_sensors_prop:s
 sys.thermal.                                    u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
 persist.sys.thermal.config                      u:object_r:vendor_thermal_normal_prop:s0
-
-# WiFi Display
-persist.vendor.setWFDInfo.                      u:object_r:vendor_wfd_vendor_debug_prop:s0
