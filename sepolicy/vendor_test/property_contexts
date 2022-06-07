@@ -1,2 +1,0 @@
-# WiFi Display
-persist.vendor.setWFDInfo.                      u:object_r:vendor_wfd_vendor_debug_prop:s0
