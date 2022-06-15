@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e660335a_d34b6c8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-15T19:31:27Z",
+      "side": 1,
+      "message": "for connection issues that should solve but audio is still mistery lol https://github.com/DerpFest-Devices/device_xiaomi_sm6150-common/commit/bba236585b87df3d59b35915990f561a8f977a85, here with thus connects always, however audio plays from phone....",
+      "revId": "31f397133dfda8fa8ad264bcdac685da56398b36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
