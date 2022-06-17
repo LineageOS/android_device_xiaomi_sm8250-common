@@ -2,10 +2,6 @@
 com.fingerprints.extension::IFingerprintNavigation                                      u:object_r:hal_fingerprint_hwservice:s0
 com.fingerprints.extension::IFingerprintSensorTest                                      u:object_r:hal_fingerprint_hwservice:s0
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                 u:object_r:hal_fingerprint_hwservice:s0
-vendor.goodix.hardware.cap.biometrics.fingerprint::IGoodixFingerprintDaemon             u:object_r:hal_fingerprint_hwservice:s0
-vendor.goodix.hardware.cap.biometrics.fingerprint::IGoodixFingerprintDaemonExt          u:object_r:hal_fingerprint_hwservice:s0
-vendor.goodix.hardware.interfaces.biometrics.fingerprint::IGoodixFingerprintDaemon      u:object_r:hal_fingerprint_hwservice:s0
-vendor.goodix.hardware.interfaces.biometrics.fingerprint::IGoodixFingerprintDaemonExt   u:object_r:hal_fingerprint_hwservice:s0
 
 # Mlipay
 vendor.xiaomi.hardware.mlipay::IMlipayService                       u:object_r:hal_mlipay_hwservice:s0
@@ -15,6 +11,3 @@ vendor.xiaomi.hardware.motor::IMotor                                u:object_r:h
 
 # NFC
 vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:hal_nfc_hwservice:s0
-
-# VPP
-::vppService                                                        u:object_r:vendor_hal_vpp_hwservice:s0
