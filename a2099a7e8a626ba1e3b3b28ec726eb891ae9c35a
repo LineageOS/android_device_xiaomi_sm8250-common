@@ -16,6 +16,23 @@
       "message": "lgtm but didn\u0027t test",
       "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0236b32f_37931b68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-17T21:45:10Z",
+      "side": 1,
+      "message": " seba@Seba-PC:/mnt/Android/dumps/xiaomi/alioth/miui_ALIOTHGlobal_V13.0.2.0.SKHMIXM_d4a06a38d5_12.0$ grep -r persist.vendor.setWFDInfo\n Il file binario system/system/framework/WfdCommon.jar corrisponde\n Il file binario system/system/framework/services.jar corrisponde\n\nThis prop shouldn\u0027t be labeled as a vendor prop",
+      "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
