@@ -1,3 +1,5 @@
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+
 allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 

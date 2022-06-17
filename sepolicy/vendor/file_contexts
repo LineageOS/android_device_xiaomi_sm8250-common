@@ -43,9 +43,9 @@
 
 # Fingerprint - data
 /data/gf_data(/.*)?                                                     u:object_r:fingerprint_data_file:s0
-/data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_data_file:s0
-/data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_data_file:s0
-/data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
 
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
