@@ -33,6 +33,41 @@
       "message": " seba@Seba-PC:/mnt/Android/dumps/xiaomi/alioth/miui_ALIOTHGlobal_V13.0.2.0.SKHMIXM_d4a06a38d5_12.0$ grep -r persist.vendor.setWFDInfo\n Il file binario system/system/framework/WfdCommon.jar corrisponde\n Il file binario system/system/framework/services.jar corrisponde\n\nThis prop shouldn\u0027t be labeled as a vendor prop",
       "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69e4de20_e5c0cdfe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:41:47Z",
+      "side": 1,
+      "message": "hm this isn\u0027t now labeled in system as should be? private sepol dir so, also logs complain about vendor_sys_wfd_debug_prop",
+      "parentUuid": "0236b32f_37931b68",
+      "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "203ee917_55b4c67b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:41:47Z",
+      "side": 1,
+      "message": "before: \n6-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:774): avc: denied { read } for name\u003d\"u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:775): avc: denied { open } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:776): avc: denied { getattr } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:777): avc: denied { map } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n\nnow: no spam",
+      "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
