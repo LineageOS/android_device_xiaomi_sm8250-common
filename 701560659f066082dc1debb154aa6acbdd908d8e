@@ -51,6 +51,24 @@
       "parentUuid": "321bb08f_e12e560f",
       "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8f0bdb2_d0b27d42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2022-06-18T08:50:33Z",
+      "side": 1,
+      "message": "Definition of the prop is on vendor from qcom: https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/blob/lineage-19.1/generic/vendor/test/property.te#L30",
+      "parentUuid": "f6e0f6d1_ee3862e6",
+      "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
