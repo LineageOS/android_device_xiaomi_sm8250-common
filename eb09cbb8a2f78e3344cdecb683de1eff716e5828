@@ -50,6 +50,23 @@
       "message": "and no labelled that prop makes wfd buggy cuz it cant properly detect your hw_id",
       "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5715c48_ddd56682",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-18T09:05:28Z",
+      "side": 1,
+      "message": "@Erfan since with this commit we\u0027re granting system to read a prop from vendor (which is even marked as vendor_internal_prop) should\u0027t we move it to public, or even better make a new label just for this prop?",
+      "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
