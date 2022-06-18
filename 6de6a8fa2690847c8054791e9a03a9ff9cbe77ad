@@ -16,6 +16,24 @@
       "message": "space",
       "revId": "6de6a8fa2690847c8054791e9a03a9ff9cbe77ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a75b7cb_d137127b",
+        "filename": "sepolicy/private/property_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-18T08:51:09Z",
+      "side": 1,
+      "message": "Test a build once before doing verified +1",
+      "parentUuid": "beb71919_bfa572f9",
+      "revId": "6de6a8fa2690847c8054791e9a03a9ff9cbe77ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
