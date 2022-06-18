@@ -85,6 +85,24 @@
       "parentUuid": "b5715c48_ddd56682",
       "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf3dfc37_d40a2f3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-18T09:09:41Z",
+      "side": 1,
+      "message": "maybe because it\u0027s user build. they might be using it in userdebug",
+      "parentUuid": "05ecae59_3cca72aa",
+      "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
