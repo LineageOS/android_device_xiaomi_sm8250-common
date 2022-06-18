@@ -16,6 +16,23 @@
       "message": "Fixed sepolicy invalid context in user build.\nLog:\ninvalid_context\u003d\"u:object_r:vendor_wfd_vendor_debug_prop:s0\"",
       "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "321bb08f_e12e560f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:37:16Z",
+      "side": 1,
+      "message": "this is prop read by system wfd stack so it shouldn\u0027t be in vendor anyway i think",
+      "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
