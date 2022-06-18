@@ -33,6 +33,23 @@
       "message": "actually, i get this on user build so idk about setting this as userdebug eng only is right....",
       "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0182df8a_e3f420eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:52:35Z",
+      "side": 1,
+      "message": "and no labelled that prop makes wfd buggy cuz it cant properly detect your hw_id",
+      "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
