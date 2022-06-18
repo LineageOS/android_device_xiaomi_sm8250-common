@@ -33,6 +33,24 @@
       "message": "this is prop read by system wfd stack so it shouldn\u0027t be in vendor anyway i think",
       "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6e0f6d1_ee3862e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:43:16Z",
+      "side": 1,
+      "message": "[adi@endeavour sm6150-common]$ rg --binary persist.vendor.setWFDInfo\nproprietary/framework/WfdCommon.jar: binary file matches (found \"\\0\" byte around offset 5)\nthis makes 06-07 22:08:35.838 13093 13111 E wfd_cfg_parser: Got HW_ID \u003d 365\nand that symbol contain: \n[adi@endeavour sm6150-common]$ rg --binary HW_ID\nproprietary/system_ext/lib64/libwfdconfigutils.so: binary file matches (found \"\\0\" byte around offset 7)\n\nproprietary/system_ext/lib/libwfdconfigutils.so: binary file matches (found \"\\0\" byte around offset 7)\n\njust merge this instead https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8250-common/+/332783",
+      "parentUuid": "321bb08f_e12e560f",
+      "revId": "701560659f066082dc1debb154aa6acbdd908d8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
