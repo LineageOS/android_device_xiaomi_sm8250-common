@@ -16,6 +16,23 @@
       "message": "looks fine now",
       "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ccc338d_79c73be8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26540
+      },
+      "writtenOn": "2022-06-18T08:51:43Z",
+      "side": 1,
+      "message": "actually, i get this on user build so idk about setting this as userdebug eng only is right....",
+      "revId": "eb09cbb8a2f78e3344cdecb683de1eff716e5828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
