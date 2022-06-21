@@ -16,6 +16,24 @@
       "message": "I\u0027m totally not qualified to judge this, but this should probably go into `hardware/xiaomi` as it did on 18.1 as well. There is nothing device-specific in here.\n\nAlso, the commit message is wrong, as it doesn\u0027t match what was eventually merged on 18.1.",
       "revId": "2135cf39a734f0d13d806b3246dd04e066cdf418",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4032578_3bdc46bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-21T14:55:30Z",
+      "side": 1,
+      "message": "Tell that to Arian, he\u0027s the only one opposing to that\nhttps://review.lineageos.org/c/LineageOS/android_hardware_xiaomi/+/331200",
+      "parentUuid": "ae0a0fad_aa311538",
+      "revId": "2135cf39a734f0d13d806b3246dd04e066cdf418",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
