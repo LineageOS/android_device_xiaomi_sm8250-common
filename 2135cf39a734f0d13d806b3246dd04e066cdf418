@@ -34,6 +34,24 @@
       "parentUuid": "ae0a0fad_aa311538",
       "revId": "2135cf39a734f0d13d806b3246dd04e066cdf418",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1f6cbac_0f7a28aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15734
+      },
+      "writtenOn": "2022-06-21T14:59:52Z",
+      "side": 1,
+      "message": "Well, the charter change is in, so I don\u0027t see why you couldn\u0027t restore that change.\n\nAs far as I can tell, if Arian wants to go through the additional effort of editing blobs, he can do so even with the stub libraries being present.",
+      "parentUuid": "d4032578_3bdc46bc",
+      "revId": "2135cf39a734f0d13d806b3246dd04e066cdf418",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
