@@ -22,6 +22,30 @@
       },
       "revId": "04856df78bcf8825014b2a1a3daeb218add09142",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d2ac5c9_468ca697",
+        "filename": "parts/src/org/lineageos/settings/popupcamera/PopupCameraUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-22T13:44:34Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "97fac22c_07a261d4",
+      "range": {
+        "startLine": 28,
+        "startChar": 32,
+        "endLine": 28,
+        "endChar": 40
+      },
+      "revId": "04856df78bcf8825014b2a1a3daeb218add09142",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
