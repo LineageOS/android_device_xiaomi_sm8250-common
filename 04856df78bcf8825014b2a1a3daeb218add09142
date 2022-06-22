@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97fac22c_07a261d4",
+        "filename": "parts/src/org/lineageos/settings/popupcamera/PopupCameraUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-22T09:23:53Z",
+      "side": 1,
+      "message": "This is an unnecessary and unrelated change.",
+      "range": {
+        "startLine": 28,
+        "startChar": 32,
+        "endLine": 28,
+        "endChar": 40
+      },
+      "revId": "04856df78bcf8825014b2a1a3daeb218add09142",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
