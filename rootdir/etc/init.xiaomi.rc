@@ -12,6 +12,9 @@ on init
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
 
+    chown system system /sys/touchpanel/fod_status
+    chmod 0644 /sys/touchpanel/fod_status
+
 on boot
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
