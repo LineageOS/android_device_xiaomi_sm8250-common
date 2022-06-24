@@ -16,12 +16,14 @@ allow hal_fingerprint_default {
   input_device
   vendor_sysfs_graphics
   sysfs_msm_subsys
+  sysfs_touchpanel
 }: dir r_dir_perms;
 
 allow hal_fingerprint_default {
   vendor_sysfs_fingerprint
   vendor_sysfs_graphics
   sysfs_msm_subsys
+  sysfs_touchpanel
 }: file rw_file_perms;
 
 r_dir_file(hal_fingerprint_default, firmware_file)

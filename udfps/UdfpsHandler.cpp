@@ -24,6 +24,7 @@ static const char* kFodUiPaths[] = {
 };
 
 static const char* kFodStatusPaths[] = {
+        "/sys/touchpanel/fod_status",
 };
 
 static bool readBool(int fd) {
