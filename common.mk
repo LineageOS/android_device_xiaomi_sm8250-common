@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.kona \
+    audio.primary.$(TARGET_BOARD_PLATFORM) \
     audio.r_submix.default \
     audio.usb.default \
 
@@ -200,7 +200,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    memtrack.kona
+    memtrack.$(TARGET_BOARD_PLATFORM)
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -242,6 +242,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+endif
+
+# FM
+ifeq ($(TARGET_BOARD_PLATFORM),lito)
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 endif
 
 # Gatekeeper
@@ -363,7 +371,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/powerhint_$(TARGET_BOARD_PLATFORM).json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
@@ -371,7 +379,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Public libraries
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+    $(LOCAL_PATH)/configs/public.libraries_$(TARGET_BOARD_PLATFORM).txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -442,9 +450,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+ifeq ($(TARGET_BOARD_PLATFORM),kona)
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi
+endif
 
 # USB
 PRODUCT_PACKAGES += \
@@ -482,9 +492,16 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+ifeq ($(TARGET_BOARD_PLATFORM),lito)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/wifi/WCNSS_qcom_cfg_lito.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+else
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/wifi/qca6390/WCNSS_qcom_cfg_kona.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
+endif
 
 # WiFi Display
 PRODUCT_PACKAGES += \
