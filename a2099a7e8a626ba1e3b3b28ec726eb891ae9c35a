@@ -68,6 +68,24 @@
       "message": "before: \n6-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:774): avc: denied { read } for name\u003d\"u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:775): avc: denied { open } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:776): avc: denied { getattr } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n06-07 22:08:35.848 13093 13093 I Binder:13093_2: type\u003d1400 audit(0.0:777): avc: denied { map } for path\u003d\"/dev/properties/u:object_r:vendor_wfd_sys_debug_prop:s0\" dev\u003d\"tmpfs\" ino\u003d13708 scontext\u003du:r:vendor_wfd_app:s0:c153,c256,c512,c768 tcontext\u003du:object_r:vendor_wfd_sys_debug_prop:s0 tclass\u003dfile permissive\u003d1 app\u003dcom.qualcomm.wfd.service\n\nnow: no spam",
       "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f533756_48435c9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-26T01:25:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69e4de20_e5c0cdfe",
+      "revId": "a2099a7e8a626ba1e3b3b28ec726eb891ae9c35a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
