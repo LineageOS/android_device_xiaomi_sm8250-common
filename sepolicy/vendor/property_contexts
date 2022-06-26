@@ -35,6 +35,13 @@ vendor.lineage.fod.                             u:object_r:vendor_fod_prop:s0
 ro.boot.factorybuild                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.boot.hwversion                               u:object_r:vendor_public_vendor_default_prop:s0
 
+# IMEI
+persist.radio.imei                              u:object_r:vendor_deviceid_prop:s0
+persist.radio.meid                              u:object_r:vendor_deviceid_prop:s0
+ro.ril.miui.imei                                u:object_r:vendor_deviceid_prop:s0
+ro.ril.oem.imei                                 u:object_r:vendor_deviceid_prop:s0
+ro.ril.oem.meid                                 u:object_r:vendor_deviceid_prop:s0
+
 # Power
 vendor.powerhal.state                           u:object_r:vendor_power_prop:s0
 vendor.powerhal.audio                           u:object_r:vendor_power_prop:s0
