@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bdece20_8cf42f06",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-26T01:22:36Z",
+      "side": 1,
+      "message": "I\u0027m keeping vendor.goodix.hardware.biometrics.fingerprint because goodix_fod HAL tries to register it",
+      "revId": "dca7540e32698310c6e521a7506b4a5452977fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
