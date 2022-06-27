@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47ec4c49_e8515c6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-27T03:52:03Z",
+      "side": 1,
+      "message": "it\u0027s common https://github.com/LineageOS/android_packages_resources_devicesettings/blob/lineage-19.1/res/mipmap-anydpi/ic_launcher.xml",
+      "revId": "84248b2ce740dff9ff378699a4f1b2f248a04394",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
