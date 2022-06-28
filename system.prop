@@ -41,8 +41,8 @@ ro.netflix.bsp_rev=Q8250-19134-1
 ro.vendor.qti.core_ctl_max_cpu=4
 ro.vendor.qti.core_ctl_min_cpu=2
 
-# Netmgr
-persist.vendor.data.mode=concurrent
+# Radio
+persist.vendor.radio.report_codec=1
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
