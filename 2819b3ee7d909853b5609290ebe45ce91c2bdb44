@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5e62578_3cf87b23",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-28T13:11:37Z",
+      "side": 1,
+      "message": "Someone reported no reported number with incoming calls and I suspect it\u0027s because we didn\u0027t add persist.vendor.radio.redir_party_num, while at it I updated all the props but it surely needs testing on all devices other than lmi",
+      "revId": "2819b3ee7d909853b5609290ebe45ce91c2bdb44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
