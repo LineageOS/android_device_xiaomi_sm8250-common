@@ -16,6 +16,23 @@
       "message": "Dynamic FPS props. i think its miui specific.",
       "revId": "c9816e9517fe31836b77494fd102bb71b6e3b8b6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f0ed66d_1ee76284",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-28T11:50:18Z",
+      "side": 1,
+      "message": "Checked device tree and blobs, no match",
+      "revId": "c9816e9517fe31836b77494fd102bb71b6e3b8b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
