@@ -29,3 +29,5 @@ allow hal_motor_default {
   mnt_vendor_file
   vendor_persist_sensors_file
 }:file rw_file_perms;
+
+set_prop(hal_motor_default, vendor_motor_prop)
