@@ -14,11 +14,6 @@ ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.camera.res.fmq.size                          u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size                          u:object_r:vendor_camera_prop:s0
 
-# DFPS
-persist.vendor.dfps.level                       u:object_r:vendor_display_prop:s0
-persist.vendor.video.dfps.level                 u:object_r:vendor_display_prop:s0
-persist.vendor.power.dfps.level                 u:object_r:vendor_display_prop:s0
-
 # Fingerprint
 gf.debug.                                       u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.fpc.                             u:object_r:vendor_fingerprint_prop:s0
