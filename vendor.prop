@@ -220,29 +220,31 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.qcomsysd.enabled=1
 
 # Radio
+persist.radio.NO_STAPA=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.dynamic_sar=false
 persist.radio.multisim.config=dsds
-persist.radio.snapshot_enabled=0
-persist.radio.snapshot_timer=0
-persist.rcs.otp_sms_port=0
-persist.rcs.supported=1
-persist.vendor.data.iwlan.enable=true
+persist.rcs.supported=0
+persist.vendor.data.mode=concurrent
 persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.arfcn_test_mode=3
-persist.vendor.radio.bar_fake_gcell=1
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.cdma_cap=true
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1
-persist.vendor.radio.efssync=true
+persist.vendor.radio.dynamic_sar=1
+persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.force_on_dc=true
-persist.vendor.radio.ignore_dom_time=10
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.mbn_cdma=/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw_j11.txt
 persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.process_sups_ind=1
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
-persist.vendor.radio.uicc_se_enabled=true
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-ro.com.android.dataroaming=false
+ro.com.android.dataroaming=true
 ro.telephony.default_network=22,22
 
 # Seamless transfer
