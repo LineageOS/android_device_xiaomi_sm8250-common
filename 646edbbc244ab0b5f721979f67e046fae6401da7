@@ -16,6 +16,24 @@
       "message": "Isn\u0027t this unused? \nhttps://github.com/LineageOS/android_device_xiaomi_sm8250-common/commit/8f4e40d97b72330bd5f4ff2dac21f5f6e1a8786a",
       "revId": "646edbbc244ab0b5f721979f67e046fae6401da7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "362e4088_fd330fda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-28T10:03:07Z",
+      "side": 1,
+      "message": "vendor.lineage.motor.enable was used on init scripts, but motor service sets props like persist.vendor.motor.calibration",
+      "parentUuid": "6d0bfe9b_8d96674c",
+      "revId": "646edbbc244ab0b5f721979f67e046fae6401da7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
