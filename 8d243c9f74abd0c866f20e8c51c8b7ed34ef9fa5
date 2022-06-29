@@ -16,6 +16,24 @@
       "message": "also ro.config.media_vol_default\u003d10 on stock",
       "revId": "8d243c9f74abd0c866f20e8c51c8b7ed34ef9fa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f5ad2df_8039fe2e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-29T19:37:24Z",
+      "side": 1,
+      "message": "It\u0027s a MIUI thing, that prop is only used to set the default volume at first boot, we don\u0027t need it",
+      "parentUuid": "61078312_991afc1d",
+      "revId": "8d243c9f74abd0c866f20e8c51c8b7ed34ef9fa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
