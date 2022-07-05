@@ -16,6 +16,24 @@
       "message": "Does HBM trigger for you when watching HDR content?",
       "revId": "10544a6faca5bb7f3ac39927a08eae174a934ebe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46c71446_75ce0ead",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-05T07:53:51Z",
+      "side": 1,
+      "message": "i seen it switches when playing hdr content",
+      "parentUuid": "98da1545_2a9cddc8",
+      "revId": "10544a6faca5bb7f3ac39927a08eae174a934ebe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
