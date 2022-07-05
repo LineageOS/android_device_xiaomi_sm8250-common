@@ -68,6 +68,24 @@
       "parentUuid": "f5e62578_3cf87b23",
       "revId": "2819b3ee7d909853b5609290ebe45ce91c2bdb44",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "650cb611_e0be6fbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-05T12:35:57Z",
+      "side": 1,
+      "message": "This is sm8250, and it was causing issues without the prop",
+      "parentUuid": "2c8f8f10_547efaac",
+      "revId": "2819b3ee7d909853b5609290ebe45ce91c2bdb44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
