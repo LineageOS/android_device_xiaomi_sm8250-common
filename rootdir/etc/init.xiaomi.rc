@@ -13,6 +13,7 @@ on init
     chown system system /dev/goodix_fp
 
 on boot
+    chown system system /sys/class/power_supply/bms/fastcharge_mode
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable
@@ -25,6 +26,7 @@ on boot
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/request_vreg
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
+    chmod 0660 /sys/class/power_supply/bms/fastcharge_mode
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/hw_reset

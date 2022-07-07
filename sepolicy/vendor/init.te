@@ -3,6 +3,8 @@ allow init debugfs_tracing_debug:dir mounton;
 
 allow init same_process_hal_file:file execute;
 
+allow init sysfs_battery_supply:file { write open };
+
 allow init proc_last_kmsg:file {
   r_file_perms
   setattr
