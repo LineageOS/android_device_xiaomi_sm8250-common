@@ -36,10 +36,6 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
 
-    # Block layer tuning: discard chunk size up to 128MB
-    # Otherwise, contiguous discards can be merged
-    write /sys/block/sda/queue/discard_max_bytes 134217728
-
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
