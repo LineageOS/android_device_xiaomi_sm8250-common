@@ -161,8 +161,6 @@ on boot
     chmod 0444 /sys/class/drm/card0-DSI-1/dynamic_fps
     chown system system /sys/class/drm/card0-DSI-1/doze_brightness
     chmod 0664 /sys/class/drm/card0-DSI-1/doze_brightness
-    chown system system /sys/class/drm/card0-DSI-1/disp_count
-    chmod 0664 /sys/class/drm/card0-DSI-1/disp_count
     chown system system /sys/class/drm/card0-DSI-1/disp_pcc
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_pcc
     #camera motor
