@@ -89,7 +89,7 @@ on early-init
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
 
     # Disable UFS clock scaling
-    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
+    write /sys/bus/platform/devices/${ro.boot.bootdevice}/clkscale_enable 0
 
 on init
     # Setup permission for Power HAL
