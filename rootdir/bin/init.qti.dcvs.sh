@@ -45,12 +45,13 @@
             done
 
             #Enable compute governor for gold latfloor
-            for latfloor in $device/*cpu-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
+            for latfloor in $device/*cpu*-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
             do
                 echo "compute" > $latfloor/governor
                 echo 8 > $latfloor/polling_interval
             done
 
+            if [ "$ProductName" == "kona" ]; then
             for qoslat in $device/*qoslat/devfreq/*qoslat
 	    do
 	        echo "mem_latency" > $qoslat/governor
@@ -63,15 +64,46 @@
                 echo "cdspl3" > $l3cdsp/governor
 	    done
 
+            fi
+
             #Gold L3 ratio ceil
+            if [ "$ProductName" == "kona" ]; then
 	    for l3gold in $device/*qcom,devfreq-l3/*cpu4-cpu-l3-lat/devfreq/*cpu4-cpu-l3-lat
 	    do
 	        echo 4000 > $l3gold/mem_latency/ratio_ceil
 	    done
+            elseif if [ "$ProductName" == "lito" ]; then
+        for l3gold in $device/*qcom,devfreq-l3/*cpu6-cpu-l3-lat/devfreq/*cpu6-cpu-l3-lat
+        do
+            echo 4000 > $l3gold/mem_latency/ratio_ceil
+        done
+        fi
+        fi
 
             #Prime L3 ratio ceil
 	    for l3prime in $device/*qcom,devfreq-l3/*cpu7-cpu-l3-lat/devfreq/*cpu7-cpu-l3-lat
             do
-	        echo 20000 > $l3prime/mem_latency/ratio_ceil
+                if [ "$ProductName" == "kona" ]; then
+	                echo 20000 > $l3prime/mem_latency/ratio_ceil
+                else if [ "$ProductName" == "lito" ]; then
+                    echo 4000 > $l3prime/mem_latency/ratio_ceil
+                    fi
+                fi
 	    done
     done;
+
+    if [ -f /sys/devices/soc0/soc_id ]; then
+       soc_id=`cat /sys/devices/soc0/soc_id`
+    else
+       soc_id=`cat /sys/devices/system/soc/soc0/id`
+    fi
+
+    case "$soc_id" in
+        "434" | "459" )
+            for gold_memlat in $device/*qcom,devfreq-l3/*cpu6*-lat/devfreq/*cpu6*-lat
+            do
+                echo 25000 > $gold_memlat/mem_latency/wb_filter_ratio
+                echo 60 > $gold_memlat/mem_latency/wb_pct_thres
+            done;
+    ;;
+    esac
