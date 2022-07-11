@@ -280,7 +280,14 @@ vendor/lib64/libgsl.so|a8490afe3f5423eefb5ea2131925d78112233479
 vendor/lib64/libllvm-glnext.so|57d8292057944419e914b44807e58de0eb2dd6f5
 vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
-# Graphics (Adreno firmware)
+# Graphics (Adreno 620 firmware) - from monet
+vendor/firmware/a620_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
+vendor/firmware/a620_zap.b01|dc5ca6102706a75811127b22dbd76f6e5782638d
+vendor/firmware/a620_zap.b02|0403cd18344b2918106f73079b2bb8aa23928509
+vendor/firmware/a620_zap.elf|5294a7fc1c33a1c2f9a0e2150cba0d6059bd83f5
+vendor/firmware/a620_zap.mdt|018cfc2de09430274f460ee6e677862154df5984
+
+# Graphics (Adreno 650 firmware)
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.b00

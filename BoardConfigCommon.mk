@@ -125,7 +125,11 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+ifeq ($(TARGET_BOARD_PLATFORM),lito)
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
+else
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -181,7 +185,9 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system_$(TARGET_BOARD_PLATFORM).prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_$(TARGET_BOARD_PLATFORM).prop
 
 # Recovery
 ifeq ($(TARGET_IS_VAB),true)
@@ -217,6 +223,9 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+ifeq ($(TARGET_BOARD_PLATFORM),kona)
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor_kona
+endif
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Touch
