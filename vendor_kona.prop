@@ -1,0 +1,6 @@
+# Bluetooth
+persist.vendor.qcom.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=hastings
+
+# Chipset
+ro.soc.model=SM8250

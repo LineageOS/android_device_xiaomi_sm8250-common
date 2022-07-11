@@ -25,10 +25,18 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "alioth apollon cas cmi elish enuma lmi thyme umi"
+write_headers "alioth apollon cas cmi elish enuma lmi monet thyme umi"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+
+printf "\n%s\n" "ifeq (\$(TARGET_BOARD_PLATFORM),kona)" >> "${PRODUCTMK}"
+write_makefiles "${MY_DIR}/proprietary-files-kona.txt" true
+echo "endif" >> "${PRODUCTMK}"
+
+printf "\n%s\n" "ifeq (\$(TARGET_BOARD_PLATFORM),lito)" >> "${PRODUCTMK}"
+write_makefiles "${MY_DIR}/proprietary-files-lito.txt" true
+echo "endif" >> "${PRODUCTMK}"
 
 # Finish
 write_footers
