@@ -80,6 +80,11 @@ if [ -z "${ONLY_TARGET}" ]; then
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    if [ $DEVICE == monet ]; then 
+        extract "${MY_DIR}/proprietary-files-lito.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    else
+        extract "${MY_DIR}/proprietary-files-kona.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    fi
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then

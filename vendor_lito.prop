@@ -1,0 +1,6 @@
+# Bluetooth
+persist.vendor.qcom.bluetooth.soc=cherokee
+vendor.qcom.bluetooth.soc=cherokee
+
+# Chipset
+ro.soc.model=SM7250
