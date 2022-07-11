@@ -52,6 +52,24 @@
       "parentUuid": "cebf178b_3644407b",
       "revId": "b8702bba88b3511c3aaa5c3b72714a06dbf5eb65",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "19c76485_f9aed843",
+        "filename": "common.mk",
+        "patchSetId": 17
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 30049
+      },
+      "writtenOn": "2022-07-11T12:55:27Z",
+      "side": 1,
+      "message": "There is no reason to keep both, better use TARGET_BOARD_PLATFORM and keep what we need.",
+      "parentUuid": "4a5fad1d_a2aba17f",
+      "revId": "b8702bba88b3511c3aaa5c3b72714a06dbf5eb65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
