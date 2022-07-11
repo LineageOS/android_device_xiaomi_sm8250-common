@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb80e41a_5ffdf58c",
+        "filename": "extract-files.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-11T05:18:47Z",
+      "side": 1,
+      "message": "or define a new platform variable in script",
+      "revId": "65c9d0332cabf41bbbea6771018fab00b326cebe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
