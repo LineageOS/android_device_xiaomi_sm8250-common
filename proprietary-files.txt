@@ -1,5 +1,6 @@
 # Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.3.0.SKHMIXM release-keys
 # lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# monet: monet 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys
 # nio: S1RN32.19
 
 # ADSP
@@ -84,12 +85,16 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # Charger (HVDCP)
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
+
+# Charger (HVDCP lito) - from monet
+vendor/bin/hvdcp_opti:vendor/bin/hvdcp_opti_lito|d681d5003d8bf974656de474ba837b135e194040
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
+
+# Charger (Mi Turbo Charge lito) - from monet
+vendor/bin/batterysecret:vendor/bin/batterysecret_lito|d921680289b683be825c2e4ba9ccb53a9154ef9b
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -295,7 +300,14 @@ vendor/lib64/libgsl.so|a8490afe3f5423eefb5ea2131925d78112233479
 vendor/lib64/libllvm-glnext.so|57d8292057944419e914b44807e58de0eb2dd6f5
 vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
-# Graphics (Adreno firmware)
+# Graphics (Adreno 620 firmware) - from monet
+vendor/firmware/a620_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
+vendor/firmware/a620_zap.b01|efc2bb078ce9cd9622b135db0c379cd6ce3bfb8a
+vendor/firmware/a620_zap.b02|0403cd18344b2918106f73079b2bb8aa23928509
+vendor/firmware/a620_zap.elf|6d3b11560e3ddd9073409b4c77d0dea0340e8318
+vendor/firmware/a620_zap.mdt|42afd48f7c39c3aea69a23574b0b9d66b4b40d53
+
+# Graphics (Adreno 650 firmware)
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.b00
