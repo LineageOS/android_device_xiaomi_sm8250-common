@@ -1,0 +1,17 @@
+# Unpinned blobs from monet 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys
+
+# Charger (HVDCP)
+vendor/bin/hvdcp_opti
+
+# Charger (Mi Turbo Charge)
+vendor/bin/batterysecret
+
+# IPA firmware
+vendor/etc/init/ipa_fws.rc
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt

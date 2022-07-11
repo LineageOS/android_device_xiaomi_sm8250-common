@@ -1,0 +1,2 @@
+# Block devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp                     u:object_r:vendor_efs_boot_dev:s0
