@@ -16,6 +16,24 @@
       "message": "should we add something like TARGET_SUPPORT_FMRADIO instead of this?.",
       "revId": "3a58563ad93778069617e19ae22dbd9e4e76c44d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "973e221f_0089bc3c",
+        "filename": "common.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 30049
+      },
+      "writtenOn": "2022-07-11T13:33:38Z",
+      "side": 1,
+      "message": "Does Kona devices support FM Radio?",
+      "parentUuid": "6b8b56cc_baf5f6b6",
+      "revId": "3a58563ad93778069617e19ae22dbd9e4e76c44d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
