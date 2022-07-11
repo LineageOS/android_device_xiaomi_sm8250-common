@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b8b56cc_baf5f6b6",
+        "filename": "common.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-11T13:03:27Z",
+      "side": 1,
+      "message": "should we add something like TARGET_SUPPORT_FMRADIO instead of this?.",
+      "revId": "3a58563ad93778069617e19ae22dbd9e4e76c44d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
