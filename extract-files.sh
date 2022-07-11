@@ -69,10 +69,14 @@ function blob_fixup() {
 LEGACY_MIFARE_READER=1
 EOF
             ;;
-        vendor/etc/media_codecs_kona.xml)
-            sed -i "/media_codecs_dolby_audio.xml/d" "${2}"
-            ;;
     esac
+    if [ $DEVICE != monet ]; then
+        case "${1}" in
+            vendor/etc/media_codecs_kona.xml)
+                sed -i "/media_codecs_dolby_audio.xml/d" "${2}"
+                ;;
+        esac
+    fi
 }
 
 if [ -z "${ONLY_TARGET}" ]; then
@@ -80,6 +84,11 @@ if [ -z "${ONLY_TARGET}" ]; then
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    if [ $DEVICE == monet ]; then
+        extract "${MY_DIR}/proprietary-files-lito.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    else
+        extract "${MY_DIR}/proprietary-files-kona.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    fi
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
