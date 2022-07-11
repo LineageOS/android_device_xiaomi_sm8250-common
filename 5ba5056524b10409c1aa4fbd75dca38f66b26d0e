@@ -71,6 +71,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1ce93c0_f760e9fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-11T07:17:19Z",
+      "side": 1,
+      "message": "\u003e we don\u0027t wanna sync it for other devices\nWhy? With this monet will sync 2 kernel sources anyway",
+      "parentUuid": "7d077a00_3388de60",
+      "revId": "5ba5056524b10409c1aa4fbd75dca38f66b26d0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1c0179d4_24e341a1",
