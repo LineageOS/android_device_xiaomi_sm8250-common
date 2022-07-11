@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dfe2cd6_dc005067",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-11T00:13:21Z",
+      "side": 1,
+      "message": "Extraction logic won\u0027t work plus missing media codecs configs split",
+      "revId": "5ba5056524b10409c1aa4fbd75dca38f66b26d0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c0179d4_24e341a1",
+        "filename": "common.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-11T00:13:21Z",
+      "side": 1,
+      "message": "There\u0027s a prop we can set to make perfmgr HAL load a specific config, ideally we should copy both configs and set that prop",
+      "range": {
+        "startLine": 376,
+        "startChar": 26,
+        "endLine": 376,
+        "endChar": 65
+      },
+      "revId": "5ba5056524b10409c1aa4fbd75dca38f66b26d0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
