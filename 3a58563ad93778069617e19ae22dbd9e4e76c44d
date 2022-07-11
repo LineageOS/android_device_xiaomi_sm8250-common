@@ -34,6 +34,24 @@
       "parentUuid": "6b8b56cc_baf5f6b6",
       "revId": "3a58563ad93778069617e19ae22dbd9e4e76c44d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "632f5bb7_c32c93a5",
+        "filename": "common.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-11T13:42:07Z",
+      "side": 1,
+      "message": "None in kona supports fmradio. does all lito supports fm radio?. then lets keep it like this.",
+      "parentUuid": "973e221f_0089bc3c",
+      "revId": "3a58563ad93778069617e19ae22dbd9e4e76c44d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
