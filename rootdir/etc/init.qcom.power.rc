@@ -46,8 +46,6 @@ on property:sys.boot_completed=1
 
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-3,5-6
-    write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
@@ -69,6 +67,16 @@ on property:sys.boot_completed=1
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
+on property:sys.boot_completed=1 && property:ro.board.platform=kona
+    # Setup runtime cpusets
+    write /dev/cpuset/foreground/cpus 0-3,5-6
+    write /dev/cpuset/background/cpus 0-1
+
+on property:sys.boot_completed=1 && property:ro.board.platform=lito
+    # Setup runtime cpusets
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/background/cpus 0-2
+
 on property:init.svc.recovery=running
     trigger enable-low-power
 
@@ -78,11 +86,6 @@ on early-init
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
 
-    # configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
-
     # configure governor settings for big big CPU
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
@@ -90,6 +93,18 @@ on early-init
 
     # Disable UFS clock scaling
     write /sys/bus/platform/devices/${ro.boot.bootdevice}/clkscale_enable 0
+
+on early-init && property:ro.board.platform=kona
+    # configure governor settings for big cluster
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
+
+on early-init && property:ro.board.platform=lito
+    # configure governor settings for big cluster
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
 
 on init
     # Setup permission for Power HAL
@@ -101,9 +116,6 @@ on init
 
     # Boot time cpuset and stune
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/restricted/cpus 2-5
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.prefer_high_cap 1
@@ -159,3 +171,15 @@ on init
     # report max frequency to unity tasks.
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+on init && property:ro.board.platform=kona
+    # Boot time cpuset
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/background/cpus 0-5
+    write /dev/cpuset/system-background/cpus 0-5
+
+on init && property:ro.board.platform=kona
+    # Boot time cpuset
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-3
