@@ -1,0 +1,9 @@
+# Bluetooth
+persist.vendor.qcom.bluetooth.soc=cherokee
+vendor.qcom.bluetooth.soc=cherokee
+
+# Chipset
+ro.soc.model=SM7250
+
+# Power
+vendor.powerhal.config=powerhint_lito.json

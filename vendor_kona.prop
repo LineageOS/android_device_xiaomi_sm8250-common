@@ -1,0 +1,9 @@
+# Bluetooth
+persist.vendor.qcom.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=hastings
+
+# Chipset
+ro.soc.model=SM8250
+
+# Power
+vendor.powerhal.config=powerhint_kona.json
