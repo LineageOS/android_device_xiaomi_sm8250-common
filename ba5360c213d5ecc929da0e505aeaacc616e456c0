@@ -34,6 +34,24 @@
       "parentUuid": "59e884e7_12586d9f",
       "revId": "ba5360c213d5ecc929da0e505aeaacc616e456c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67c83cfc_2a0ac1e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-12T10:31:40Z",
+      "side": 1,
+      "message": "sure its fine globally? even in recovery?",
+      "parentUuid": "d7526026_c174d1c1",
+      "revId": "ba5360c213d5ecc929da0e505aeaacc616e456c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
