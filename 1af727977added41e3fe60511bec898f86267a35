@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aafaa649_57a8df3c",
+        "filename": "rootdir/bin/init.qti.dcvs.sh",
+        "patchSetId": 20
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 30049
+      },
+      "writtenOn": "2022-07-13T19:16:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37061e89_5b888851",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6509a116_3a81499d",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f7bc0dd_09b4940b",
+        "filename": "rootdir/bin/init.qti.dcvs.sh",
+        "patchSetId": 20
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 30049
+      },
+      "writtenOn": "2022-07-13T19:16:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6509a116_3a81499d",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "acd583eb_74209728",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-07-13T17:54:18Z",
       "side": 1,
       "message": "it would be cleaner if we could move all these to two rc files.",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "42597284_d5d7188e",
+        "filename": "rootdir/etc/init.qcom.power.rc",
+        "patchSetId": 20
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 30049
+      },
+      "writtenOn": "2022-07-13T19:16:50Z",
+      "side": 1,
+      "message": "Not really needed",
+      "parentUuid": "acd583eb_74209728",
       "revId": "1af727977added41e3fe60511bec898f86267a35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
