@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37061e89_5b888851",
+        "filename": "rootdir/bin/init.qti.dcvs.sh",
+        "patchSetId": 20
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-13T17:54:18Z",
+      "side": 1,
+      "message": ".",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6509a116_3a81499d",
+        "filename": "rootdir/bin/init.qti.dcvs.sh",
+        "patchSetId": 20
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-13T17:54:18Z",
+      "side": 1,
+      "message": "change from tab to space maybe while we are here.",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "acd583eb_74209728",
+        "filename": "rootdir/etc/init.qcom.power.rc",
+        "patchSetId": 20
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-13T17:54:18Z",
+      "side": 1,
+      "message": "it would be cleaner if we could move all these to two rc files.",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51e64aa6_8fbd1337",
+        "filename": "rootdir/etc/init.xiaomi.rc",
+        "patchSetId": 20
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-13T17:54:18Z",
+      "side": 1,
+      "message": "make init.kona.rc and init.lito.rc instead of this?",
+      "revId": "1af727977added41e3fe60511bec898f86267a35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
