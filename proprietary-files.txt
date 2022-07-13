@@ -1,5 +1,6 @@
 # Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.3.0.SKHMIXM release-keys
 # lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# monet: monet_global 12 RKQ1.200826.002 V13.0.3.0.SJIMIXM release-keys
 # nio: S1RN32.19
 
 # ADSP
