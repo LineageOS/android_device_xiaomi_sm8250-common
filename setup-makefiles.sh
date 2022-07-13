@@ -30,6 +30,10 @@ write_headers "alioth apollon cas cmi elish enuma lmi thyme umi"
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
+printf "\n%s\n" "ifeq (\$(TARGET_HAS_FM),true)" >> "${PRODUCTMK}"
+write_makefiles "${MY_DIR}/proprietary-files-fm.txt" true
+echo "endif" >> "${PRODUCTMK}"
+
 # Finish
 write_footers
 

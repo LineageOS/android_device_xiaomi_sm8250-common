@@ -1,0 +1,9 @@
+# FM - from monet
+system_ext/lib64/fm_helium.so|dd0aa17b1b5d0cbce34d6d6343dc49883c5bfe73
+system_ext/lib64/libfm-hci.so|66993341bb7c9ea05ac7621e043bd3de86c06a8a
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|08cfa624526c3b71797b84e704e8cc63d47ede02
+vendor/bin/fm_qsoc_patches|ca5c6c32db65193a82495e93c59e89ae44d024c0
+vendor/etc/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
+vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|f790744707da73a57267b4697fe33d62be766f3a
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|86e247473332ecb950164eb115d7fea6214c7a45
