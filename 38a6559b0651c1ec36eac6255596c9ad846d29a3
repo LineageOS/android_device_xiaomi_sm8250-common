@@ -16,6 +16,24 @@
       "message": "some of the configs are same for kona and lito, like media_profiles_V1_0.xml, media_profiles.xml\n",
       "revId": "38a6559b0651c1ec36eac6255596c9ad846d29a3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16f6c546_a476dbb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 28
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-14T04:47:11Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "aa6e3612_929f9a1e",
+      "revId": "38a6559b0651c1ec36eac6255596c9ad846d29a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
