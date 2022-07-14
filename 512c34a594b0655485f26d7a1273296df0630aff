@@ -16,6 +16,24 @@
       "message": "no. just add a platform variable in script and check.",
       "revId": "512c34a594b0655485f26d7a1273296df0630aff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2386f570_0c011ca7",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-14T04:16:38Z",
+      "side": 1,
+      "message": "its fine i guess",
+      "parentUuid": "cac8993f_9066bcab",
+      "revId": "512c34a594b0655485f26d7a1273296df0630aff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
