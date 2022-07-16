@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "436c05f9_fdc90723",
+        "filename": "rootdir/bin/init.qti.dcvs.sh",
+        "patchSetId": 30
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-16T15:57:30Z",
+      "side": 1,
+      "message": "elseif if",
+      "revId": "6374e2700ecb22cbf490ff50352cd7de464b35fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
