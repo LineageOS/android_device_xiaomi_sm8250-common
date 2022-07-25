@@ -247,6 +247,9 @@ on post-fs-data
 
     mkdir /data/vendor/misc 01771 system system
 
+    # Create directory used for dump collection
+    mkdir /data/vendor/ssrdump 0770 root system
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
@@ -294,6 +297,9 @@ on post-fs-data
 
     # Create directory used by audio subsystem
     mkdir /data/vendor/audio 0771 audio audio
+
+    # Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
 
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
@@ -432,6 +438,16 @@ on property:graphics.display.kernel_idle_timer.enabled=false
     # Disable aggressive idle mode switching
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
 
+service vendor.ssr_setup /system/vendor/bin/ssr_setup
+    oneshot
+    disabled
+
+service vendor.ss_ramdump /system/bin/subsystem_ramdump_system 2
+    class late_start
+#   user system
+    group system everybody
+    disabled
+
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio
@@ -447,6 +463,9 @@ on property:ro.vendor.iocgrp.config=1
 on property:persist.vendor.sys.per_app_memcg=1
     setprop ro.config.per_app_memcg true
 
+on property:persist.sys.ssr.enable_debug=*
+    write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
+
 on property:persist.sys.mba_boot_timeout=*
     write /sys/module/pil_msa/parameters/pbl_mba_boot_timeout_ms ${persist.sys.mba_boot_timeout}
 
@@ -455,6 +474,17 @@ on property:persist.sys.modem_auth_timeout=*
 
 on property:persist.sys.pil_proxy_timeout=*
     write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.sys.pil_proxy_timeout}
+
+on property:persist.vendor.ssr.restart_level=*
+    start vendor.ssr_setup
+
+on property:persist.vendor.ssr.enable_ramdumps=1
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
+    mkdir /data/vendor/ramdump_ssr 770 system system
+#   start vendor.ss_ramdump
+
+on property:persist.vendor.ssr.enable_ramdumps=0
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
 
 on property:persist.vendor.sys.rawdump_copy=1
     write /sys/kernel/dload/emmc_dload 1
@@ -484,12 +514,23 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/core-%e-%p"
 
+on property:vendor.bluetooth.startwdsdaemon=true
+    start vendor.bt_wdsdaemon
+
+on property:vendor.bluetooth.startwdsdaemon=false
+    stop vendor.bt_wdsdaemon
+
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
 on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
+
+service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
+    class core
+    user root
+    oneshot
 
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
@@ -510,6 +551,13 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
+    oneshot
+
+service vendor.bt_wdsdaemon /system/vendor/bin/wdsdaemon -su
+    class late_start
+    user root
+    group bluetooth diag system wakelock
+    disabled
     oneshot
 
 service qmiproxy /system/bin/qmiproxy
@@ -667,6 +715,18 @@ service loc_launcher /system/vendor/bin/loc_launcher
     user gps
     group gps
 
+service drmdiag /system/vendor/bin/drmdiagapp
+    class late_start
+     user root
+     disabled
+     oneshot
+
+on property:drmdiag.load=1
+    start drmdiag
+
+on property:drmdiag.load=0
+    stop drmdiag
+
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
@@ -684,6 +744,18 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     group root system wakelock graphics
     disabled
     oneshot
+
+service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
+    class late_start
+    group wifi inet
+    disabled
+    oneshot
+
+service wifi-crda /vendor/bin/init.crda.sh
+   class late_start
+   user root
+   disabled
+   oneshot
 
 on property:sys.boot_completed=1
     start qcom-post-boot
@@ -708,6 +780,14 @@ service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/glob
     group wifi
     disabled
     oneshot
+
+service ims_regmanager /system/vendor/bin/exe-ims-regmanagerprocessnative
+    class late_start
+    group net_bt_admin inet radio wifi
+    disabled
+
+on property:persist.ims.regmanager.mode=1
+    start ims_regmanager
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
@@ -744,6 +824,12 @@ service charger /system/bin/charger
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
+
+service vendor.ssr_diag /system/vendor/bin/ssr_diag
+    class late_start
+    user system
+    group system
+    disabled
 
 service hvdcp /system/bin/hvdcp
     class core
@@ -784,6 +870,44 @@ service diag_mdlog_stop /vendor/bin/diag_mdlog -k
     group system oem_2901 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
+
+service diag_mdlog_auto_start /vendor/bin/diag_mdlog -c -n 20
+    class late_start
+    user system
+    group system oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service diag_mdlog_auto_stop /vendor/bin/diag_mdlog -k
+    class late_start
+    user system
+    group system oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+on property:persist.vendor.radio.diag_log_trriger=modem
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=gps
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=sensor
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=audio
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
 
 service qlogd /system/xbin/qlogd
     socket qlogd stream 0662 system system

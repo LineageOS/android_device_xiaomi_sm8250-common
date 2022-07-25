@@ -11,8 +11,6 @@ libHalSuperSensorServer.so 64
 libSuperSensor.so 64
 libSuperSensorCPU.so 64
 libarcsoft_beautyshot.so 64
-libarcsoft_dualcam_refocus_image.so 64
-libarcsoft_dualcam_refocus_video.so 64
 libarcsoft_portrait_lighting.so 64
 libarcsoft_portrait_lighting_c.so 64
 libarcsoft_high_dynamic_range.so 64
@@ -21,7 +19,6 @@ libmialgo_image_colourkeeping.so 64
 libarcsoft_distortion_correction.so 64
 libarcsoft_bodyslim.so 64
 libalCFR.so 64
-libsupermoon.so 64
 libcvp_common.so
 libalhLDC.so 64
 libalAILDC.so 64
@@ -30,6 +27,7 @@ libarcsoft_superportrait.so 64
 libmialgo_ie_capture.so 64
 libmialgo_utils.so 64
 libxmi_high_dynamic_range.so 64
+libxmi_high_dynamic_range_cdsp.so 64
 libxmi_hdr_checker.so 64
 libMIAIHDRhvx_interface.so 64
 libcvp2.so
@@ -41,3 +39,11 @@ libsnpe_dsp_domains_v2.so 64
 libbeauty_face_interface.so 64
 libmiai_portraitsupernight.so 64
 libEGL.so
+librelight_only.so 64
+libwa_depth.so 64
+libanc_dc_base.so 64
+libwa_refocus.so 64
+libmiphone_capture_ldc.so 64
+com.xiaomi.plugin.ldc.so 64
+libwa_widelens_undistort.so 64
+libarcsoft_mf_superresolution.so 64
