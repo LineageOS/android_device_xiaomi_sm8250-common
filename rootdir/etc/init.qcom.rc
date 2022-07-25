@@ -295,6 +295,9 @@ on post-fs-data
     # Create directory used by audio subsystem
     mkdir /data/vendor/audio 0771 audio audio
 
+    # Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
+
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
     mkdir /data/vendor/audio/acdbdata/delta 0770 media audio
