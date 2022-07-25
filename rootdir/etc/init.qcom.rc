@@ -295,6 +295,9 @@ on post-fs-data
     # Create directory used by audio subsystem
     mkdir /data/vendor/audio 0771 audio audio
 
+    # Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
+
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
     mkdir /data/vendor/audio/acdbdata/delta 0770 media audio
@@ -490,6 +493,11 @@ on property:vendor.media.target.version=*
 on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
+
+service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
+    class core
+    user root
+    oneshot
 
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
