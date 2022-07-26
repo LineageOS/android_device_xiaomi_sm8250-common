@@ -726,12 +726,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soter service (Tencent)
 -vendor/app/SoterService/SoterService.apk
 
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-
 # Time services
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
