@@ -88,6 +88,11 @@
 # SSR
 /sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
 
+# Thermal
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel           u:object_r:hal_thermal_default_exec:s0
+/vendor/bin/thermal_symlinks                                            u:object_r:init-thermal-symlinks-sh_exec:s0
+/dev/thermal(/.*)?                                                      u:object_r:thermal_link_device:s0
+
 # Touch
 /vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi              u:object_r:hal_lineage_touch_default_exec:s0
 
