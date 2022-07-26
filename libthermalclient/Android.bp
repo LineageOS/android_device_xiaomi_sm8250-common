@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2022 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libthermalclient",
+    vendor: true,
+    srcs: ["thermal_client.c"],
+    header_libs: ["libThermal_headers"],
+}
