@@ -1,7 +1,6 @@
 allow vendor_thermal-engine {
   vendor_sysfs_devfreq
   sysfs_msm_subsys
-  thermal_data_file
 }:dir r_dir_perms;
 
 allow vendor_thermal-engine vendor_sysfs_devfreq:file rw_file_perms;
