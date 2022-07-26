@@ -20,4 +20,6 @@ type sysfs_wireless_supply, fs_type, sysfs_type;
 
 type ultrasound_device, dev_type;
 
+type thermal_link_device, dev_type;
+
 type vendor_sysfs_iio, fs_type, sysfs_type;
