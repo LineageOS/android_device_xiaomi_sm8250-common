@@ -56,3 +56,6 @@ invn.hal.data.                                  u:object_r:vendor_sensors_prop:s
 invn.hal.entry.                                 u:object_r:vendor_sensors_prop:s0
 invn.hal.debug.                                 u:object_r:vendor_sensors_prop:s0
 invn.hal.verbose.                               u:object_r:vendor_sensors_prop:s0
+
+# Thermal
+vendor.thermal.                                 u:object_r:vendor_thermal_prop:s0
