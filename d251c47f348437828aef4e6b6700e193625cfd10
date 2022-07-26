@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93fe5632_d96b0ad2",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 478,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-26T16:30:55Z",
+      "side": 1,
+      "message": "we removed these in a previous commit. this doesn\u0027t do anything\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8250-common/+/331474",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
