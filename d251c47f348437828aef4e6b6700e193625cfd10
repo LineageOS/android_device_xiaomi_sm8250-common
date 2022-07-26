@@ -16,6 +16,23 @@
       "message": "we removed these in a previous commit. this doesn\u0027t do anything\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8250-common/+/331474",
       "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5c61fe7_487c4960",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 372,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-26T16:36:21Z",
+      "side": 1,
+      "message": "we could remove this, if we are not shipping this file",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
