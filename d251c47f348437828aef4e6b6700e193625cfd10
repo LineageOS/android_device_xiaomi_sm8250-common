@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3b57d626_ac90a638",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 556,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-26T16:38:32Z",
+      "side": 1,
+      "message": ".",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c5c61fe7_487c4960",
         "filename": "rootdir/etc/init.target.rc",
         "patchSetId": 1
