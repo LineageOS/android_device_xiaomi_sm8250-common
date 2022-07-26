@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "868a6752_28135fbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-26T21:28:11Z",
+      "side": 1,
+      "message": "thermal-engine definitely does more than handling thermal protection but Xiaomi decided to disable it...",
+      "revId": "d229339b7454347c9bdcb68748819649fa00bb8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
