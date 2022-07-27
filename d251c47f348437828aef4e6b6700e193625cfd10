@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8b9b9a7_3e5a6d79",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 478,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-27T05:37:52Z",
+      "side": 1,
+      "message": "too many unused stuff is there in our current and this. will have to do a cleanup",
+      "parentUuid": "93fe5632_d96b0ad2",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3b57d626_ac90a638",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6b6ce04_b81bace0",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 556,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-27T05:37:52Z",
+      "side": 1,
+      "message": ".",
+      "parentUuid": "3b57d626_ac90a638",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c5c61fe7_487c4960",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-07-26T16:36:21Z",
       "side": 1,
       "message": "we could remove this, if we are not shipping this file",
+      "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab9c36f0_64e00b05",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 372,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-27T05:37:52Z",
+      "side": 1,
+      "message": ".",
+      "parentUuid": "c5c61fe7_487c4960",
       "revId": "d251c47f348437828aef4e6b6700e193625cfd10",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
