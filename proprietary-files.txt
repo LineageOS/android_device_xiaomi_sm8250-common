@@ -732,6 +732,7 @@ vendor/etc/init/init.mi_thermald.rc
 
 # Thermal engine
 vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
