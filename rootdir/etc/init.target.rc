@@ -1,3 +1,4 @@
+
 # Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -119,8 +120,11 @@ on post-fs-data
     mkdir /data/vendor/thermal/config 0771 root system
     chown gps system /dev/ttyHS1
 
-on boot
+
+on early-boot
     start vendor.sensors
+    verity_update_state
+
 on property:ro.boot.dp=0x0
     write /sys/bus/platform/devices/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/pshold_reboot 7
 
@@ -170,10 +174,27 @@ on boot
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
     chmod 0664 /sys/class/power_supply/battery/dc_thermal_levels
     chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/balance_mode
+    chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
 
     write /sys/block/sda/queue/wbt_lat_usec 75000
+
+    chown root system /sys/module/migt/parameters/add_lclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/add_lclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/del_lclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/del_lclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/add_mclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/add_mclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/del_mclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/del_mclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/add_bclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/add_bclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/del_bclus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/del_bclus_affinity_uidlist
+    chown root system /sys/module/migt/parameters/reset_clus_affinity_uidlist
+    chmod 0664 /sys/module/migt/parameters/reset_clus_affinity_uidlist
 
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
@@ -314,6 +335,49 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
+on post-fs-data
+    chmod 0666 /dev/migt
+    restorecon /dev/migt
+    chmod 0777 /sys/module/migt/parameters/migt_freq
+    restorecon /sys/module/migt/parameters/migt_freq
+    chmod 0777 /sys/module/migt/parameters/migt_ms
+    restorecon /sys/module/migt/parameters/migt_ms
+    chmod 0777 /sys/module/migt/parameters/migt_thresh
+    restorecon /sys/module/migt/parameters/migt_thresh
+    chmod 0777 /sys/module/migt/parameters/boost_policy
+    restorecon /sys/module/migt/parameters/boost_policy
+    chmod 0777 /sys/module/migt/parameters/fps_variance_ratio
+    restorecon /sys/module/migt/parameters/fps_variance_ratio
+    chmod 0777 /sys/module/migt/parameters/super_task_max_num
+    restorecon /sys/module/migt/parameters/super_task_max_num
+    chmod 0777 /sys/module/migt/parameters/migt_ceiling_freq
+    restorecon /sys/module/migt/parameters/migt_ceiling_freq
+    chmod 0777 /sys/module/migt/parameters/stask_candidate_num
+    restorecon /sys/module/migt/parameters/stask_candidate_num
+    chmod 0777 /sys/module/migt/parameters/fas_power_mod
+    restorecon /sys/module/migt/parameters/fas_power_mod
+    chmod 0666 /sys/module/migt/parameters/mi_viptask
+    restorecon /sys/module/migt/parameters/mi_viptask
+
+service mi-serial-sh /vendor/bin/init.mi.serial.sh
+    class late_start
+    user root
+    group root system radio
+    disabled
+    oneshot
+
+on post-fs && property:ro.product.device=elish
+    start mi-serial-sh
+
+on property:sys.lmkd.memory.start_reclaim_in_video_record=1
+    setprop sys.lmkd.memory.start_reclaim_in_video_record 0
+    write /sys/kernel/cam_reclaim/event 1
+
+on property:sys.lmkd.memory.start_reclaim_in_capture=1
+    setprop sys.lmkd.memory.start_reclaim_in_capture 0
+    write /sys/kernel/cam_reclaim/config "120 0 0 400000 1000 0 0 2000000000"
+    write /sys/kernel/cam_reclaim/event 1
+
 #####copy megvii files#####
 on property:sys.boot_completed=1
     mkdir /data/vendor/camera/model 0777 cameraserver audio
@@ -337,3 +401,13 @@ on property:sys.boot_completed=1
     copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
     chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_policy
     chmod 0777 /data/vendor/camera/model/dof_model/capture_policy
+    mkdir /data/vendor/camera/model/ldc_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/ldc_model/ldc_cap_cache /data/vendor/camera/model/ldc_model/ldc_cap_cache
+    chown cameraserver audio  /data/vendor/camera/model/ldc_model/ldc_cap_cache
+    chmod 0777 /data/vendor/camera/model/ldc_model/ldc_cap_cache
+    copy /vendor/etc/camera/model/ldc_model/ldc_cap_model /data/vendor/camera/model/ldc_model/ldc_cap_model
+    chown cameraserver audio  /data/vendor/camera/model/ldc_model/ldc_cap_model
+    chmod 0777 /data/vendor/camera/model/ldc_model/ldc_cap_model
+    copy /vendor/etc/camera/model/ldc_model/ldc_cap_policy /data/vendor/camera/model/ldc_model/ldc_cap_policy
+    chown cameraserver audio  /data/vendor/camera/model/ldc_model/ldc_cap_policy
+    chmod 0777 /data/vendor/camera/model/ldc_model/ldc_cap_policy
