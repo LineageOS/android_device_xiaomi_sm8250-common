@@ -33,6 +33,7 @@
 baseband=`getprop ro.baseband`
 sgltecsfb=`getprop persist.vendor.radio.sglte_csfb`
 datamode=`getprop persist.vendor.data.mode`
+low_ram=`getprop ro.config.low_ram`
 qcrild_status=true
 
 case "$baseband" in
@@ -87,12 +88,10 @@ case "$baseband" in
     if [ "$qcrild_status" = "true" ]; then
         # Make sure both rild, qcrild are not running at same time.
         # This is possible with vanilla aosp system image.
-        stop ril-daemon
         stop vendor.ril-daemon
 
         start vendor.qcrild
     else
-        start ril-daemon
         start vendor.ril-daemon
     fi
 
@@ -130,11 +129,15 @@ case "$baseband" in
     case "$datamode" in
         "tethered")
             start vendor.dataqti
-            start vendor.dataadpl
+            if [ "$low_ram" != "true" ]; then
+              start vendor.dataadpl
+            fi
             ;;
         "concurrent")
             start vendor.dataqti
-            start vendor.dataadpl
+            if [ "$low_ram" != "true" ]; then
+              start vendor.dataadpl
+            fi
             ;;
         *)
             ;;
