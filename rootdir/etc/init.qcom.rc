@@ -295,6 +295,9 @@ on post-fs-data
     # Create directory used by audio subsystem
     mkdir /data/vendor/audio 0771 audio audio
 
+    # Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
+
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
     mkdir /data/vendor/audio/acdbdata/delta 0770 media audio
@@ -784,6 +787,44 @@ service diag_mdlog_stop /vendor/bin/diag_mdlog -k
     group system oem_2901 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
+
+service diag_mdlog_auto_start /vendor/bin/diag_mdlog -c -n 20
+    class late_start
+    user system
+    group system oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service diag_mdlog_auto_stop /vendor/bin/diag_mdlog -k
+    class late_start
+    user system
+    group system oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+on property:persist.vendor.radio.diag_log_trriger=modem
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=gps
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=sensor
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
+
+on property:persist.vendor.radio.diag_log_trriger=audio
+    setprop debug.offline_log.flag ${persist.vendor.radio.diag_log_trriger}
+    setprop debug.offline_log.enable true
+    setprop debug.offline_log.module ${persist.vendor.radio.diag_log_trriger}
+    start diag_mdlog_auto_start
 
 service qlogd /system/xbin/qlogd
     socket qlogd stream 0662 system system
