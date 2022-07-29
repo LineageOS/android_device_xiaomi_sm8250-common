@@ -16,6 +16,24 @@
       "message": "add it in boardconfig sepolicy dirs, we don\u0027t need to copy if its same ",
       "revId": "a8c0c52b72dc07804d60cc3ff9ad91edc61a4a7d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3f9ae9b_16440524",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-29T04:24:45Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "18340bbb_d57bc2d3",
+      "revId": "a8c0c52b72dc07804d60cc3ff9ad91edc61a4a7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
