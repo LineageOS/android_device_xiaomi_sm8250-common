@@ -34,6 +34,24 @@
       "parentUuid": "f4d7042c_08aa7115",
       "revId": "8d04e2ac8eddcdddf97eead533c9554ae887d6dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "489d30b1_ef89f669",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-29T13:50:26Z",
+      "side": 1,
+      "message": "There are duplicated entries in file_contexts",
+      "parentUuid": "51c7bf14_8f6d501d",
+      "revId": "8d04e2ac8eddcdddf97eead533c9554ae887d6dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
