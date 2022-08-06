@@ -16,6 +16,24 @@
       "message": "this is common.",
       "revId": "4f8fe506a3d0bed56c0bbb7227f4e215506a2835",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2397fe47_4f18bc73",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 799,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-08-06T05:57:45Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "7e9c4baf_99b01b27",
+      "revId": "4f8fe506a3d0bed56c0bbb7227f4e215506a2835",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
