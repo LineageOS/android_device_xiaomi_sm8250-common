@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1839c273_0b5bb1f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-08-06T08:28:52Z",
+      "side": 1,
+      "message": "crashing for alioth, bootloop https://katb.in/safavogeniw",
+      "revId": "916377b8e76fb3b5d780c9b2d45ffb083a948b27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
