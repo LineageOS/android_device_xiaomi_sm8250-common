@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f250bc3_c0d19757",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28423
+      },
+      "writtenOn": "2022-08-27T19:10:55Z",
+      "side": 1,
+      "message": "seems, fine to me \u0026 adjusted commit message!",
+      "revId": "0f7a8095b884ff03078c7aa2d2c53fd87c09626d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
