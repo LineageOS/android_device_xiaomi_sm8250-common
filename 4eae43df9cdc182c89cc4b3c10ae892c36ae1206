@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6207a3bf_74eba1d5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-08-27T16:59:56Z",
+      "side": 1,
+      "message": "sm8250-common: sepolicy: Remove debugfs related rules",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 37
+      },
+      "revId": "4eae43df9cdc182c89cc4b3c10ae892c36ae1206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
