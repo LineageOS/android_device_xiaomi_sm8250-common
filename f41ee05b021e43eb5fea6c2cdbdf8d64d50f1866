@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c18c0dfc_c250915d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-09-02T09:08:22Z",
+      "side": 1,
+      "message": "Only tested a speaker with dock in the box. haven\u0027t tried mic",
+      "revId": "f41ee05b021e43eb5fea6c2cdbdf8d64d50f1866",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
