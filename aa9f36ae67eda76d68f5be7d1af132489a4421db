@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4155687e_d3d82336",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28423
+      },
+      "writtenOn": "2022-09-09T07:38:09Z",
+      "side": 1,
+      "message": "this requires another commit to enable \"config_useVideoPauseWorkaround\" \u0026 set more props, namely:\npersist.vendor.radio.report_codec\u003d1\npersist.vendor.radio.vdp_on_ims_cap\u003d1\npersist.vendor.qti.telephony.vt_cam_interface\u003d2",
+      "revId": "aa9f36ae67eda76d68f5be7d1af132489a4421db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
