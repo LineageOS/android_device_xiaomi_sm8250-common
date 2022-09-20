@@ -33,8 +33,10 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("device", variant.device, true);
     set_ro_build_prop("marketname", variant.marketname, true);
     set_ro_build_prop("model", variant.model, true);
+    property_override("vendor.usb.product_string", variant.marketname, true);
 
     if (access("/system/bin/recovery", F_OK) != 0) {
+        property_override("bluetooth.device.default_name", variant.marketname, true);
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
         property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
