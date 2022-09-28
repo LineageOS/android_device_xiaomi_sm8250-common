@@ -251,6 +251,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+ifneq ($(TARGET_IS_VAB),true)
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
+endif
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
