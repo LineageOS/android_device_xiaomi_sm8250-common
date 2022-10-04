@@ -16,6 +16,24 @@
       "message": "forgotten \\",
       "revId": "cf44830b8b0d227aed26808e4874474e64c03087",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "033c5b61_a3c9f355",
+        "filename": "kona.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-10-04T22:54:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "835be4d0_02731a06",
+      "revId": "cf44830b8b0d227aed26808e4874474e64c03087",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
