@@ -34,6 +34,23 @@
       "parentUuid": "41f19715_1d7b13c1",
       "revId": "2d1884a4b18cc1b90061ef41ac79fa90ce44fef9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de5e1fa2_dc87d365",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-10-05T12:39:44Z",
+      "side": 1,
+      "message": "On lmi it works",
+      "revId": "2d1884a4b18cc1b90061ef41ac79fa90ce44fef9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
