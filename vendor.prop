@@ -144,9 +144,6 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=hastings
 
-# Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
-
 # Chipset
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
