@@ -16,6 +16,24 @@
       "message": "you can remove snapcam",
       "revId": "bbc3cbd59810363efcbf85f978dfd9dab5b9eb81",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc460be2_10f00154",
+        "filename": "overlay-lineage/lineage-sdk/lineage/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-11-24T19:27:43Z",
+      "side": 1,
+      "message": "gcam",
+      "parentUuid": "bd0726f4_c32d51e5",
+      "revId": "bbc3cbd59810363efcbf85f978dfd9dab5b9eb81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
