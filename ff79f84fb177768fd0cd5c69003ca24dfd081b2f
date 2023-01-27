@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eeb359f9_766c93b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2023-01-27T14:34:44Z",
+      "side": 1,
+      "message": "They are available in device/qcom/sepolicy_vndr-legacy-um",
+      "revId": "ff79f84fb177768fd0cd5c69003ca24dfd081b2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
