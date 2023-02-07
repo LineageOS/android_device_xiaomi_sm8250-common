@@ -190,6 +190,7 @@ debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
+debug.sf.enable_transaction_tracing=false
 debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
