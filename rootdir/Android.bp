@@ -116,6 +116,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "ueventd.xiaomi.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.xiaomi.rc",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.qcom.rc",
