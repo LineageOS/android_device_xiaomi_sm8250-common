@@ -1,0 +1,8 @@
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Charging
+/sys/class/power_supply/battery battery_charging_enabled 0660 system system
