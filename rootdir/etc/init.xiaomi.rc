@@ -36,6 +36,10 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/request_vreg
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
 
+    # Power supply
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
 on post-fs-data
     mkdir /data/vendor/fortsense 0770 system system
     mkdir /data/vendor/fpc 0770 system system
