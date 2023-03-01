@@ -45,6 +45,11 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
+# Health
+on boot
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
 # NFC
 service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
     override
