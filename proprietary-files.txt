@@ -12,9 +12,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 
-# ANT+
-vendor/lib64/com.dsi.ant@1.0.so
-
 # Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
