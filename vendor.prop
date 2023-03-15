@@ -145,7 +145,7 @@ ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=hastings
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
 
 # Crypto
