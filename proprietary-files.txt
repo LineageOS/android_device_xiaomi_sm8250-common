@@ -1,4 +1,4 @@
-# Unpinned blobs from munch-user 12 RKQ1.200826.002 V13.0.5.0.SLMMIXM release-keys
+# Unpinned blobs from munch-user 13 RKQ1.211001.001 V14.0.1.0.TLMMIXM release-keys
 # lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
 
 # ADSP
@@ -48,18 +48,18 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera motor (sound) - from lmi
-media/audio/ui/popup_cangmen_down.ogg:system_ext/media/audio/ui/popup_cangmen_down.ogg|573b107889ccf639db5455af21129ce1fee93bc5
-media/audio/ui/popup_cangmen_up.ogg:system_ext/media/audio/ui/popup_cangmen_up.ogg|f152dea254b4eaae403b791c49c60c05ccf12ea7
-media/audio/ui/popup_chilun_down.ogg:system_ext/media/audio/ui/popup_chilun_down.ogg|e200a3de45abbf2057ca0c6a735b6a6a78ec1b1c
-media/audio/ui/popup_chilun_up.ogg:system_ext/media/audio/ui/popup_chilun_up.ogg|908bd714b58648c8861c0e56ca7c6f0db84d4e2b
-media/audio/ui/popup_jijia_down.ogg:system_ext/media/audio/ui/popup_jijia_down.ogg|680b41897aaa47972630012e0c68396bf4cbe9c7
-media/audio/ui/popup_jijia_up.ogg:system_ext/media/audio/ui/popup_jijia_up.ogg|bd71c2f07f439a2afc9e9b435ef8d1a7a28a4fc1
-media/audio/ui/popup_mofa_down.ogg:system_ext/media/audio/ui/popup_mofa_down.ogg|ebfec5126f64a5eea69aad43af169de5eed398ae
-media/audio/ui/popup_mofa_up.ogg:system_ext/media/audio/ui/popup_mofa_up.ogg|95ef57769ca5e4a3264e4adf7c9958d55ff1a32c
-media/audio/ui/popup_muqin_down.ogg:system_ext/media/audio/ui/popup_muqin_down.ogg|3ecf82ae3d4ec853e0832901d2163c252ad62e07
-media/audio/ui/popup_muqin_up.ogg:system_ext/media/audio/ui/popup_muqin_up.ogg|047ae904c2932bc6112cd7ef4458f4cad1972181
-media/audio/ui/popup_yingyan_down.ogg:system_ext/media/audio/ui/popup_yingyan_down.ogg|de1623b20f311322dc79a3d152ca30318e1ed0db
-media/audio/ui/popup_yingyan_up.ogg:system_ext/media/audio/ui/popup_yingyan_up.ogg|0c3a716ba49dd682a6d58cca04eece0f81ca6834
+system/media/audio/ui/popup_cangmen_down.ogg:system_ext/media/audio/ui/popup_cangmen_down.ogg|573b107889ccf639db5455af21129ce1fee93bc5
+system/media/audio/ui/popup_cangmen_up.ogg:system_ext/media/audio/ui/popup_cangmen_up.ogg|f152dea254b4eaae403b791c49c60c05ccf12ea7
+system/media/audio/ui/popup_chilun_down.ogg:system_ext/media/audio/ui/popup_chilun_down.ogg|e200a3de45abbf2057ca0c6a735b6a6a78ec1b1c
+system/media/audio/ui/popup_chilun_up.ogg:system_ext/media/audio/ui/popup_chilun_up.ogg|908bd714b58648c8861c0e56ca7c6f0db84d4e2b
+system/media/audio/ui/popup_jijia_down.ogg:system_ext/media/audio/ui/popup_jijia_down.ogg|680b41897aaa47972630012e0c68396bf4cbe9c7
+system/media/audio/ui/popup_jijia_up.ogg:system_ext/media/audio/ui/popup_jijia_up.ogg|bd71c2f07f439a2afc9e9b435ef8d1a7a28a4fc1
+system/media/audio/ui/popup_mofa_down.ogg:system_ext/media/audio/ui/popup_mofa_down.ogg|ebfec5126f64a5eea69aad43af169de5eed398ae
+system/media/audio/ui/popup_mofa_up.ogg:system_ext/media/audio/ui/popup_mofa_up.ogg|95ef57769ca5e4a3264e4adf7c9958d55ff1a32c
+system/media/audio/ui/popup_muqin_down.ogg:system_ext/media/audio/ui/popup_muqin_down.ogg|3ecf82ae3d4ec853e0832901d2163c252ad62e07
+system/media/audio/ui/popup_muqin_up.ogg:system_ext/media/audio/ui/popup_muqin_up.ogg|047ae904c2932bc6112cd7ef4458f4cad1972181
+system/media/audio/ui/popup_yingyan_down.ogg:system_ext/media/audio/ui/popup_yingyan_down.ogg|de1623b20f311322dc79a3d152ca30318e1ed0db
+system/media/audio/ui/popup_yingyan_up.ogg:system_ext/media/audio/ui/popup_yingyan_up.ogg|0c3a716ba49dd682a6d58cca04eece0f81ca6834
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -179,7 +179,7 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -374,6 +374,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 -system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
@@ -468,7 +469,6 @@ vendor/etc/media_codecs_performance_c2.xml
 vendor/etc/media_codecs_performance_kona.xml
 vendor/etc/media_codecs_performance_kona_vendor.xml
 vendor/etc/media_codecs_system_default.xml
-vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_kona.xml
 vendor/etc/media_profiles_vendor.xml
@@ -568,8 +568,8 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
 # QMI
-etc/permissions/privapp-permissions-qti.xml
-etc/sysconfig/qti_whitelist.xml
+system/etc/permissions/privapp-permissions-qti.xml
+system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
