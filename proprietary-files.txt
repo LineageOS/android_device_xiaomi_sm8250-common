@@ -1,6 +1,6 @@
 # Unpinned blobs from munch-user 13 RKQ1.211001.001 V14.0.1.0.TLMMIXM release-keys
-# instantnoodlep: IN2025_11.F.62
 # lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# renoir: 22.5.11
 
 # ADSP
 vendor/bin/adsprpcd
@@ -424,7 +424,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# IMS - from instantnoodlep
+# IMS - from renoir
 -system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
 
 # IRQ balance
