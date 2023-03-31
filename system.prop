@@ -23,10 +23,6 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
-
 # LMK properties
 ro.lmk.use_minfree_levels=true
 ro.lmk.kill_heaviest_task=true
