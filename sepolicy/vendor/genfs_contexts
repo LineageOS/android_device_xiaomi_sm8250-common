@@ -59,7 +59,6 @@ genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/wakeup                 
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup                                                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/1101_00.01.00/wakeup                                   u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c00000.qcom,pcie/wakeup                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/pci0002:00/0002:00:00.0/0002:01:00.0/0306_02.01.00_EFS/wakeup                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/wakeup                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup                                                                                       u:object_r:sysfs_wakeup:s0
