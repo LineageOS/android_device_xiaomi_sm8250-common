@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d191d05_450af8fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-05-29T13:57:43Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/_/android/device/google/coral/+/4c86e7f94d0782d64c4a34e30bad20dab24a964a",
+      "revId": "c35d482d0fb9c08b40343a5c838770f7af97836e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
