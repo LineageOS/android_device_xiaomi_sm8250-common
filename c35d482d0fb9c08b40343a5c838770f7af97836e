@@ -52,6 +52,23 @@
       "parentUuid": "0c08c92d_738a8c8a",
       "revId": "c35d482d0fb9c08b40343a5c838770f7af97836e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "644f905c_699a3e04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-04T10:02:48Z",
+      "side": 1,
+      "message": "Switching to 60Hz in AOD for alioth, when its 120Hz locked.",
+      "revId": "c35d482d0fb9c08b40343a5c838770f7af97836e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
