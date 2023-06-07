@@ -211,6 +211,10 @@ ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
 
+# HVDCP
+persist.vendor.pps.disallowed=1
+persist.vendor.hvdcp_opti.disallowed=1
+
 # Keystore
 ro.hardware.keystore_desede=true
 
