@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "73cb0165_a23c297a",
+        "filename": "sepolicy/vendor/hal_lineage_health_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-06-10T14:27:37Z",
+      "side": 1,
+      "message": "I think they are already here:\nhttps://github.com/LineageOS/android_device_lineage_sepolicy/commit/c86fda9bf6b12a905947ba09a147102fb09e42c5#diff-8782bcca49b3bd7eb46dd76fec7b91615c77cd92388a97e4077216e01a8fa72aR1",
+      "revId": "d6950321c5db4755f155587dd8d442f3d8cc4f7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
