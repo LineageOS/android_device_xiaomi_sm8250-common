@@ -33,6 +33,23 @@
       "message": "Need to confirm something",
       "revId": "a344cf2586143d6ad527170dc3409de4adf451d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c2094a1_fe63c3f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-11T08:29:41Z",
+      "side": 1,
+      "message": "Doesn\u0027t work when its fast charging.",
+      "revId": "a344cf2586143d6ad527170dc3409de4adf451d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
