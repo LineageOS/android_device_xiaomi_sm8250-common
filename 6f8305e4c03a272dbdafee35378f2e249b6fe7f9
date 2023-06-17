@@ -16,6 +16,23 @@
       "message": "Works with mi/fast charger now.",
       "revId": "6f8305e4c03a272dbdafee35378f2e249b6fe7f9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e766a86b_d8f131f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-17T18:01:46Z",
+      "side": 1,
+      "message": "Requires this patch to work properly\n\nhttps://review.lineageos.org/c/LineageOS/android_lineage-sdk/+/358940",
+      "revId": "6f8305e4c03a272dbdafee35378f2e249b6fe7f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
