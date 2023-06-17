@@ -16,6 +16,23 @@
       "message": "https://github.com/sdm870/proprietary_vendor_xiaomi_sm8250-common/commits/lineage-20",
       "revId": "6cb950a0408545de3a35776190dc04d1b39eabf2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff0a5dde_f30729c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-17T13:54:59Z",
+      "side": 1,
+      "message": "boots and works fine, might wanna wait for june sp to get merged",
+      "revId": "6cb950a0408545de3a35776190dc04d1b39eabf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
