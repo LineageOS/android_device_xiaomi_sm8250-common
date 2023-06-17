@@ -16,6 +16,24 @@
       "message": "it was false by default when i tried getprop",
       "revId": "eebf527591877016332da34346643fc4318c5d19",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46e59ec8_c1e2eb29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-06-17T13:39:43Z",
+      "side": 1,
+      "message": "then something had to set it to false, try to figure out who did that?",
+      "parentUuid": "87ad4cfa_f6eeb837",
+      "revId": "eebf527591877016332da34346643fc4318c5d19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
