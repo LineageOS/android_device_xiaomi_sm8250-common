@@ -158,23 +158,6 @@
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
                 </mixPort>
-                <mixPort name="uplink downlink input" role="sink" flags="AUDIO_INPUT_FLAG_INCALL_UPLINK_DOWNLINK">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
-                             channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
-                </mixPort>
-                <mixPort name="voip record" role="sink" maxOpenCount="1" maxActiveCount="1"
-                         flags="AUDIO_INPUT_FLAG_VOIP_RECORD">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
-                             channelMasks="AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
-                </mixPort>
-                <mixPort name="fast input" role="sink" maxOpenCount="2" maxActiveCount="2"
-                         flags="AUDIO_INPUT_FLAG_FAST">
-                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,96000"
-                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
-                </mixPort>
                 <mixPort name="voip_tx" role="sink"
                          flags="AUDIO_INPUT_FLAG_VOIP_TX">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -212,6 +195,12 @@
                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK,AUDIO_CHANNEL_INDEX_MASK_3"/>
                 </mixPort>
                 <mixPort name="hifi_input" role="sink" />
+                <mixPort name="fast input" role="sink"
+                         flags="AUDIO_INPUT_FLAG_FAST">
+                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
+                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
+                </mixPort>
                 <mixPort name="quad mic" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                         samplingRates="48000"
@@ -347,10 +336,6 @@
                        sources="Telephony Rx"/>
                 <route type="mix" sink="primary input"
                        sources="Wired Headset Mic,BT SCO Headset Mic,FM Tuner,USB Device In,USB Headset In,Telephony Rx"/>
-                <route type="mix" sink="uplink downlink input"
-                       sources="Wired Headset Mic,BT SCO Headset Mic,FM Tuner,USB Device In,USB Headset In,Telephony Rx"/>
-                <route type="mix" sink="voip record"
-                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,FM Tuner,USB Device In,USB Headset In,Telephony Rx"/>
                 <route type="mix" sink="usb_surround_sound"
                        sources="USB Device In,USB Headset In"/>
                 <route type="mix" sink="voip_tx"
