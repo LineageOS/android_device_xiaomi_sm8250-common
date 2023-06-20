@@ -34,6 +34,24 @@
       "parentUuid": "0cbb14c4_7ed596f0",
       "revId": "39b60939bef78ec689fb051b500b2629463f3dcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb3f7186_5aede182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-20T11:36:53Z",
+      "side": 1,
+      "message": "12w is not considered as that fast charging these days**",
+      "parentUuid": "888ffe81_1e71b344",
+      "revId": "39b60939bef78ec689fb051b500b2629463f3dcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
