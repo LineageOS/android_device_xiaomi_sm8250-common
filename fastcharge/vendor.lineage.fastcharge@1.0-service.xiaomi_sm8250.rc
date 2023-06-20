@@ -1,0 +1,11 @@
+service vendor.fastcharge-hal-1-0 /vendor/bin/hw/vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250
+    class hal
+    user system
+    group system
+
+# Battery secret is starts on sys.boot_completed, so disable it afterwards if neccessary.
+on property:dev.bootcomplete=1 && property:persist.vendor.fastcharging.enabled=false
+    stop batterysecret
+
+on property:persist.vendor.fastcharging.enabled=true
+    start batterysecret

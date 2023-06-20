@@ -35,6 +35,9 @@
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
 /dev/mius(.*)?                                                          u:object_r:ultrasound_device:s0
 
+# Fastcharge HAL
+/vendor/bin/hw/vendor\.lineage\.fastcharge@1\.0-service\.xiaomi_sm8250                                  u:object_r:hal_lineage_fastcharge_default_exec:s0
+
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi                           u:object_r:hal_fingerprint_default_exec:s0
 
