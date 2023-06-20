@@ -16,6 +16,24 @@
       "message": "Let\u0027s wait for the new fastcharge AIDL interface\n\nAlso I\u0027m not entirely convinced of disabling batterysecret, 12w is technically considered fast charging, so 5w is the proper wattage to choose when disabling fast charging (I don\u0027t even know why would you even want to do that)",
       "revId": "39b60939bef78ec689fb051b500b2629463f3dcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "888ffe81_1e71b344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-06-20T11:34:45Z",
+      "side": 1,
+      "message": "12w is considered as that fast these days. 5w is way too slow for anything nowadays",
+      "parentUuid": "0cbb14c4_7ed596f0",
+      "revId": "39b60939bef78ec689fb051b500b2629463f3dcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
