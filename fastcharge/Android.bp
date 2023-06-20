@@ -1,0 +1,19 @@
+cc_binary {
+    name: "vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250",
+    relative_install_path: "hw",
+    init_rc: ["vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250.rc"],
+    vintf_fragments: ["vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "libcutils",
+        "libhidlbase",
+        "libutils",
+        "vendor.lineage.fastcharge@1.0",
+    ],
+    srcs: [
+        "FastCharge.cpp",
+        "service.cpp",
+    ],
+}

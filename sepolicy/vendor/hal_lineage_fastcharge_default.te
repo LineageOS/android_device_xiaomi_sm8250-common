@@ -1,0 +1,2 @@
+get_prop(hal_lineage_fastcharge, vendor_fastcharge_prop)
+set_prop(hal_lineage_fastcharge, vendor_fastcharge_prop)

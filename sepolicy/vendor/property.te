@@ -6,6 +6,8 @@ vendor_internal_prop(vendor_device_prop);
 
 vendor_internal_prop(vendor_deviceid_prop);
 
+vendor_internal_prop(vendor_fastcharge_prop);
+
 vendor_restricted_prop(vendor_fingerprint_prop);
 
 vendor_internal_prop(vendor_motor_prop);
