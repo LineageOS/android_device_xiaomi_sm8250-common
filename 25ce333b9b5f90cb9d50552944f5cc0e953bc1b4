@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "523cf9fb_e023ec44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-06-24T11:00:43Z",
+      "side": 1,
+      "message": "Xiaomi fucked up our ADSP, it will crash hard if we use some exotic combination of sample rate and bitness.\nI prefer to not rely on offloading, also I think you can get deep_buffer to work with ALSA powered HAL",
+      "revId": "25ce333b9b5f90cb9d50552944f5cc0e953bc1b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
