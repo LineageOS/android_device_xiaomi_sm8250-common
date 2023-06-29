@@ -33,6 +33,29 @@
       "message": "Requires this patch to work properly\n\nhttps://review.lineageos.org/c/LineageOS/android_lineage-sdk/+/358940",
       "revId": "6f8305e4c03a272dbdafee35378f2e249b6fe7f9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5af5f853_73ea39fc",
+        "filename": "rootdir/etc/init.xiaomi.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-06-29T17:17:07Z",
+      "side": 1,
+      "message": "Move this under a new section and call it \"Health\"",
+      "range": {
+        "startLine": 39,
+        "startChar": 4,
+        "endLine": 39,
+        "endChar": 18
+      },
+      "revId": "6f8305e4c03a272dbdafee35378f2e249b6fe7f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
