@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b595eff_fd61b869",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2023-07-09T15:39:22Z",
+      "side": 1,
+      "message": "https://github.com/sdm870/proprietary_vendor_xiaomi_sm8250-common/commit/3111e7405067ea54c9162380857f66605b6a92fd",
+      "revId": "b1f7d1911d3c47d3978b2938bd5e6136b9918416",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
