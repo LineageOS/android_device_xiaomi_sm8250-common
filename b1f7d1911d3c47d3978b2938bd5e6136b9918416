@@ -16,6 +16,23 @@
       "message": "https://github.com/sdm870/proprietary_vendor_xiaomi_sm8250-common/commit/3111e7405067ea54c9162380857f66605b6a92fd",
       "revId": "b1f7d1911d3c47d3978b2938bd5e6136b9918416",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce68ff08_c95b2b4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-07-09T15:45:04Z",
+      "side": 1,
+      "message": "I wanna avoid out of tree patches, either find a way to do with extract-files.sh or keep the current blob",
+      "revId": "b1f7d1911d3c47d3978b2938bd5e6136b9918416",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
