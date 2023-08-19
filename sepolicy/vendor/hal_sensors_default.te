@@ -1,5 +1,7 @@
 # Access to the audio socket
 unix_socket_connect(hal_sensors_default, vendor_audio, hal_audio_default)
+type vendor_sysfs_palm_sensor, fs_type, sysfs_type;
+
 allow hal_sensors_default vendor_audio_socket:sock_file rw_file_perms;
 
 # Access to ultrasound devices
@@ -11,6 +13,8 @@ allow hal_sensors_default ultrasound_device:chr_file rw_file_perms;
 allow hal_sensors_default iio_device:chr_file rw_file_perms;
 allow hal_sensors_default sysfs_iio:dir r_dir_perms;
 allow hal_sensors_default sysfs_iio:file rw_file_perms;
+allow hal_sensors_default vendor_sysfs_palm_sensor:dir r_dir_perms;
+allow hal_sensors_default vendor_sysfs_palm_sensor:file rw_file_perms;
 
 # Access to ADSP properties
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
