@@ -45,5 +45,8 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Radio
 persist.vendor.radio.report_codec=1
 
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
