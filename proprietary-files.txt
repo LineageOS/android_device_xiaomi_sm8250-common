@@ -734,6 +734,13 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soter service (Tencent)
 -vendor/app/SoterService/SoterService.apk
 
+# SSR
+vendor/bin/ssr_diag
+vendor/bin/ssr_setup
+vendor/bin/subsystem_ramdump
+vendor/lib/libsubsystem_control.so
+vendor/lib64/libsubsystem_control.so
+
 # Thermal
 vendor/bin/mi_thermald
 vendor/etc/init/init.mi_thermald.rc
