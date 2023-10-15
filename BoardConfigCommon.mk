@@ -161,6 +161,9 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+ifneq ($(PRODUCT_IS_TABLET),true)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
+endif
 
 # Recovery
 ifeq ($(TARGET_IS_VAB),true)
@@ -227,6 +230,10 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
+
+ifneq ($(PRODUCT_IS_TABLET),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_phone.xml
+endif
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
