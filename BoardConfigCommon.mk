@@ -156,6 +156,9 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+ifneq ($(TARGET_IS_TABLET),true)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
+endif
 
 # Recovery
 ifeq ($(TARGET_IS_VAB),true)
@@ -219,6 +222,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+ifneq ($(TARGET_IS_TABLET),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_phone.xml
+endif
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml

@@ -1,0 +1,38 @@
+# Unpinned blobs from munch-user 13 RKQ1.211001.001 V14.0.3.0.TLMMIXM release-keys
+
+# Consumer IR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
+
+# GNSS
+vendor/bin/hw/android.hardware.gnss@2.1-service-qti
+vendor/bin/slim_daemon
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
+vendor/lib64/libbatching.so
+vendor/lib64/libgeofencing.so
+vendor/lib64/libgnsspps.so
+vendor/lib64/libgnss.so
+vendor/lib64/liblocationservice_glue.so
+vendor/lib64/liblocationservice.so
+vendor/lib64/libloc_socket.so
+vendor/lib64/libslimclient.so
+vendor/lib64/vendor.qti.gnss@4.0-service.so
+
+# GNSS configs
+vendor/etc/apdr.conf
+vendor/etc/flp.conf
+vendor/etc/gps.conf
+vendor/etc/sap.conf
+
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+
+# Soter service (Tencent)
+-vendor/app/SoterService/SoterService.apk
