@@ -8,6 +8,3 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                       u:object_r:h
 
 # Motor
 vendor.xiaomi.hardware.motor::IMotor                                u:object_r:hal_motor_hwservice:s0
-
-# NFC
-vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:hal_nfc_hwservice:s0

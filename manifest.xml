@@ -40,6 +40,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.nfc</name>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
@@ -59,6 +62,9 @@
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IdpmQmi/dpmQmiService</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.nxp.nxpnfc_aidl</name>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
