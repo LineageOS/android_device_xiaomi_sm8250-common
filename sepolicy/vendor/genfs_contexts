@@ -127,3 +127,4 @@ genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup                 
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-npu/wakeup                                                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup                                                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input5/wakeup85                                                                                              u:object_r:sysfs_wakeup:s0
