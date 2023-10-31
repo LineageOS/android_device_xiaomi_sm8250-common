@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_usr_idc {
+    name: "Xiaomi_Keyboard.idc",
+    src: "Xiaomi_Keyboard.idc",
+    vendor: true,
+}
