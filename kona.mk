@@ -198,6 +198,9 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# HWUI
+TARGET_USES_VULKAN := true
+
 # IFAAService
 PRODUCT_PACKAGES += \
     IFAAService
