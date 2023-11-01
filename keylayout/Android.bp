@@ -5,6 +5,12 @@
 //
 
 prebuilt_usr_keylayout {
+    name: "Xiaomi_Smart_Pen_Keyboard.kl",
+    src: "Xiaomi_Smart_Pen_Keyboard.kl",
+    vendor: true,
+}
+
+prebuilt_usr_keylayout {
     name: "kona-mtp-snd-card_Button_Jack.kl",
     src: "kona-mtp-snd-card_Button_Jack.kl",
     vendor: true,
