@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca614380_55b60745",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33149
+      },
+      "writtenOn": "2023-11-03T10:00:37Z",
+      "side": 1,
+      "message": "build pass, file exists, test pass",
+      "revId": "02220c24c843853d4bf271469b655312c8c99e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
