@@ -735,13 +735,6 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service charger /system/bin/charger
-    class charger
-    user system
-    group system graphics input
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
-
 service diag_mdlog_start /vendor/bin/diag_mdlog -u -c -n 20
     class late_start
     user shell
