@@ -249,6 +249,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.example_recovery
 endif
 
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
