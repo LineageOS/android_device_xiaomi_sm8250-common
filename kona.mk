@@ -242,11 +242,11 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.example
+    android.hardware.health-service.qti
 
 ifneq ($(TARGET_IS_VAB),true)
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.example_recovery
+    android.hardware.health-service.qti_recovery
 endif
 
 PRODUCT_PACKAGES += \
