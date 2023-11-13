@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d25a8745_8921d5b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-13T09:21:27Z",
+      "side": 1,
+      "message": "I would rather use QTI service (https://github.com/LineageOS/android_vendor_qcom_opensource_healthd-ext/tree/lineage-20.0/aidl).",
+      "revId": "0bb494e02859b0b158f9c2821f68e5c202643f0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
