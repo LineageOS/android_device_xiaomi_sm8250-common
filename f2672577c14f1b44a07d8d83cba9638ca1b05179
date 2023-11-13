@@ -16,6 +16,23 @@
       "message": "Not sure why you don\u0027t set \"ro.charger.enable_suspend\u003dtrue\", but pretty much all QCOM devices do that. The QTI HAL set is by default - https://github.com/LineageOS/android_vendor_qcom_opensource_healthd-ext/blob/lineage-20.0/aidl/main.cpp#L25.",
       "revId": "f2672577c14f1b44a07d8d83cba9638ca1b05179",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d254a56a_df24ee1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-13T17:46:28Z",
+      "side": 1,
+      "message": "Also, pick https://review.lineageos.org/c/LineageOS/android_device_qcom_sepolicy_vndr/+/374040 to lineage-20 branch.",
+      "revId": "f2672577c14f1b44a07d8d83cba9638ca1b05179",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
