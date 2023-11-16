@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7feac0ea_84c27f7d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-11-16T20:45:30Z",
+      "side": 1,
+      "message": "You should be able to just add your vibrator changes to QTI vibrator and get rid of the device specific HAL.",
+      "revId": "4fae8b59ebc94991c3dd1ad5db454565c9f1cfb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
