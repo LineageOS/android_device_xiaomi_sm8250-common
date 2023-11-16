@@ -203,7 +203,7 @@ on property:persist.vendor.sys.fp.fod.large_field=1
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
-on charger
+on property:init.svc.vendor.charger=running
     mkdir /mnt/vendor/persist
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist

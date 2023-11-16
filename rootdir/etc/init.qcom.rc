@@ -845,7 +845,7 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     user system
     group nfc
 
-on charger
+on property:init.svc.vendor.charger=running
     start qcom-post-boot
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system / ro barrier=1
