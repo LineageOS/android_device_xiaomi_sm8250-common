@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd62e0a4_21604864",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-16T18:00:44Z",
+      "side": 1,
+      "message": "You can pick this to mi8150 as well. I forgot about that one.",
+      "revId": "06ffdc658a5b03b248b049ccda170aaf852a1350",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
