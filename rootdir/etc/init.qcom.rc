@@ -174,8 +174,6 @@ on boot
 
     setprop wifi.interface wlan0
 
-    setprop persist.bluetooth.a2dp_offload.disabled false
-
     setprop ro.telephony.call_ring.multiple false
 
     #Remove SUID bit for iproute2 ip tool
