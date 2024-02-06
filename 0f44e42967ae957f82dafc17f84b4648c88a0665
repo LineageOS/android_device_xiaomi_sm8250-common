@@ -34,6 +34,23 @@
       "parentUuid": "3b775bce_d704e02b",
       "revId": "0f44e42967ae957f82dafc17f84b4648c88a0665",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87875e3b_d683ffd6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-06T11:32:06Z",
+      "side": 1,
+      "message": "Yeah idk if this is a good idea, all of our devices are sold everywhere",
+      "revId": "0f44e42967ae957f82dafc17f84b4648c88a0665",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
