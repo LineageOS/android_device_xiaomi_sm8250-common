@@ -16,6 +16,24 @@
       "message": "Not booting with Lineage OS 21 on lmi:\n\n[    2.110059] request_module fs-erofs succeeded, but still no fs?\n[    2.120459] reboot: Restarting system with command \u0027bootloader\u0027\n\nhttps://paste.rs/ktvaq",
       "revId": "bef36762ece4e35b9042ba51e1873a0ae97856e6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fdc4b50_cb5cdb02",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-16T01:08:08Z",
+      "side": 1,
+      "message": "I have local changes in the kernel for that",
+      "parentUuid": "968b26cd_81ba5c5b",
+      "revId": "bef36762ece4e35b9042ba51e1873a0ae97856e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
