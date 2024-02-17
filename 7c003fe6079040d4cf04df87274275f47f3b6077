@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "025ee9d3_d92fe770",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20520
+      },
+      "writtenOn": "2024-02-17T08:39:17Z",
+      "side": 1,
+      "message": "None of Ximi tablets have fingerprint, so maybe it should be to the exclusions?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
