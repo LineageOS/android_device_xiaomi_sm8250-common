@@ -16,6 +16,40 @@
       "message": "None of Ximi tablets have fingerprint, so maybe it should be to the exclusions?",
       "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5a233c2_6212ca85",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-02-20T11:13:09Z",
+      "side": 1,
+      "message": "Shouldn\u0027t both lines above also be ifdef\u0027ed as NFC is not enabled in kona.mk?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31ce89f7_cf706d36",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-02-20T11:13:09Z",
+      "side": 1,
+      "message": "Why not all files under GNSS?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
