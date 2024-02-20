@@ -37,6 +37,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "256b772a_0b55e3a5",
+        "filename": "kona.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-02-20T11:13:59Z",
+      "side": 1,
+      "message": "Should this not also be ifdef\u0027ed?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "31ce89f7_cf706d36",
         "filename": "proprietary-files.txt",
         "patchSetId": 4
