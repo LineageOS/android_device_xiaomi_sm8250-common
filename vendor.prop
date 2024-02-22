@@ -273,6 +273,9 @@ persist.vendor.sensors.sync_request=true
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# Subsystem Restart
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
