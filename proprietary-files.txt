@@ -691,6 +691,9 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
+# Subsystem Restart
+vendor/bin/ssr_setup
+
 # Thermal
 vendor/bin/mi_thermald
 vendor/etc/init/init.mi_thermald.rc
