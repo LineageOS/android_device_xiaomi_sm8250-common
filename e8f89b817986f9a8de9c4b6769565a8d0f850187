@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce00b418_52f7bd78",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 31334
+      },
+      "writtenOn": "2024-02-23T10:53:55Z",
+      "side": 0,
+      "message": "Apollo(n) has a battery led.",
+      "revId": "e8f89b817986f9a8de9c4b6769565a8d0f850187",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
