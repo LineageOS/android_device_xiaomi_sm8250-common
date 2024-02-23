@@ -16,6 +16,24 @@
       "message": "Apollo(n) has a battery led.",
       "revId": "e8f89b817986f9a8de9c4b6769565a8d0f850187",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67dd01cd_1914f233",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 33487
+      },
+      "writtenOn": "2024-02-23T20:20:27Z",
+      "side": 0,
+      "message": "Bro check https://github.com/LineageOS/android_hardware_xiaomi/blob/lineage-20/aidl/light/android.hardware.light-service.xiaomi.rc\nWe\u0027ve set permission for it in common lights hal",
+      "parentUuid": "ce00b418_52f7bd78",
+      "revId": "e8f89b817986f9a8de9c4b6769565a8d0f850187",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
