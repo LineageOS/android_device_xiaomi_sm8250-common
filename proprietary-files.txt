@@ -139,6 +139,49 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 
+# CNE (new)
+-system_ext/app/DynamicDDSService/DynamicDDSService.apk
+system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
+system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
+system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
+system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
+system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
+system_ext/framework/vendor.qti.data.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.0-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.1-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.2-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.3-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.4-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.5-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.6-java.jar
+system_ext/framework/vendor.qti.data.factory-V2.7-java.jar
+system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar
+system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar
+system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.lce-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
+system_ext/framework/vendor.qti.latency-V2.0-java.jar
+system_ext/framework/vendor.qti.latency-V2.1-java.jar
+system_ext/framework/vendor.qti.latency-V2.2-java.jar
+system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar
+system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
+
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
@@ -193,6 +236,12 @@ vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
+
+# DPM (new)
+-system_ext/app/dpmserviceapp/dpmserviceapp.apk
+system_ext/lib64/libmwqemiptablemgr.so
+system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar
 
 # DRM (QSEECom)
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
@@ -391,6 +440,33 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+
+# IMS (new)
+-system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -669,6 +745,17 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
+
+# RIL (new)
+-system_ext/app/atfwd/atfwd.apk
+-system_ext/app/DeviceInfo/DeviceInfo.apk
+-system_ext/app/embms/embms.apk
+-system_ext/app/QtiTelephony/QtiTelephony.apk
+-system_ext/app/uceShimService/uceShimService.apk
+system_ext/framework/embmslibrary.jar
+system_ext/framework/extphonelib.jar
+system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
+system_ext/etc/permissions/embms.xml
 
 # SECCOMP policy
 vendor/etc/seccomp_policy/mediacodec.policy
