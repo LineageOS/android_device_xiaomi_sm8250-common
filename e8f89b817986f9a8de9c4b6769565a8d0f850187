@@ -34,6 +34,29 @@
       "parentUuid": "ce00b418_52f7bd78",
       "revId": "e8f89b817986f9a8de9c4b6769565a8d0f850187",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6984ff2c_7599defc",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 319,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-25T23:16:35Z",
+      "side": 0,
+      "message": "We actually ship nv_mac, have you even checked what you have deleted?",
+      "range": {
+        "startLine": 314,
+        "startChar": 0,
+        "endLine": 319,
+        "endChar": 0
+      },
+      "revId": "e8f89b817986f9a8de9c4b6769565a8d0f850187",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
