@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f3a9bdf_4a27fda2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33487
+      },
+      "writtenOn": "2024-02-26T00:16:12Z",
+      "side": 1,
+      "message": "Sorry for wasting your time with my last unchecked submission, I\u0027ll take care of it",
+      "revId": "81e6ca756709ca486304c34e253672a6dbd2b829",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
