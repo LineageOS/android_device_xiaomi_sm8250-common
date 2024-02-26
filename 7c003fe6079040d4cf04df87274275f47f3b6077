@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d711774_04305263",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-26T00:04:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "025ee9d3_d92fe770",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c5a233c2_6212ca85",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-02-20T11:13:09Z",
       "side": 1,
       "message": "Shouldn\u0027t both lines above also be ifdef\u0027ed as NFC is not enabled in kona.mk?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbda9e92_ad1ef7bb",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-26T00:04:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c5a233c2_6212ca85",
       "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -52,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "339d19c3_24ba12b8",
+        "filename": "kona.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-26T00:04:10Z",
+      "side": 1,
+      "message": "Present on stock :shrug:",
+      "parentUuid": "256b772a_0b55e3a5",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "31ce89f7_cf706d36",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-02-20T11:13:09Z",
       "side": 1,
       "message": "Why not all files under GNSS?",
+      "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "359c20c2_10f0b8af",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-26T00:04:10Z",
+      "side": 1,
+      "message": "Apparently stock doesn\u0027t exclude everything",
+      "parentUuid": "31ce89f7_cf706d36",
       "revId": "7c003fe6079040d4cf04df87274275f47f3b6077",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
