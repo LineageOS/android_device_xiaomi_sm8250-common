@@ -90,3 +90,7 @@ service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
     group system bluetooth wifi
     oneshot
     disabled
+
+# Radio
+on early-init
+    setprop ro.vendor.radio.midevice ${ro.product.vendor.device}
