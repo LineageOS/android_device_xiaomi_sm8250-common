@@ -67,6 +67,9 @@ function blob_fixup() {
         vendor/etc/media_codecs_kona.xml)
             sed -i "/media_codecs_dolby_audio.xml/d" "${2}"
             ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            sed -i 's|ro.product.vendor.device|ro.vendor.radio.midevice|g' "${2}"
+            ;;
     esac
 }
 
