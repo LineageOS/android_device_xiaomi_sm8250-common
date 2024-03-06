@@ -16,6 +16,24 @@
       "message": "nfc works on alioth",
       "revId": "e2693db30780f7ab91056d62fd152b1eefa7cfd3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fbf359d_6422436e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-03-06T21:31:29Z",
+      "side": 1,
+      "message": "Unfortunately as is the patch won\u0027t work on devices w/o NFC due to manifest entry",
+      "parentUuid": "5c580a5a_0bd4209f",
+      "revId": "e2693db30780f7ab91056d62fd152b1eefa7cfd3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
