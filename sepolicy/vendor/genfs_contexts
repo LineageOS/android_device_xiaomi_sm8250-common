@@ -52,7 +52,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc        u:object_r:sysfs_rtc:s0
 
 # Touchpanel
-genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate                u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /touchpanel                                                      u:object_r:sysfs_touchpanel:s0
 
 # UFS
