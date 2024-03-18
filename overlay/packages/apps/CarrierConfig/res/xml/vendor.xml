@@ -48,7 +48,8 @@
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
-        <string name="5g_icon_configuration_string">connected_mmwave:5GUWB,connected:5g,not_restricted:None,restricted:None</string>
+        <string name="5g_icon_configuration_string">
+            connected_mmwave:5GUWB,connected:5g,not_restricted:None,restricted:None</string>
         <boolean name="support_adhoc_conference_calls_bool" value="true" />
         <boolean name="support_add_conference_participants_bool" value="true" />
     </carrier_config>
@@ -543,7 +544,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -573,7 +575,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -603,7 +606,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -633,7 +637,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -663,7 +668,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -693,7 +699,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -723,7 +730,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -753,7 +761,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -783,7 +792,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -813,7 +823,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -843,7 +854,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -873,7 +885,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -903,7 +916,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -933,7 +947,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -963,7 +978,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -993,7 +1009,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1023,7 +1040,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1053,7 +1071,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1083,7 +1102,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1113,7 +1133,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1143,7 +1164,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -1173,7 +1195,8 @@
         <boolean name="show_data_usage_toast" value="false" />
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid" />
-            <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
+            <item
+                value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
             <item value="type" />
             <item value="ims,emergency" />
             <item value="include_common_rules" />
@@ -2517,6 +2540,7 @@
         <boolean name="config_enable_vt_with_mobile_data_off" value="true" />
         <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
         <boolean name="allow_adding_apns_bool" value="true" />
         <boolean name="config_power_center_5g_save_mode" value="true" />
         <boolean name="carrier_fiveg_power_saving_available_bool" value="true" />
@@ -2572,6 +2596,7 @@
         <boolean name="config_update_multiparty_state" value="true" />
         <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true" />
         <boolean name="mtk_vt_over_wifi_check_volte_enable_bool" value="true" />
+        <boolean name="config_show_vonr_icon_in_statusbar" value="false" />
     </carrier_config>
     <carrier_config sdk="26">
         <boolean name="vilte_data_is_metered_bool" value="false" />
@@ -2630,6 +2655,9 @@
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true" />
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true" />
         <boolean name="fallback_sms_not_allowed_in_roaming" value="false" />
+        <string name="imsserviceentitlement.entitlement_server_url_string">https://des.orange.fr</string>
+        <string name="imsserviceentitlement.fcm_sender_id_string">958953883393</string>
+        <boolean name="imsserviceentitlement.show_vowifi_webview_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="208" mnc="01" spn="Rakuten">
         <boolean name="config_support_secret_code_for_volte_and_wfc" value="true" />
@@ -2699,6 +2727,7 @@
         <boolean name="editable_wfc_mode_bool" value="false" />
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="display_call_type_icon_bool" value="false" />
+        <boolean name="display_hd_audio_property_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
         <string name="default_vm_number_string">133</string>
         <string name="default_vm_number_roaming_string">+351931331330</string>
@@ -2736,13 +2765,13 @@
         <int name="config_nr_display_rule" value="4" />
         <int name="config_nr_display_timer1" value="10" />
         <int name="config_nr_display_timer2" value="10" />
+        <boolean name="config_show_3g_only" value="true" />
     </carrier_config>
     <carrier_config mcc="334" mnc="030">
         <boolean name="voicemail_notification_persistent_bool" value="true" />
         <boolean name="carrier_5g_switch_available_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="334" mnc="050,090">
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="show_iccid_in_sim_status_bool" value="true" />
         <boolean name="voicemail_notification_persistent_bool" value="true" />
         <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
@@ -2812,6 +2841,7 @@
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="01,06,09">
+        <boolean name="config_prefer_2g_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="carrier_volte_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
@@ -2830,6 +2860,8 @@
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="carrier_volte_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_stk_dialog_timout_customized" value="true" />
+        <boolean name="carrier_stk_dialog_set_cancelable" value="true" />
         <string-array name="apn_hide_rule_strings_array" num="2">
             <item value="type" />
             <item value="" />
@@ -2844,6 +2876,10 @@
     </carrier_config>
     <carrier_config mcc="460" mnc="00,02,04,07,08" nr_support_mode="1">
         <boolean name="config_volte_on_by_default_after_ota" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="00,02,04,07,08">
+        <boolean name="carrier_stk_dialog_timout_customized" value="true" />
+        <boolean name="carrier_stk_dialog_set_cancelable" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="13,15">
         <boolean name="config_prefer_2g_bool" value="false" />
@@ -2886,7 +2922,8 @@
         <boolean name="config_editable_wfc_when_calling" value="false" />
         <boolean name="config_video_supp_service" value="true" />
     </carrier_config>
-    <carrier_config mcc="404" mnc="34,38,51,53,54,55,57,58,59,62,64,66,71,72,73,74,75,76,77,79,80,81">
+    <carrier_config mcc="404"
+        mnc="34,38,51,53,54,55,57,58,59,62,64,66,71,72,73,74,75,76,77,79,80,81">
         <boolean name="carrier_disable_5g_switch_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405">
@@ -2930,7 +2967,8 @@
         <boolean name="wos_flight_mode_support_bool" value="true" />
         <boolean name="carrier_disable_5g_switch_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="405" mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
+    <carrier_config mcc="405"
+        mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -3021,6 +3059,7 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="config_disable_ss_over_wfc_when_airplane_enabled" value="true" />
         <int name="maxMessageSize" value="3145728" />
     </carrier_config>
     <carrier_config mcc="235" mnc="94">
@@ -3063,12 +3102,16 @@
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true" />
     </carrier_config>
+    <carrier_config mcc="232" mnc="04">
+        <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="232" mnc="05,10,14">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="display_call_type_icon_bool" value="true" />
         <boolean name="config_prefer_2g_bool" value="false" />
+        <boolean name="config_show_prefer_3g" value="false" />
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
         <string-array name="non_roaming_operator_string_array" num="1">
             <item value="23203" />
@@ -3138,7 +3181,6 @@
         <string name="default_vm_number_string">+420608989898</string>
         <int name="smsToMmsTextThreshold" value="6" />
         <boolean name="display_hd_audio_property_bool" value="false" />
-        <boolean name="config_ecc_notification_for_wifi_calling" value="true" />
         <int name="wfc_spn_format_idx_int" value="1" />
         <int name="config_nr_display_rule" value="0" />
         <boolean name="config_cota_carrier_customize_for_call_feature" value="true" />
@@ -3274,6 +3316,9 @@
         <boolean name="display_hd_audio_property_bool" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
     </carrier_config>
+    <carrier_config mcc="262" mnc="23">
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+    </carrier_config>
     <carrier_config mcc="216" mnc="70">
         <boolean name="config_power_center_5g_save_mode" value="false" />
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
@@ -3302,6 +3347,11 @@
         <boolean name="carrier_5g_switch_available_bool" value="true" />
         <string name="default_vm_number_string">41919</string>
         <boolean name="config_volte_play_local_hold_tone" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
     </carrier_config>
     <carrier_config mcc="222" mnc="08">
         <boolean name="config_restore_participants_presentation" value="true" />
@@ -3346,6 +3396,8 @@
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="226" mnc="01">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="config_power_center_5g_save_mode" value="false" />
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
@@ -3554,7 +3606,7 @@
     <carrier_config mcc="214">
         <boolean name="config_support_callbarring_over_ims" value="false" />
         <boolean name="config_hide_pref_sms_settings" value="false" />
-        <string-array name="unloggable_numbers_string_array" num="9">
+        <string-array name="unloggable_numbers_string_array" num="10">
             <item value="900018018" />
             <item value="016" />
             <item value="900202010" />
@@ -3564,6 +3616,7 @@
             <item value="024" />
             <item value="017" />
             <item value="021" />
+            <item value="028" />
         </string-array>
     </carrier_config>
     <carrier_config mcc="222" mnc="10">
@@ -3675,6 +3728,11 @@
     </carrier_config>
     <carrier_config mcc="214" mnc="21">
         <boolean name="carrier_5g_switch_available_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="06">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="639" mnc="02">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
@@ -3866,6 +3924,7 @@
         <string-array name="non_roaming_operator_string_array" num="1">
             <item value="27205" />
         </string-array>
+        <boolean name="config_show_3g_only" value="true" />
     </carrier_config>
     <carrier_config mcc="272" mnc="03">
         <boolean name="carrier_stk_icon_hidden_bool" value="true" />
@@ -3887,6 +3946,7 @@
     <carrier_config mcc="466" mnc="01,02,03,05,12,11,12,89,92,97">
         <boolean name="config_editable_wfc_when_calling" value="false" />
         <boolean name="carrier_stk_icon_hidden_bool" value="true" />
+        <boolean name="config_prefer_2g_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="466" mnc="05">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -3921,6 +3981,7 @@
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_stk_icon_hidden_bool" value="true" />
+        <boolean name="config_prefer_2g_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="456" mnc="11">
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
@@ -4408,13 +4469,10 @@
     <carrier_config cust_region="it_vodafone">
         <boolean name="config_show_prefer_4g" value="true" />
     </carrier_config>
-    <carrier_config cust_region="es_telefonica">
-        <boolean name="config_show_prefer_4g" value="true" />
-    </carrier_config>
     <carrier_config cust_region="mx_telcel">
         <boolean name="support_direct_fdn_dialing_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="232" mnc="03,07">
+    <carrier_config mcc="232" mnc="03,04,07">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
@@ -4615,7 +4673,6 @@
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
         <boolean name="config_power_center_5g_save_mode" value="false" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
-        <string name="default_vm_number_string">+36309888444</string>
         <boolean name="show_ims_registration_status_bool" value="true" />
         <int name="wfc_spn_format_idx_int" value="1" />
         <boolean name="is_ims_conference_size_enforced_bool" value="true" />
@@ -4790,6 +4847,7 @@
         <boolean name="config_customize_for_operator_vowifi_feature" value="true" />
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true" />
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true" />
+        <boolean name="config_hide_pref_sms_settings" value="false" />
     </carrier_config>
     <carrier_config mcc="259" mnc="01">
         <boolean name="config_support_secret_code_for_volte_and_wfc" value="false" />
@@ -4869,9 +4927,10 @@
         <boolean name="display_hd_audio_property_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="297" mnc="02">
-        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
-        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="hide_wfc_mode_option_in_roaming" value="true" />
         <boolean name="config_show_prefer_4g" value="true" />
         <boolean name="show_ims_registration_status_bool" value="true" />
         <boolean name="config_power_center_5g_save_mode" value="false" />
@@ -5062,6 +5121,11 @@
     <carrier_config mcc="244" mnc="05">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
     </carrier_config>
     <carrier_config mcc="244" mnc="12,13">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
@@ -5421,6 +5485,9 @@
     <carrier_config cust_region="jp_sb">
         <boolean name="config_show_prefer_4g" value="true" />
     </carrier_config>
+    <carrier_config mcc="999" mnc="29">
+        <boolean name="carrier_disable_sa_mode_bool" value="false" />
+    </carrier_config>
     <carrier_config include="default_qcom_v2.7.3.xml" />
     <carrier_config mcc="204" mnc="16">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -5570,7 +5637,8 @@
     <carrier_config mcc="405" mnc="51,52,53,54,55,56">
         <boolean name="carrier_disable_5g_switch_bool" value="false" />
     </carrier_config>
-    <carrier_config mcc="405" mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
+    <carrier_config mcc="405"
+        mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="carrier_disable_5g_switch_bool" value="false" />
     </carrier_config>
@@ -5587,6 +5655,9 @@
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="427" mnc="7">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="7">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="502" mnc="12">
@@ -5610,6 +5681,10 @@
         <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="510" mnc="09,28">
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="510" mnc="89">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="515" mnc="2">
@@ -5651,6 +5726,9 @@
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="525" mnc="10">
+        <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="716" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
