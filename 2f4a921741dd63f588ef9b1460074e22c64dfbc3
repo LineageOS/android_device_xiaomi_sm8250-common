@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2371daaa_7d82d3b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-03-18T05:46:54Z",
+      "side": 1,
+      "message": "https://github.com/xiaomi-sm8250-devs/proprietary_vendor_xiaomi_sm8250-common/commits/lineage-21/",
+      "revId": "2f4a921741dd63f588ef9b1460074e22c64dfbc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
