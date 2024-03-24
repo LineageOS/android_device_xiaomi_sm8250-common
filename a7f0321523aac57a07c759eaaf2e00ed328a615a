@@ -16,6 +16,24 @@
       "message": "These entries are in the device specific manifests now",
       "revId": "a7f0321523aac57a07c759eaaf2e00ed328a615a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "525007a8_52d39270",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33487
+      },
+      "writtenOn": "2024-03-24T21:23:16Z",
+      "side": 1,
+      "message": "I see",
+      "parentUuid": "5fc091bc_36a0ef73",
+      "revId": "a7f0321523aac57a07c759eaaf2e00ed328a615a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
