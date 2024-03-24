@@ -227,6 +227,9 @@ ifneq ($(TARGET_IS_TABLET),true)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_phone.xml
 endif
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
+ifeq ($(TARGET_HAS_UDFPS),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_fod.xml
+endif
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
 
