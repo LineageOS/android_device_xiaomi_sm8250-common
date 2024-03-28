@@ -31,44 +31,6 @@ $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-EGL_32_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so
-$(EGL_32_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 32-bit EGL symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-GLESv2_32_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
-$(GLESv2_32_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 32-bit GLESv2 symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-Q3DTOOLS_32_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libq3dtools_adreno.so
-$(Q3DTOOLS_32_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 32-bit Q3D Tools symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-EGL_64_SYMLINK := $(TARGET_OUT_VENDOR)/lib64/libEGL_adreno.so
-$(EGL_64_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 64-bit EGL symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-GLESv2_64_SYMLINK := $(TARGET_OUT_VENDOR)/lib64/libGLESv2_adreno.so
-$(GLESv2_64_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 64-bit GLESv2 symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-Q3DTOOLS_64_SYMLINK := $(TARGET_OUT_VENDOR)/lib64/libq3dtools_adreno.so
-$(Q3DTOOLS_64_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating 64-bit Q3DTools symlink: $@"
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_32_SYMLINK) $(GLESv2_32_SYMLINK) $(Q3DTOOLS_32_SYMLINK) $(EGL_64_SYMLINK) $(GLESv2_64_SYMLINK) $(Q3DTOOLS_64_SYMLINK)
-
 CNE_LIBS := libvndfwk_detect_jni.qti.so
 CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR_APPS)/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
 $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
