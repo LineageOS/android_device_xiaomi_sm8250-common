@@ -16,6 +16,24 @@
       "message": "This would break alioth to whatever device came before pipa?",
       "revId": "df38fac1c7b437ee5b494e3affe6188a6caf4cdc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8006c6e1_468720ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26349
+      },
+      "writtenOn": "2024-04-24T12:31:43Z",
+      "side": 1,
+      "message": "Would be fair to check alioth\u0027s symlink path on stock",
+      "parentUuid": "64b083ad_9dc6e2d4",
+      "revId": "df38fac1c7b437ee5b494e3affe6188a6caf4cdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
