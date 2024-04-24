@@ -1,1 +1,3 @@
 allow ueventd self:capability sys_nice;
+allow ueventd vendor_persist_wcnss_service_file:dir search;
+allow ueventd vendor_persist_wcnss_service_file:file r_file_perms;
