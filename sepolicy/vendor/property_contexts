@@ -34,13 +34,6 @@ ro.ril.miui.imei                                u:object_r:vendor_deviceid_prop:
 ro.ril.oem.imei                                 u:object_r:vendor_deviceid_prop:s0
 ro.ril.oem.meid                                 u:object_r:vendor_deviceid_prop:s0
 
-# Power
-vendor.powerhal.state                           u:object_r:vendor_power_prop:s0
-vendor.powerhal.audio                           u:object_r:vendor_power_prop:s0
-vendor.powerhal.lpm                             u:object_r:vendor_power_prop:s0
-vendor.powerhal.init                            u:object_r:vendor_power_prop:s0
-vendor.powerhal.rendering                       u:object_r:vendor_power_prop:s0
-
 # Mlipay
 persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_prop:s0
 
