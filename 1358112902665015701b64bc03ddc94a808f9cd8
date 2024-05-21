@@ -16,6 +16,23 @@
       "message": "Didn\u0027t notice any issue in alioth.",
       "revId": "1358112902665015701b64bc03ddc94a808f9cd8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92017b9d_70db208e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-05-21T18:42:38Z",
+      "side": 1,
+      "message": "Check my comment here: https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8150-common/+/392821",
+      "revId": "1358112902665015701b64bc03ddc94a808f9cd8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
