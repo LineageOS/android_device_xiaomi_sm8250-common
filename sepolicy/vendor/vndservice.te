@@ -1,1 +1,1 @@
-type remosaic_daemon_service, vndservice_manager_type;
+type vendor_remosaic_daemon_service, vndservice_manager_type;

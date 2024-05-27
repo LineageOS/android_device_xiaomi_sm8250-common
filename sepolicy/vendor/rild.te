@@ -1,1 +1,2 @@
+# Allow rild to set IMEI props
 set_prop(rild, vendor_deviceid_prop)
