@@ -5,11 +5,6 @@ aaudio.mmap_policy=1
 audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
@@ -24,8 +19,6 @@ persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
 ro.vendor.audio.game.effect=true
 ro.vendor.audio.ring.filter=true
 ro.vendor.audio.scenario.support=true
@@ -41,7 +34,6 @@ ro.vendor.audio.us.proximity=true
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
 ro.vendor.audio.voice.change.youme.support=true
-tunnel.audio.encode=true
 vendor.audio.capture.enforce_legacy_copp_sr=true
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -189,9 +181,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
 
-# GPS
-persist.backup.ntpServer=0.pool.ntp.org
-
 # Graphics
 debug.egl.hw=0
 debug.mdpcomp.logs=0
@@ -203,7 +192,6 @@ debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
-persist.demo.hdmirotationlock=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
