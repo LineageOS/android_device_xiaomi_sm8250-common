@@ -1,2 +1,3 @@
-allow platform_app vendor_hal_soter_hwservice:hwservice_manager find;
+# Allow SoterService to access the vendor HAL
+hal_client_domain(platform_app, vendor_hal_soter)
 binder_call(platform_app, vendor_hal_soter_qti)

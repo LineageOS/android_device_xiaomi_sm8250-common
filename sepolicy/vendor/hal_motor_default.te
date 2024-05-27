@@ -8,26 +8,18 @@ binder_call(hal_motor_client, hal_motor_server)
 hal_client_domain(cameraserver, hal_motor)
 hal_server_domain(hal_motor_default, hal_motor)
 
-binder_call(devicesettings_app, hal_motor)
-binder_call(hal_motor_default, devicesettings_app)
-
 hal_attribute_hwservice(hal_motor, hal_motor_hwservice)
 
-# Allow hal_motor_default to read and write to { motor_device hall_device }
-allow hal_motor_default {
-  hall_device 
-  motor_device
-}:chr_file rw_file_perms;
+# Allow hal_motor_default to read and write to the motor and hall devices
+allow hal_motor_default hall_device:chr_file rw_file_perms;
+allow hal_motor_default motor_device:chr_file rw_file_perms;
 
-# Allow hal_motor_default to read and write to { mnt_vendor_file vendor_persist_sensors_file }
-allow hal_motor_default {
-  mnt_vendor_file 
-  vendor_persist_sensors_file
-}:dir rw_dir_perms;
+# Allow hal_motor_default to read and write to persist sensors files
+allow hal_motor_default vendor_persist_sensors_file:dir rw_dir_perms;
+allow hal_motor_default vendor_persist_sensors_file:file rw_file_perms;
 
-allow hal_motor_default {
-  mnt_vendor_file
-  vendor_persist_sensors_file
-}:file rw_file_perms;
-
+# Allow hal_motor_default to set motor properties
 set_prop(hal_motor_default, vendor_motor_prop)
+
+# Motor HAL wants to search on /mnt/vendor
+allow hal_motor_default mnt_vendor_file:dir search;
