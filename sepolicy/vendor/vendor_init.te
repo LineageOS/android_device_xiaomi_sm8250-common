@@ -1,4 +1,5 @@
 set_prop(vendor_init, vendor_alarm_boot_prop)
+set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 set_prop(vendor_init, vendor_video_prop)
 
@@ -8,6 +9,3 @@ allow vendor_init {
 }:file w_file_perms;
 
 allow vendor_init block_device:lnk_file setattr;
-allow vendor_init vendor_camera_prop:property_service set;
-
-allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };

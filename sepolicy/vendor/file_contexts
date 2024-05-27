@@ -1,94 +1,90 @@
 # Audio
-/dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
-/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value              u:object_r:vendor_sysfs_audio:s0
+/dev/socket/audio_hw_socket                                                                         u:object_r:vendor_audio_socket:s0
+/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                                          u:object_r:vendor_sysfs_audio:s0
 
 # Bluetooth
-/vendor/bin/init\.mi\.btmac\.sh                                         u:object_r:vendor_qti_init_shell_exec:s0
+/vendor/bin/init\.mi\.btmac\.sh                                                                     u:object_r:vendor_qti_init_shell_exec:s0
 
-# Boot devices
-/dev/block/platform/soc/1d84000.ufshc/by-name/vendor_boot_[ab]          u:object_r:boot_block_device:s0
+# Block devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp                                                 u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/vendor_boot_[ab]                                      u:object_r:boot_block_device:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                                        u:object_r:camera_persist_file:s0
-/vendor/bin/remosaic_daemon                                             u:object_r:remosaic_daemon_exec:s0
+/mnt/vendor/persist/camera(/.*)?                                                                    u:object_r:vendor_camera_persist_file:s0
+/vendor/bin/remosaic_daemon                                                                         u:object_r:vendor_remosaic_daemon_exec:s0
 
 # Camera motor
-/dev/drv8846_dev                                                        u:object_r:motor_device:s0
-/dev/ti-drv8846                                                         u:object_r:motor_device:s0
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service              u:object_r:hal_motor_default_exec:s0
+/dev/drv8846_dev                                                                                    u:object_r:motor_device:s0
+/dev/ti-drv8846                                                                                     u:object_r:motor_device:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service                                          u:object_r:hal_motor_default_exec:s0
 
 # Charger
-/vendor/bin/batterysecret                                               u:object_r:batterysecret_exec:s0
-
-# Display
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param              u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps             u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status              u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info              u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/smart_fps_value         u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/thermal_hbm_disabled    u:object_r:vendor_sysfs_graphics:s0
-
-# UFS Devices
-/dev/block/platform/soc/1d84000.ufshc/by-name/msadp                     u:object_r:vendor_efs_boot_dev:s0
-
-# Elliptic
-/dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
-/dev/mius(.*)?                                                          u:object_r:ultrasound_device:s0
+/vendor/bin/batterysecret                                                                           u:object_r:vendor_batterysecret_exec:s0
 
 # Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi                           u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi                      u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint - devices
-/dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
+/dev/goodix_fp                                                                                      u:object_r:fingerprint_device:s0
 
 # Fingerprint - data
-/data/gf_data(/.*)?                                                     u:object_r:fingerprint_data_file:s0
-/data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
+/data/gf_data(/.*)?                                                                                 u:object_r:fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                                                                           u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpc(/.*)?                                                                              u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpdump(/.*)?                                                                           u:object_r:fingerprint_vendor_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?                                                                       u:object_r:vendor_persist_fingerprint_file:s0
+/mnt/vendor/persist/goodix(/.*)?                                                                    u:object_r:vendor_persist_fingerprint_file:s0
 
 # Hexagon DSP-side executable needed for Halide operation
-# This is labeled as public_adsprpcd_file as it needs to be read by apps
+# This is labeled as vendor_public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
-/mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
+/mnt/vendor/dsp/fastrpc_shell_3                                                                     u:object_r:vendor_public_adsprpcd_file:s0
 
 # IR
-/dev/ir_spi                                                             u:object_r:lirc_device:s0
-/dev/lirc[0-9]                                                          u:object_r:lirc_device:s0
-/dev/spidev[0-9]\.1                                                     u:object_r:lirc_device:s0
+/vendor/bin/hw/android\.hardware\.ir@1\.0-service\.xiaomi                                           u:object_r:hal_ir_default_exec:s0
+
+# IR devices
+/dev/ir_spi                                                                                         u:object_r:lirc_device:s0
+/dev/lirc[0-9]+                                                                                     u:object_r:lirc_device:s0
+/dev/spidev[0-9]+\.1                                                                                u:object_r:lirc_device:s0
 
 # LED
-/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?            u:object_r:sysfs_leds:s0
-/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?    u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                           u:object_r:sysfs_leds:s0
 
 # Lights
-/vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.light-service\.xiaomi                                             u:object_r:hal_light_default_exec:s0
 
 # Mlipay
-/vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
+/vendor/bin/mlipayd@1\.1                                                                            u:object_r:hal_mlipay_default_exec:s0
 
 # NFC
-/vendor/bin/hw/android.hardware\.nfc-service\.nxp                       u:object_r:hal_nfc_default_exec:s0
+/vendor/bin/hw/android.hardware\.nfc-service\.nxp                                                   u:object_r:hal_nfc_default_exec:s0
 
 # Persist subsystem
-/mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
+/mnt/vendor/persist/subsys(/.*)?                                                                    u:object_r:vendor_persist_subsys_file:s0
 
 # Sensors
-/dev/akm09970                                                                                                                   u:object_r:hall_device:s0
-/sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/us_prox.0/iio:device3(/.*)?                                                                               u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?        u:object_r:vendor_sysfs_iio:s0
+/dev/akm09970                                                                                       u:object_r:hall_device:s0
+/sys/bus/iio/devices                                                                                u:object_r:sysfs_iio:s0
+/sys/devices/platform/us_prox.0/iio:device3(/.*)?                                                   u:object_r:sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?    u:object_r:sysfs_iio:s0
 
 # SSR
-/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
+/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name                           u:object_r:vendor_sysfs_ssr:s0
 
 # Thermal
-/vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
+/vendor/bin/mi_thermald                                                                             u:object_r:vendor_mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?                                                                          u:object_r:vendor_thermal_data_file:s0
 
-# USB
-/vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
+# Ultrasound devices
+/dev/elliptic[0-9]+                                                                                 u:object_r:ultrasound_device:s0
+/dev/mius(.*)?                                                                                      u:object_r:ultrasound_device:s0
 
-# WiFi
-/vendor/bin/nv_mac                                                      u:object_r:vendor_wcnss_service_exec:s0
-/data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
+# Wakeup source stats
+/sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?                                           u:object_r:sysfs_wakeup:s0
+
+# Wi-Fi
+/data/vendor/mac_addr(/.*)?                                                                         u:object_r:vendor_wifi_vendor_data_file:s0
+/mnt/vendor/persist/wlan_mac\.bin                                                                   u:object_r:vendor_persist_wcnss_service_file:s0
+/vendor/bin/nv_mac                                                                                  u:object_r:vendor_wcnss_service_exec:s0
