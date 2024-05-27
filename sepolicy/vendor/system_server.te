@@ -1,1 +1,2 @@
+# Allow system_server to read /proc/last_kmsg
 allow system_server proc_last_kmsg:file r_file_perms;
