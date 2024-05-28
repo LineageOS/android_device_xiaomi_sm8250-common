@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "847775da_0bc466b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31334
+      },
+      "writtenOn": "2024-05-28T16:52:00Z",
+      "side": 1,
+      "message": "Tested in Apollo with fingerprint failed. log:\n05-29 00:38:39.217  1605  1605 W fingerprint@2.3: type\u003d1400 audit(0.0:107): avc:  denied  { write } for  name\u003d\"wakeup_enable\" dev\u003d\"sysfs\" ino\u003d65316 scontext\u003du:r:hal_fingerprint_default:s0 tcontext\u003du:object_r:sysfs_wakeup:s0 tclass\u003dfile permissive\u003d0",
+      "revId": "5b1545027c581b5b2cf690a18a767fdf553a6b76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
