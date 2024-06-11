@@ -36,6 +36,9 @@ genfscon sysfs /devices/platform/soc/c80000.i2c/i2c-4/4-003b/power_supply/idt   
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                     u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16_slave/power_supply/batt_verify_slave         u:object_r:sysfs_battery_supply:s0
 
+# IIO
+genfscon sysfs /bus/iio/devices                                                                     u:object_r:sysfs_iio:s0
+
 # LED
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/flashlight/brightness   u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:torch_0/brightness  u:object_r:sysfs_leds:s0
