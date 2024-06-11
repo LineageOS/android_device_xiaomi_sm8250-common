@@ -49,3 +49,6 @@ allow hal_fingerprint_default sysfs_touchpanel:file rw_file_perms;
 # ADSP access
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
+
+# Allow access to RTC
+r_dir_file(hal_fingerprint_default, sysfs_rtc)
