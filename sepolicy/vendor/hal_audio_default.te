@@ -10,3 +10,6 @@ set_prop(hal_audio_default, vendor_audio_prop)
 
 allow hal_audio_default vendor_audio_socket:sock_file rw_file_perms;
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
+
+# Allow reading IIO devices (MIUS)
+r_dir_file(hal_audio_default, sysfs_iio)

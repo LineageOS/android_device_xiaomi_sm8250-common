@@ -1,5 +1,7 @@
 type fingerprint_data_file, data_file_type, core_data_file_type, file_type;
 
+type sysfs_iio, fs_type, sysfs_type;
+
 type sysfs_msm_boot, fs_type, sysfs_type;
 
 type sysfs_touchpanel, fs_type, sysfs_type;
