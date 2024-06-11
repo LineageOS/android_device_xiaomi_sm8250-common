@@ -1,3 +1,6 @@
+# Audio
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                               u:object_r:vendor_sysfs_audio:s0
+
 # DSP
 genfscon sysfs /kernel/boot_cdsp/boot                                                               u:object_r:sysfs_msm_boot:s0
 
