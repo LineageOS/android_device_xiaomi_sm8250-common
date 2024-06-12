@@ -238,6 +238,7 @@ sys.vendor.shutdown.waittime=500
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # USB
+ro.usb.uvc.enabled=true
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
