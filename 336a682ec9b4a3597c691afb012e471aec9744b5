@@ -50,6 +50,24 @@
       "message": "I don\u0027t see this denial. Will check once more",
       "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "231ce804_157089ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-06-16T12:07:01Z",
+      "side": 1,
+      "message": "We might have to update qcom sepolicy",
+      "parentUuid": "18adf840_13814706",
+      "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
