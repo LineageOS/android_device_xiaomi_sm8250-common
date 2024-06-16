@@ -68,6 +68,24 @@
       "parentUuid": "18adf840_13814706",
       "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "135bd64a_c87f26b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27025
+      },
+      "writtenOn": "2024-06-16T13:46:21Z",
+      "side": 1,
+      "message": "https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/commit/9cd1279999b80ce31c80f80c7cdbf4d25e0dae40 looks like they moved it to aidl",
+      "parentUuid": "231ce804_157089ea",
+      "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
