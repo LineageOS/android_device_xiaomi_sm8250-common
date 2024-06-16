@@ -33,6 +33,23 @@
       "message": "Got avc denies like\n```\n06-16 11:00:26.841     0     0 E SELinux : avc:  denied  { find } for pid\u003d28044 uid\u003d10132 name\u003dvendor.qti.hardware.alarm.IAlarm/default scontext\u003du:r:vendor_poweroffalarm_app:s0:c132,c256,c512,c768 tcontext\u003du:object_r:default_android_service:s0 tclass\u003dservice_manager permissive\u003d0\n```",
       "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8747c730_a410ccc8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-06-16T09:47:04Z",
+      "side": 1,
+      "message": "I don\u0027t see this denial. Will check once more",
+      "revId": "336a682ec9b4a3597c691afb012e471aec9744b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
