@@ -16,6 +16,23 @@
       "message": "I\u0027ll decommonized it then, don\u0027t really like per-device guards",
       "revId": "60acebc9da561573bfb0c2c766dac51fc33bd756",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54015857_67f6364f",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-06-22T03:20:53Z",
+      "side": 1,
+      "message": "add symlink to both location. That shouldnt cause any issues.\n\n$(hide) ln -sf /mnt/vendor/persist/wlan/wlan_mac.bin $@/wlan_mac.bin\n$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin",
+      "revId": "60acebc9da561573bfb0c2c766dac51fc33bd756",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
