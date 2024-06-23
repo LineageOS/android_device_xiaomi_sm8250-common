@@ -16,6 +16,23 @@
       "message": "Usb configuration menu is freezing for me.",
       "revId": "f9d6b9628d8cb63477771534d64b173c21ef4bc5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24ad7417_b9d72100",
+        "filename": "rootdir/etc/init.xiaomi.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-06-23T13:44:58Z",
+      "side": 1,
+      "message": "can\u0027t you just add all of that to common qcom usb rc?",
+      "revId": "f9d6b9628d8cb63477771534d64b173c21ef4bc5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
