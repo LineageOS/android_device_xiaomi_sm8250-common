@@ -1,4 +1,4 @@
-# Unpinned blobs from munch-user 13 RKQ1.211001.001 V14.0.6.0.TLMMIXM release-keys
+# Unpinned blobs from munch-user 14 RKQ1.211001.001 V816.0.2.0.ULMMIXM release-keys
 
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
