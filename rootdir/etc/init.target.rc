@@ -196,7 +196,6 @@ on charger
     mkdir /mnt/vendor/persist/subsys 0770 root system
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
-    setprop sys.usb.configfs 1
     start leds-sh
 
 on property:vendor.audio.cit.spkcal.copy=true
