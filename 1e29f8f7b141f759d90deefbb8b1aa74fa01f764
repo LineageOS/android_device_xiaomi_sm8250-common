@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2862a475_08443cec",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-06-25T01:58:38Z",
+      "side": 1,
+      "message": "qti_symlink",
+      "range": {
+        "startLine": 81,
+        "startChar": 67,
+        "endLine": 81,
+        "endChar": 85
+      },
+      "revId": "1e29f8f7b141f759d90deefbb8b1aa74fa01f764",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
