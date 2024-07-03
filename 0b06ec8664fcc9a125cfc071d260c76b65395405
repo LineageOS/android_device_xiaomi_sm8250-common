@@ -16,6 +16,24 @@
       "message": "As this is not working properly, we can\u0027t merge it.",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b185b06_d676b7ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-07-03T17:38:42Z",
+      "side": 1,
+      "message": "Are you referring to the inverted color issue? Fixed by the upper commit and I4376102e2b0eeaefed536eff29c315a71e469b57",
+      "parentUuid": "33b4757e_d0c3fcf1",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
