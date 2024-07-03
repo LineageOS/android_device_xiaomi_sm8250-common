@@ -33,6 +33,24 @@
       "message": "can\u0027t you just add all of that to common qcom usb rc?",
       "revId": "f9d6b9628d8cb63477771534d64b173c21ef4bc5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "deca1b05_069287df",
+        "filename": "rootdir/etc/init.xiaomi.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-07-03T16:54:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "24ad7417_b9d72100",
+      "revId": "f9d6b9628d8cb63477771534d64b173c21ef4bc5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
