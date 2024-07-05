@@ -69,6 +69,10 @@ on property:sys.boot_completed=1
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
+    # Enable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 1
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
+
 on property:init.svc.recovery=running
     trigger enable-low-power
 
@@ -88,8 +92,9 @@ on early-init
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
 
-    # Disable UFS clock scaling
-    write /sys/bus/platform/devices/${ro.boot.bootdevice}/clkscale_enable 0
+    # Disable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 0
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
 
 on init
     # Setup permission for Power HAL
@@ -159,3 +164,8 @@ on init
     # report max frequency to unity tasks.
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+on charger
+    # Enable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 1
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
