@@ -52,6 +52,24 @@
       "parentUuid": "03721efa_ebfe79e2",
       "revId": "74644da78745407169824a796f544b6c96e0ea27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d16a84d1_5c9ac133",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-07-05T17:27:56Z",
+      "side": 1,
+      "message": "please email devrel[@]lineageos.org with that lmi tree for submission!",
+      "parentUuid": "7544774b_62121377",
+      "revId": "74644da78745407169824a796f544b6c96e0ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
