@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f03d8235_401fe374",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-05T16:21:54Z",
+      "side": 1,
+      "message": "Not even Google does this, does it really improve stuff or we\u0027re doing it just for fun?",
+      "revId": "7955a9e684c663ff310a1ee7b483b89f00eebe23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
