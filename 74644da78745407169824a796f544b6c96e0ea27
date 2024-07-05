@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29b390f7_0da08a3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-07-05T15:33:42Z",
+      "side": 1,
+      "message": "Hey, are you bringing up cmi on that tree?\n\nIf yes, do you wish to submit and maintain the device when it\u0027s ready?",
+      "revId": "74644da78745407169824a796f544b6c96e0ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
