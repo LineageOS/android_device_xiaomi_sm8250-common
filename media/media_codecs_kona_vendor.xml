@@ -118,8 +118,6 @@ Only the three quirks included above are recognized at this point:
  |             | 3820    2160    240     220     7735500             |
  |             | 4096    2160    120     220     4147200             |
  |             | 7680    4320    60      220     7776000             |
- | mpeg4-sw    | 1920    1088    30      40      244800      244800  |
- |             | 1280    720     30      40      108000              |
  | vp8         | 1280    720     120     220     432000      1036800 |
  |             | 1920    1088    120     220     979200              |
  |             | 3840    2160    30      220     972000              |
@@ -128,7 +126,6 @@ Only the three quirks included above are recognized at this point:
  |             | 3820    2160    240     220     7735500             |
  |             | 4096    2160    120     220     4147200             |
  |             | 7680    4320    60      220     7776000             |
- | h263-sw     | 864     480     30      16      48600       48600   |
  | mpeg2       | 1020    1088    60i     40      130050      244800  |
  |             | 1920    1088    30      40      244800              |
  |_____________|_____________________________________________________|
@@ -172,12 +169,10 @@ Only the three quirks included above are recognized at this point:
  |          | 4096    2160    60      220     2073600             |
  |          | 8192    4320    24      220     3317760             |
  | hevc.cq  | 512     512     3825    220     3916800     3916800 |
- | mpeg4-sw | 1280    720     30      4       108000      108000  |
  | vp8      | 1280    720     60      70      216000      2073600 |
  |          | 1920    1088    60      70      489600              |
  |          | 3840    2160    60      70      1944000             |
  |          | 4096    2160    60      70      2073600             |
- | h263-sw  | 864     480     30      2       48600       48600   |
  |__________|_____________________________________________________|
 -->
 
@@ -187,7 +182,6 @@ Only the three quirks included above are recognized at this point:
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
     <Encoders>
-        <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.encoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -268,26 +262,8 @@ Only the three quirks included above are recognized at this point:
             <Limit name="performance-point-16384x8192" value="3" />
             <Limit name="performance-point-1920x1080" value="6" />
         </MediaCodec>
-        <!-- Video Software -->
-        <MediaCodec name="OMX.qcom.video.encoder.h263sw" type="video/3gpp" >
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Quirk name="requires-loaded-to-idle-after-allocation" />
-            <Limit name="size" min="96x96" max="864x864" />
-            <Limit name="alignment" value="4x4" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="36-1620" />
-            <Limit name="blocks-per-second" min="36" max="48600" />
-            <Limit name="bitrate" range="1-2000000" />
-            <Limit name="frame-rate" range="1-30" />
-            <Limit name="concurrent-instances" max="3" />
-            <Limit name="performance-point-720x576" value="25" />
-            <Limit name="performance-point-720x480" value="30" />
-            <Limit name="performance-point-864x480" value="30" />
-        </MediaCodec>
     </Encoders>
     <Decoders>
-       <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -437,36 +413,6 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="3" />
             <Limit name="performance-point-3840x2160" value="60" />
             <Limit name="performance-point-4096x2304" value="60" />
-        </MediaCodec>
-        <!-- Video Software -->
-        <MediaCodec name="OMX.qti.video.decoder.h263sw" type="video/3gpp" >
-             <Quirk name="requires-allocate-on-input-ports" />
-             <Quirk name="requires-allocate-on-output-ports" />
-             <Limit name="size" min="96x96" max="864x864" />
-             <Limit name="alignment" value="4x4" />
-             <Limit name="block-size" value="16x16" />
-             <Limit name="block-count" range="36-1620" />
-             <Limit name="blocks-per-second" min="36" max="48600" />
-             <Limit name="bitrate" range="1-16000000" />
-             <Limit name="frame-rate" range="1-30" />
-             <Feature name="adaptive-playback" />
-             <Limit name="concurrent-instances" max="4" />
-             <Limit name="performance-point-720x480" value="30" />
-             <Limit name="performance-point-720x576" value="25" />
-             <Limit name="performance-point-864x480" value="30" />
-        </MediaCodec>
-        <MediaCodec name="OMX.qti.video.decoder.mpeg4sw" type="video/mp4v-es">
-             <Quirk name="requires-allocate-on-input-ports" />
-             <Quirk name="requires-allocate-on-output-ports" />
-             <Limit name="size" min="96x96" max="1920x1920" />
-             <Limit name="alignment" value="2x2" />
-             <Limit name="block-size" value="16x16" />
-             <Limit name="block-count" range="36-8160" />
-             <Limit name="blocks-per-second" min="36" max="244800" />
-             <Limit name="bitrate" range="1-40000000" />
-             <Limit name="frame-rate" range="1-30" />
-             <Limit name="concurrent-instances" max="4" />
-             <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
     </Decoders>
 </MediaCodecs>
