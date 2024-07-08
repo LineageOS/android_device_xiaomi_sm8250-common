@@ -276,5 +276,4 @@
             <Limit name="performance-point-7680x4320" value="30" />
         </MediaCodec>
     </Encoders>
-    <Include href="media_codecs_google_c2.xml" />
 </Included>
