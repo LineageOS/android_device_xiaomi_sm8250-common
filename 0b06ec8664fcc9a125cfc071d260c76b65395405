@@ -51,6 +51,23 @@
       "message": "Ah right, I didn\u0027t upload commits for the kernel yet (just the backport of UVC function from android13-5.10)",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "483f7bf1_66976537",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11571
+      },
+      "writtenOn": "2024-07-10T15:22:27Z",
+      "side": 1,
+      "message": "I\u0027ve uploaded the kernel commits: https://review.lineageos.org/q/topic:%22xiaomi-sm8250-uvc-webcam%22\nWebcam is working fine on alioth.",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
