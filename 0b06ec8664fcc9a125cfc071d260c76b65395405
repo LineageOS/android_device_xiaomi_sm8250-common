@@ -68,6 +68,23 @@
       "message": "I\u0027ve uploaded the kernel commits: https://review.lineageos.org/q/topic:%22xiaomi-sm8250-uvc-webcam%22\nWebcam is working fine on alioth.",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e55e6196_7220a6bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-07-11T08:19:41Z",
+      "side": 1,
+      "message": "For some reason, after adding this usb debugging doesnt work most of the time.",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
