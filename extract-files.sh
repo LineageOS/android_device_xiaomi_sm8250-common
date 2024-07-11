@@ -64,6 +64,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+            ;;
         vendor/etc/init/init.mi_thermald.rc)
             sed -i "/seclabel u:r:mi_thermald:s0/d" "${2}"
             ;;
