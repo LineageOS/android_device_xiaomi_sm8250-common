@@ -138,6 +138,24 @@
       "message": "Issue is only present when try to connect in `No data transfer`. See below log, works fine when i change to `File transfer`.\n\nhttps://katb.in/itifufeyime",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa500504_bc5ba6c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-07-12T14:04:46Z",
+      "side": 1,
+      "message": "in \u0027No data transfer\u0027 and Webcam mode.",
+      "parentUuid": "3d9eecfc_85ed5eb5",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
