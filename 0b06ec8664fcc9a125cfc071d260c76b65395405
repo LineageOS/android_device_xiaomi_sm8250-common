@@ -85,6 +85,24 @@
       "message": "For some reason, after adding this usb debugging doesnt work most of the time.",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "416d249e_8672aec2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11571
+      },
+      "writtenOn": "2024-07-12T11:52:52Z",
+      "side": 1,
+      "message": "\u003e For some reason, after adding this usb debugging doesnt work most of the time.\n\nI could not reproduce any problems with usb debugging. Even repeated switching between Webcam and \"No data transfer\" with subsequent adb pulls works fine on my alioth.",
+      "parentUuid": "e55e6196_7220a6bb",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
