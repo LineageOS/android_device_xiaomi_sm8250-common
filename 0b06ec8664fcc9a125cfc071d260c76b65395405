@@ -121,6 +121,23 @@
       "parentUuid": "416d249e_8672aec2",
       "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d9eecfc_85ed5eb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-07-12T13:59:25Z",
+      "side": 1,
+      "message": "Issue is only present when try to connect in `No data transfer`. See below log, works fine when i change to `File transfer`.\n\nhttps://katb.in/itifufeyime",
+      "revId": "0b06ec8664fcc9a125cfc071d260c76b65395405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
