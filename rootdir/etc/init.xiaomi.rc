@@ -48,6 +48,10 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
+# Hardware revision
+on property:ro.boot.hwlevel=*
+    setprop ro.boot.hardware.revision ${ro.boot.hwlevel}
+
 # Health
 on boot
     chmod 0660 /sys/class/power_supply/battery/input_suspend
