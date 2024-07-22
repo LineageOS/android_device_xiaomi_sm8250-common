@@ -285,8 +285,8 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/kona-mtp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/kona-mtp-snd-card_Button_Jack.kl
+PRODUCT_PACKAGES += \
+    kona-mtp-snd-card_Button_Jack.kl
 
 PRODUCT_PACKAGES += \
     Xiaomi_Keyboard.idc

@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_usr_keylayout {
+    name: "kona-mtp-snd-card_Button_Jack.kl",
+    src: "kona-mtp-snd-card_Button_Jack.kl",
+    vendor: true,
+}
