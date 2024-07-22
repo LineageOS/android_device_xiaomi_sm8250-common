@@ -29,14 +29,17 @@ void search_variant(const std::vector<variant_info_t> variants) {
 }
 
 void set_variant_props(const variant_info_t variant) {
+    // Older devices don't have marketname
+    auto marketname = !variant.marketname.empty() ? variant.marketname : variant.model;
+
     set_ro_build_prop("brand", variant.brand, true);
     set_ro_build_prop("device", variant.device, true);
-    set_ro_build_prop("marketname", variant.marketname, true);
+    set_ro_build_prop("marketname", marketname, true);
     set_ro_build_prop("model", variant.model, true);
-    property_override("vendor.usb.product_string", variant.marketname, true);
+    property_override("vendor.usb.product_string", marketname, true);
 
     if (access("/system/bin/recovery", F_OK) != 0) {
-        property_override("bluetooth.device.default_name", variant.marketname, true);
+        property_override("bluetooth.device.default_name", marketname, true);
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
         property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
