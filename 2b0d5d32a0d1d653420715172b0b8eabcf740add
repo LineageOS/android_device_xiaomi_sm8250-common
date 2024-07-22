@@ -16,6 +16,23 @@
       "message": "`CN_MP_2.9.0` on my device",
       "revId": "2b0d5d32a0d1d653420715172b0b8eabcf740add",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7deba804_f9effcf2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-22T10:53:33Z",
+      "side": 1,
+      "message": "Works on munch as well",
+      "revId": "2b0d5d32a0d1d653420715172b0b8eabcf740add",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
