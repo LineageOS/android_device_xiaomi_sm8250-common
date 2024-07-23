@@ -51,7 +51,7 @@ sh_binary {
 soong_config_module_type {
     name: "xiaomi_kona_rootdir_prebuilt_etc",
     module_type: "prebuilt_etc",
-    config_namespace: "XIAOMI_KONA_ROOTDIR",
+    config_namespace: "XIAOMI_KONA",
     variables: ["PARTITION_SCHEME"],
     properties: ["src"],
 }
