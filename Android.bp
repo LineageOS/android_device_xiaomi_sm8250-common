@@ -16,6 +16,19 @@ soong_namespace {
     ],
 }
 
+soong_config_module_type {
+    name: "xiaomi_kona_wifi_install_symlink",
+    module_type: "install_symlink",
+    config_namespace: "XIAOMI_KONA",
+    variables: ["WIFI_SYMLINK_VERSION"],
+    properties: ["symlink_target"],
+}
+
+soong_config_string_variable {
+    name: "WIFI_SYMLINK_VERSION",
+    values: ["v1", "v2"],
+}
+
 install_symlink {
     name: "firmware_WCNSS_qcom_cfg.ini_symlink",
     vendor: true,
@@ -23,9 +36,21 @@ install_symlink {
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
 
-install_symlink {
+xiaomi_kona_wifi_install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
-    symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+    soong_config_variables: {
+        WIFI_SYMLINK_VERSION: {
+            v1: {
+                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+            },
+            v2: {
+                symlink_target: "/mnt/vendor/persist/wlan/wlan_mac.bin",
+            },
+            conditions_default: {
+                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+            }
+        },
+    },
 }
