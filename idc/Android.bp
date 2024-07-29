@@ -9,3 +9,21 @@ prebuilt_usr_idc {
     src: "Xiaomi_Keyboard.idc",
     vendor: true,
 }
+
+prebuilt_usr_idc {
+    name: "uinput-fortsense.idc",
+    src: "uinput-fortsense.idc",
+    vendor: true,
+}
+
+prebuilt_usr_idc {
+    name: "uinput-fpc.idc",
+    src: "uinput-fpc.idc",
+    vendor: true,
+}
+
+prebuilt_usr_idc {
+    name: "uinput-goodix.idc",
+    src: "uinput-goodix.idc",
+    vendor: true,
+}

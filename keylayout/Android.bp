@@ -15,3 +15,21 @@ prebuilt_usr_keylayout {
     src: "kona-mtp-snd-card_Button_Jack.kl",
     vendor: true,
 }
+
+prebuilt_usr_keylayout {
+    name: "uinput-fortsense.kl",
+    src: "uinput-fortsense.kl",
+    vendor: true,
+}
+
+prebuilt_usr_keylayout {
+    name: "uinput-fpc.kl",
+    src: "uinput-fpc.kl",
+    vendor: true,
+}
+
+prebuilt_usr_keylayout {
+    name: "uinput-goodix.kl",
+    src: "uinput-goodix.kl",
+    vendor: true,
+}

@@ -287,10 +287,16 @@ PRODUCT_PACKAGES += \
 # Input
 PRODUCT_PACKAGES += \
     Xiaomi_Smart_Pen_Keyboard.kl \
-    kona-mtp-snd-card_Button_Jack.kl
+    kona-mtp-snd-card_Button_Jack.kl \
+    uinput-fortsense.kl \
+    uinput-fpc.kl \
+    uinput-goodix.kl
 
 PRODUCT_PACKAGES += \
-    Xiaomi_Keyboard.idc
+    Xiaomi_Keyboard.idc \
+    uinput-fortsense.idc \
+    uinput-fpc.idc \
+    uinput-goodix.idc
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
