@@ -303,6 +303,14 @@ vendor/firmware/a650_zap.mdt
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
+# OpenGL Vulkan V782 Update
+vendor/lib/libadreno_app_profiles.so
+vendor/lib/libdmabufheap.so
+vendor/lib/libllvm-qgl.so
+vendor/lib64/libadreno_app_profiles.so
+vendor/lib64/libdmabufheap.so
+vendor/lib64/libllvm-qgl.so
+
 # GNSS
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
