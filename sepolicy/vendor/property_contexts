@@ -16,6 +16,7 @@ ro.camera.req.fmq.size                                                          
 ro.vendor.camera.                                                                                   u:object_r:vendor_camera_prop:s0
 vendor.camera.boot_complete                                                                         u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.                                                                               u:object_r:vendor_camera_prop:s0
+persist.vendor.EnableP3ColorSpace                                                                   u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 gf.debug.                                                                                           u:object_r:vendor_fingerprint_prop:s0
