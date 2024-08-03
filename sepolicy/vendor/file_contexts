@@ -66,6 +66,9 @@
 # Sensors
 /dev/akm09970                                                                                       u:object_r:hall_device:s0
 
+# Sensors - data
+/data/vendor/sensor_log(/.*)?                                                                       u:object_r:vendor_sensor_log_data_file:s0
+
 # SSR
 /sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name                           u:object_r:vendor_sysfs_ssr:s0
 
