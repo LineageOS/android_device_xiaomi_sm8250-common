@@ -10,6 +10,7 @@ persist.vendor.btstack.                                                         
 # Camera
 camera.                                                                                             u:object_r:vendor_camera_prop:s0
 persist.camera.                                                                                     u:object_r:vendor_camera_prop:s0
+persist.vendor.EnableP3ColorSpace                                                                   u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                                                                               u:object_r:vendor_camera_prop:s0
 ro.camera.res.fmq.size                                                                              u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size                                                                              u:object_r:vendor_camera_prop:s0
