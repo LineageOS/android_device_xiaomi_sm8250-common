@@ -5,7 +5,7 @@ hal_client_domain(hal_camera_default, hal_power)
 r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
 
 # Allow hal_camera_default to read to /mnt/vendor/persist/camera
-r_dir_file(hal_camera_default, vendor_camera_persist_file)
+r_dir_file(hal_camera_default, vendor_persist_camera_file)
 
 # Allow hal_camera_default to read to /mnt/vendor/persist/sensors
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
