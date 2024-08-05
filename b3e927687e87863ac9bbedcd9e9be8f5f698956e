@@ -46,6 +46,30 @@
       },
       "revId": "b3e927687e87863ac9bbedcd9e9be8f5f698956e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85d17bb4_00270789",
+        "filename": "sepolicy/vendor/file.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 24387
+      },
+      "writtenOn": "2024-08-05T06:13:10Z",
+      "side": 1,
+      "message": "Yes at the beginning I thought of labeling same as stock but the I saw that the naming convention was different on sm8250 common. So I opted for keeping it consistent. I had to rename it to sensor_log though cause sensors label was not allowed to be used on /data/sensor_log. For what concerns the section, I\u0027ll move it in the evening.",
+      "parentUuid": "4887ba89_53ec2b52",
+      "range": {
+        "startLine": 23,
+        "startChar": 5,
+        "endLine": 23,
+        "endChar": 29
+      },
+      "revId": "b3e927687e87863ac9bbedcd9e9be8f5f698956e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
