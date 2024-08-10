@@ -777,6 +777,8 @@ vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display
 -framework/WfdCommon.jar
+system/lib/vendor.qti.hardware.display.config-V5-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V5-ndk.so
 system_ext/bin/wfdservice
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
