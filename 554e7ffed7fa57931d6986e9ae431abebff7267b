@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60a51ada_648378d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33916
+      },
+      "writtenOn": "2024-08-10T14:11:39Z",
+      "side": 1,
+      "message": "kona.mk change fixed wfd, verified by a cmi user now",
+      "revId": "554e7ffed7fa57931d6986e9ae431abebff7267b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
