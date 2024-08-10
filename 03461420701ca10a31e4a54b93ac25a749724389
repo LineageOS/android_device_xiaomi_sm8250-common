@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de4c9d63_85c3b2c7",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-08-10T22:15:53Z",
+      "side": 1,
+      "message": "Covered by the rule in file_contexts",
+      "range": {
+        "startLine": 157,
+        "startChar": 0,
+        "endLine": 157,
+        "endChar": 173
+      },
+      "revId": "03461420701ca10a31e4a54b93ac25a749724389",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
