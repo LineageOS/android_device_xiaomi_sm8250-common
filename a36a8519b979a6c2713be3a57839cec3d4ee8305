@@ -16,6 +16,24 @@
       "message": "Wrong section? I would see this under a Sensors section, unless it\u0027s strictly related to fingerprint, in which case you could also recycle the fingerprint_vendor_data_file label then",
       "revId": "a36a8519b979a6c2713be3a57839cec3d4ee8305",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30fe8583_3c61e4e1",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-08-10T22:17:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "89dced83_96e89a23",
+      "revId": "a36a8519b979a6c2713be3a57839cec3d4ee8305",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
