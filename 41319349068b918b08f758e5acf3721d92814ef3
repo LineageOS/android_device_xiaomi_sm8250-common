@@ -16,6 +16,24 @@
       "message": "Missing file extension for vendor_init-qcom-sensors-sh",
       "revId": "41319349068b918b08f758e5acf3721d92814ef3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47808cb7_cb007015",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-08-12T19:50:32Z",
+      "side": 1,
+      "message": "What do you mean? The domain is called `vendor_init-qcom-sensors-sh` in sepolicy",
+      "parentUuid": "654f0faf_415a6571",
+      "revId": "41319349068b918b08f758e5acf3721d92814ef3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
