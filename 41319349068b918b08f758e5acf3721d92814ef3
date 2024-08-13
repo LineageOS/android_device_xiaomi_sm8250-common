@@ -34,6 +34,24 @@
       "parentUuid": "654f0faf_415a6571",
       "revId": "41319349068b918b08f758e5acf3721d92814ef3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5440a605_a3ccd448",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16908
+      },
+      "writtenOn": "2024-08-13T01:59:54Z",
+      "side": 1,
+      "message": "\u003e What do you mean? The domain is called `vendor_init-qcom-sensors-sh` in sepolicy\n\nsepolicy/vendor/vendor_init-qcom-sensors-sh`.te`?",
+      "parentUuid": "47808cb7_cb007015",
+      "revId": "41319349068b918b08f758e5acf3721d92814ef3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
