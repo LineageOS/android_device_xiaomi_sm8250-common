@@ -17,10 +17,14 @@ genfscon sysfs /class/power_supply/battery/capacity                             
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0051/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0035/884000.i2c:qcom,smb1396@35:qcom,div2_cp_slave/power_supply/cp_slave                u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/verify_digest                          u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0065/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-slave             u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-006b/power_supply/bbc                       u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-5/5-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-6/6-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-6/6-0065/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
@@ -30,6 +34,7 @@ genfscon sysfs /devices/platform/soc/888000.i2c/i2c-4/4-0055/verify_digest      
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-003b/power_supply/idt                       u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi                  u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0061/power_supply/rx1619                    u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-6/6-002a/power_supply/cp_wdog                   u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0051/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-0/0-0055/power_supply/bms_slave                 u:object_r:sysfs_battery_supply:s0
@@ -85,6 +90,8 @@ genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-005a/wakeup             
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-master/wakeup                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-standalone/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/wakeup                                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master/wakeup        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0035/884000.i2c:qcom,smb1396@35:qcom,div2_cp_slave/power_supply/cp_slave/wakeup            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms/wakeup                                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0065/power_supply/bq2597x-master/wakeup                                                    u:object_r:sysfs_wakeup:s0
@@ -92,6 +99,7 @@ genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0065/wakeup             
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-slave/wakeup                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-standalone/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup                                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-006b/power_supply/bbc/wakeup                                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-5/5-0066/power_supply/bq2597x-standalone/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-5/5-0066/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-4/4-0055/power_supply/bms/wakeup                                                               u:object_r:sysfs_wakeup:s0
@@ -104,6 +112,7 @@ genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0061/wakeup             
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0067/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-8/8-0026/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-8/8-0055/wakeup                                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-6/6-002a/power_supply/cp_wdog/wakeup                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0010/890000.i2c:qcom,smb1390@10:qcom,charge_pump/wakeup                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0051/power_supply/bq2597x-standalone/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0051/wakeup                                                                                u:object_r:sysfs_wakeup:s0
