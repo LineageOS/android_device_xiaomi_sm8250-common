@@ -1,8 +1,5 @@
 # Unpinned blobs from munch-user 14 RKQ1.211001.001 V816.0.2.0.ULMMIXM release-keys
 
-# Consumer IR
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
-
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/slim_daemon

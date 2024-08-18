@@ -40,7 +40,7 @@
 /mnt/vendor/dsp/fastrpc_shell_3                                                                     u:object_r:vendor_public_adsprpcd_file:s0
 
 # IR
-/vendor/bin/hw/android\.hardware\.ir@1\.0-service\.xiaomi                                           u:object_r:hal_ir_default_exec:s0
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi                                                u:object_r:hal_ir_default_exec:s0
 
 # IR devices
 /dev/ir_spi                                                                                         u:object_r:lirc_device:s0
