@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8aac334b_07d53c3d",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-09-02T21:17:45Z",
+      "side": 1,
+      "message": "Unless xiaomi uses google carriersettings app and pb, you should skip these changes and CARRIER_SKIP_FILES above",
+      "revId": "6d9d8669b8c978a019354cf16d8c1ef48fb5c75a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f3f7345_0f226bb6",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-09-02T21:17:45Z",
+      "side": 1,
+      "message": "Same as the other file",
+      "revId": "6d9d8669b8c978a019354cf16d8c1ef48fb5c75a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
