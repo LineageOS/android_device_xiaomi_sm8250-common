@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0eadc13_13e369fc",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 790,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-09-02T21:59:37Z",
+      "side": 1,
+      "message": "On 4.19 qcom, WFD is still 32bit. You can check FP4 for reference",
+      "revId": "b2cddfe109ab204992f6cad2cd624a78742efa49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72ec2a9b_8f39aceb",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 800,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-09-02T21:59:37Z",
+      "side": 1,
+      "message": "This is built from source",
+      "range": {
+        "startLine": 800,
+        "startChar": 11,
+        "endLine": 800,
+        "endChar": 27
+      },
+      "revId": "b2cddfe109ab204992f6cad2cd624a78742efa49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
