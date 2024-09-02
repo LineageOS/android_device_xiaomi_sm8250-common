@@ -14,6 +14,7 @@ vendor/lib64/libgnsspps.so
 vendor/lib64/libgnss.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocationservice.so
+vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/libslimclient.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
