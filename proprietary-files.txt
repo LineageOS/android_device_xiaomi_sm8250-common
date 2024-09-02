@@ -185,7 +185,7 @@ system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_vendor
 vendor/lib64/libdpmqmihal.so
 
 # DRM (QSEECom)
@@ -402,7 +402,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_vendor
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -434,7 +434,7 @@ vendor/lib/libsmwrapper.so
 # Media
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
-vendor/lib/libmmosal.so
+vendor/lib/libmmosal.so;MODULE=libmmosal_vendor
 
 # Media configs
 vendor/etc/media_profiles_kona.xml:vendor/etc/media_profiles_V1_0.xml
@@ -752,5 +752,5 @@ vendor/lib/libwfduibcsinkinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0_vendor
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
