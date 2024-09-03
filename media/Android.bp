@@ -1,0 +1,29 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "media_codecs_kona.xml",
+    src: "media_codecs_kona.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_kona_vendor.xml",
+    src: "media_codecs_kona_vendor.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_performance_kona.xml",
+    src: "media_codecs_performance_kona.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_system_default.xml",
+    src: "media_codecs_system_default.xml",
+    vendor: true,
+}
