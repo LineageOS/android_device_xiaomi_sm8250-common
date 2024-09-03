@@ -441,7 +441,6 @@ vendor/etc/media_codecs_kona.xml
 vendor/etc/media_codecs_kona_vendor.xml
 vendor/etc/media_codecs_performance_kona.xml
 vendor/etc/media_codecs_system_default.xml
-vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_kona.xml
 vendor/etc/system_properties.xml
 
