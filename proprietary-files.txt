@@ -4,7 +4,6 @@
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
@@ -61,12 +60,8 @@ system/media/audio/ui/popup_yingyan_up.ogg:system_ext/media/audio/ui/popup_yingy
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsprpc.so
-vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
