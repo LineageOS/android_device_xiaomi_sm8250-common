@@ -15,15 +15,27 @@ FILES = [Path(file) for file in [
 
 setlocale(LC_ALL, "C")
 
+def get_source_file_name(line: str) -> str:
+    # Remove '-' from strings if there,
+    # it is used to indicate a build target
+    line = line.removeprefix('-')
+
+    # Remove the various additional arguments
+    line = line.split(";", maxsplit=1)[0]
+
+    # Remove the destination path if there
+    line = line.split(":", maxsplit=1)[0]
+
+    return line
+
 def strcoll_extract_utils(string1: str, string2: str) -> int:
     # Skip logic if one of the string if empty
     if not string1 or not string2:
         return strcoll(string1, string2)
 
-    # Remove '-' from strings if there,
-    # it is used to indicate a build target
-    string1 = string1.removeprefix('-')
-    string2 = string2.removeprefix('-')
+    # Get the source file name
+    string1 = get_source_file_name(string1)
+    string2 = get_source_file_name(string2)
 
     # If no directories, compare normally
     if not "/" in string1 and not "/" in string2:
