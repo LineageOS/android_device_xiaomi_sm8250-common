@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a38044a9_c7fdeaab",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 478,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-09-12T00:40:47Z",
+      "side": 0,
+      "message": "AFAIK OMX is still 32bit",
+      "revId": "8fe62a0c7c4995e174f18c25de9c420816870f87",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
