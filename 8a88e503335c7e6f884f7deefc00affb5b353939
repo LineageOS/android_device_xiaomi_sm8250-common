@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fd65493_31134f4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-09-13T14:08:11Z",
+      "side": 1,
+      "message": "You could also just do ;MODULE_SUFFIX\u003d_vendor since https://review.lineageos.org/c/LineageOS/android_tools_extract-utils/+/401400 was merged",
+      "revId": "8a88e503335c7e6f884f7deefc00affb5b353939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
