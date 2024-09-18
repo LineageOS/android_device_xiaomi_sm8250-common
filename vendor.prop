@@ -208,6 +208,11 @@ persist.vendor.hvdcp_opti.disallowed=1
 # Keystore
 ro.hardware.keystore_desede=true
 
+# LMK
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+ro.lmk.use_minfree_levels=true
+
 # NFC
 ro.camera.notify_nfc=1
 
