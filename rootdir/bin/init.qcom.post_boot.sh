@@ -968,22 +968,6 @@ function configure_memory_parameters() {
 
         echo $LimitSize > /dev/memcg/camera/memory.soft_limit_in_bytes
     else
-        arch_type=`uname -m`
-        MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-        MemTotal=${MemTotalStr:16:8}
-
-        # Set parameters for 32-bit Go targets.
-        if [ $MemTotal -le 1048576 ] && [ "$low_ram" == "true" ]; then
-            # Disable KLMK, ALMK, PPR & Core Control for Go devices
-        echo 0 > /sys/module/lowmemorykiller/parameters/enable_lmk
-        echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
-        echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
-        disable_core_ctl
-        # Enable oom_reaper for Go devices
-        if [ -f /proc/sys/vm/reap_mem_on_sigkill ]; then
-            echo 1 > /proc/sys/vm/reap_mem_on_sigkill
-        fi
-    else
 
         # Read adj series and set adj threshold for PPR and ALMK.
         # This is required since adj values change from framework to framework.
@@ -1092,7 +1076,6 @@ function configure_memory_parameters() {
     configure_read_ahead_kb_values
 
     enable_swap
-fi
 }
 
 function enable_memory_features()
