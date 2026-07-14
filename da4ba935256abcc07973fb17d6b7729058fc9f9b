@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b6fe5bc_4273fb54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34491
+      },
+      "writtenOn": "2026-07-14T02:18:31Z",
+      "side": 1,
+      "message": "Check if the bt mac addr is fixed. If not, this commit might still be needed and must be applied to all mikona together.\n\nhttps://github.com/PixelOS-Devices/android_device_xiaomi_sm8250-common/commit/98e8f30135ffbdd35f30abdbafdf671407e7bdd5\nhttps://github.com/PixelOS-Devices/android_device_xiaomi_alioth/commit/6dcd20e880f0ad2857de2a44c4f0c521de4f0281",
+      "revId": "da4ba935256abcc07973fb17d6b7729058fc9f9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
