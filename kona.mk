@@ -232,7 +232,6 @@ PRODUCT_PACKAGES += \
     uinput-goodix.idc
 
 # Kernel
-PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Lights
