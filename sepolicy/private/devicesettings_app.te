@@ -1,4 +1,4 @@
-type devicesettings_app, domain;
+type devicesettings_app, domain, coredomain;
 typeattribute devicesettings_app mlstrustedsubject;
 
 app_domain(devicesettings_app)
@@ -18,9 +18,6 @@ allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perm
 
 # Allow binder communication with gpuservice
 binder_call(devicesettings_app, gpuservice)
-
-# Allow XiaomiParts to write to sysfs_leds
-allow devicesettings_app sysfs_leds:file w_file_perms;
 
 # Allow XiaomiParts to write to sysfs_thermal
 allow devicesettings_app sysfs_thermal:file w_file_perms;
