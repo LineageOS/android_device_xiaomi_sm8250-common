@@ -371,6 +371,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/leds/blue     delay_off    0640    system    system
 /sys/class/leds/blue     breath       0640    system    system
 /sys/class/leds/blue     trigger      0640    system    system
+/sys/class/leds/red-right    breath   0640    system    system
+/sys/class/leds/green-right  breath   0640    system    system
+/sys/class/leds/blue-right   breath   0640    system    system
 
 # NPU device
 /dev/msm_npu             0644   system     system
