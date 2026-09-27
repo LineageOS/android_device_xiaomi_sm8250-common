@@ -33,6 +33,24 @@
       "message": "Is there any personal evidence this works? Any other qcom devices have this (as this doesnt look device specific)?\n\n(or is this yet another AI distraction)?",
       "revId": "8a4fb06f476f29beeafe49d8026f5678c852a8d9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee0b066e_2203d986",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-27T19:38:12Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/I0f6a7531f57eaf293299b72e9ced9de70cc32477",
+      "parentUuid": "e043e19e_bb88060c",
+      "revId": "8a4fb06f476f29beeafe49d8026f5678c852a8d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
