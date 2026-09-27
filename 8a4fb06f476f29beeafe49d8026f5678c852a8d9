@@ -51,6 +51,23 @@
       "parentUuid": "e043e19e_bb88060c",
       "revId": "8a4fb06f476f29beeafe49d8026f5678c852a8d9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e8881b7_dcca8cf8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-09-27T20:29:59Z",
+      "side": 1,
+      "message": "Wrong git metadata and change ID then",
+      "revId": "8a4fb06f476f29beeafe49d8026f5678c852a8d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
