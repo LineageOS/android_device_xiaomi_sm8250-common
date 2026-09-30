@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.kona \
     audio.r_submix.default \
-    audio.usbv2.default \
+    audio.usbv2.default
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
@@ -164,9 +164,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    vendor.qti.hardware.display.allocator-service
-
-PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service
 
 # DRM
