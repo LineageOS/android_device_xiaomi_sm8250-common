@@ -16,6 +16,24 @@
       "message": "Can anyone confirm if this does anything or not?",
       "revId": "77f0a4ac35bea372bdc0764b850188d6cccf2a82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cb0147c_e9b64ccf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38072
+      },
+      "writtenOn": "2026-10-06T07:25:45Z",
+      "side": 1,
+      "message": "Yes,\nverified locally on the affected device (Xiaomi apollon, MegaFon RU,\nlineage-23.2). Before the patch:\n\n  DataServiceManager: Carrier config changed. Try to bind data service.\n  DataServiceManager: Can\u0027t find the binding package\n\ndumpsys activity services vendor.qti.iwlan showed only\n.QualifiedNetworksServiceImpl and .IWlanNetworkService bound, never\n.IWlanDataService.\n\nAfter applying the equivalent overlay locally (built and pushed as a\nruntime resource overlay carrying the same\nconfig_wlan_data_service_package value, to test without a full\nrebuild):\n\n  DataServiceManager: onServiceConnected: ComponentInfo{vendor.qti.iwlan/vendor.qti.iwlan.IWlanDataService}\n\nand dumpsys activity services vendor.qti.iwlan now lists\n.IWlanDataService as an active bound service alongside the other two,\nconsistently across reboots and Wi-Fi toggles. This is a direct,\nreproducible before/after confirmation that the missing default was\nexactly what prevented the WLAN transport from ever registering.",
+      "parentUuid": "7aa9958c_87b5f7fc",
+      "revId": "77f0a4ac35bea372bdc0764b850188d6cccf2a82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
