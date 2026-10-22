@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "db24eb2f_66a4f172",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34491
+      },
+      "writtenOn": "2026-10-22T21:21:36Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:%22OSS-SoterService%22",
+      "revId": "d0f25feca34f15d45230690b65631947329302c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
