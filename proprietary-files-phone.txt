@@ -31,6 +31,3 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-
-# Soter service (Tencent)
-vendor/app/SoterService/SoterService.apk

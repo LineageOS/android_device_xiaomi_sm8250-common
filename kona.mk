@@ -342,6 +342,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
+# Soter service (Tencent)
+PRODUCT_PACKAGES += \
+    SoterService
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
