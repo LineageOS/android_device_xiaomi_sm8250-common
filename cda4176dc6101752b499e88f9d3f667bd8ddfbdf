@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7b5f37d_98e0d71a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-11-13T16:18:41Z",
+      "side": 1,
+      "message": "What Xiaomi SM8250 device do you have btw?\n\nAlso, AI usage must be disclosed with `Assisted-by: LLM`, for the record",
+      "revId": "cda4176dc6101752b499e88f9d3f667bd8ddfbdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
