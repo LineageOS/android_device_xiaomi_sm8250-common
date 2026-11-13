@@ -21,3 +21,5 @@ type vendor_public_adsprpcd_file, file_type;
 type vendor_sensor_log_data_file, file_type, data_file_type;
 
 type vendor_thermal_data_file, file_type, data_file_type;
+
+type vendor_sysfs_palm_sensor, fs_type, sysfs_type;
