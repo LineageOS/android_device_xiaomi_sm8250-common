@@ -16,6 +16,24 @@
       "message": "Alphabetical order",
       "revId": "962597ee399ae6f16987d87e521997fac3d7848e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65a4e796_9b338f77",
+        "filename": "sepolicy/vendor/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 37805
+      },
+      "writtenOn": "2026-11-13T15:49:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f27f0e9d_8865f04e",
+      "revId": "962597ee399ae6f16987d87e521997fac3d7848e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
