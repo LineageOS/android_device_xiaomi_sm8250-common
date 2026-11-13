@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f27f0e9d_8865f04e",
+        "filename": "sepolicy/vendor/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-11-13T15:43:44Z",
+      "side": 1,
+      "message": "Alphabetical order",
+      "revId": "962597ee399ae6f16987d87e521997fac3d7848e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
