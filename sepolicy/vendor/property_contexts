@@ -1,6 +1,6 @@
 # Audio
 vendor.audio.offload.                                                                               u:object_r:vendor_audio_prop:s0
-vendor.audio.soundtrigger.debug.urser_id                                                            u:object_r:vendor_audio_prop:s0
+vendor.audio.soundtrigger.debug.user_id                                                             u:object_r:vendor_audio_prop:s0
 vendor.audio_hal.in_period_size                                                                     u:object_r:vendor_audio_prop:s0
 
 # Bluetooth
