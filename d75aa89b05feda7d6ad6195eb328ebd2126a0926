@@ -16,6 +16,23 @@
       "message": "@althafvly@gmail.com @seba@sebaubuntu.dev submit please.",
       "revId": "d75aa89b05feda7d6ad6195eb328ebd2126a0926",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7a81160_c82fd304",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-11-19T15:55:18Z",
+      "side": 1,
+      "message": "Hold: please check the blobs first for this string, it has been like that for 5 years",
+      "revId": "d75aa89b05feda7d6ad6195eb328ebd2126a0926",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
